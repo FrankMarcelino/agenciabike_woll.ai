@@ -1,8 +1,6 @@
 body {
-  padding-top: 75px;
-
+  padding-top: 50px;
 }
-
 
 #home-quote {
   background: url('../img/bg-quote.jpg') center center;
@@ -21,4 +19,116 @@ body {
   .fixed-top {
     position: relative;
   }
+}
+
+/* Cards do hero */
+.hero-section {
+  background-color: #b5b9bd;
+  color: rgb(0, 0, 0);
+  padding: 50px 0;
+}
+
+.hero-section .hero-text {
+  margin-bottom: 30px;
+}
+
+.hero-section .stats {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section .stats li {
+  margin-bottom: 10px;
+}
+
+.hero-section .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Carousel */
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.hero-text {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.image-container {
+  text-align: right;
+}
+
+.hero-text h1 {
+  color: #00a8e8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.hero-text span {
+  color: #083b5b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.hero-text p,
+.hero-text ul {
+  margin: 0;
+}
+
+.hero-text ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.hero-text ul li {
+  margin-bottom: 10px;
+}
+
+.promo-section {
+  background-color: #001f3f;
+  color: white;
+  padding: 50px 0;
+}
+
+.promo-section .promo-text {
+  padding-right: 20px;
+}
+
+.promo-section .btn-black {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.promo-section .progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.promo-section .progress-bar-inner {
+  width: 100%;
+  background-color: #00a8e8;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+.promo-section .promo-image img {
+  max-width: 100%;
+  height: auto;
 }
