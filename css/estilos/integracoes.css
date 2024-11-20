@@ -1,7 +1,11 @@
-.case-sucesso-section {
-  background-color: #f8f9fa;
-  padding: 50px 20px;
+.integracoes-section {
   text-align: center;
+  color: #00a8e8;
+  font-weight: 700;
+  font-size: 3.25em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
 }
 
 .unique-carousel-wrapper {

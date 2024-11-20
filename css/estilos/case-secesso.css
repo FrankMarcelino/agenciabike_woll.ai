@@ -47,7 +47,7 @@
   align-self: end;
   max-width: 458px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
