@@ -1,0 +1,32 @@
+.difereciais-section {
+  display: flex;
+  height: 695px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.accordion-bg {
+  position: relative;
+}
+
+.accordion-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+  /* Ajuste a opacidade conforme necessário */
+  z-index: -1;
+  /* Garante que a imagem fique atrás do conteúdo */
+}
+
+.accordion-container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fundo branco semitransparente */
+  padding: 20px;
+}
