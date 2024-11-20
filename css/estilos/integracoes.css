@@ -1,0 +1,32 @@
+.case-sucesso-section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.unique-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.unique-carousel-content {
+  display: flex;
+  animation: unique-scroll 20s linear infinite;
+}
+
+.unique-carousel-item img {
+  width: 100vw;
+  height: auto;
+}
+
+@keyframes unique-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

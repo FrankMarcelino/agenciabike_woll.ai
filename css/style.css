@@ -5,6 +5,7 @@
 @import "./estilos/card-soluicoes.css";
 @import "./estilos/diferenciais.css";
 @import "./estilos/case-secesso.css";
+@import "./estilos/integracoes.css";
 
 body {
   padding-top: 50px;
@@ -16,8 +17,12 @@ body {
 }
 
 .bg-azul-claro {
-
   background: linear-gradient(135deg, #E6F0F8 0%, #B3D4E8 100%);
+}
+
+.bg-integracoes {
+  background-image: url('../img/bg.integracoes.jpg');
+  background-size: cover;
 }
 
 .detalhebg {
