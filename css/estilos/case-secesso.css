@@ -1,9 +1,21 @@
 .case1 {
+  display: flex;
   background-image: url('../../img/case1.png');
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 670px;
+  width: 100%;
 }
 
 .case2 {
+  display: flex;
   background-image: url('../../img/case2.png');
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 670px;
+  width: 100%;
 }
