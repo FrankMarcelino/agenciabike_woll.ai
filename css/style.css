@@ -6,6 +6,7 @@
 @import "./estilos/diferenciais.css";
 @import "./estilos/case-secesso.css";
 @import "./estilos/integracoes.css";
+@import "./estilos/crm.css";
 
 body {
   padding-top: 50px;
