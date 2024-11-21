@@ -10,6 +10,7 @@
 @import "./estilos/empresa.css";
 @import "./estilos/impacto.css";
 @import "./estilos/manifesto.css";
+@import "./estilos/footer.css";
 
 body {
   padding-top: 50px;
