@@ -1,0 +1,28 @@
+/* ----- cores ----- */
+
+/* variaveis cores */
+:root {
+  /* tons de cinza até o preto */
+
+  --c11: #000;
+  --c10: #2e2e2e;
+  --c09: #404040;
+  --c08: #595959;
+  --c07: #717171;
+  --c06: #9c9c9c;
+  --c05: #b2b2b2;
+  --c04: #cccccc;
+  --c03: #dedede;
+  --c02: #ededed;
+  --c01: #f7f7f7;
+  --w: #ffffff;
+
+  /* tons de azul */
+
+  --p5: #083b5b;
+  --p4: #00a8e8;
+  --p3: #bd747b;
+  --p2: #d2959b;
+  --p1: #efc0c5;
+
+}

@@ -1,3 +1,4 @@
+@import "./estilos/navbar.css";
 @import "./estilos/hero.css";
 @import "./estilos/carrosel.css";
 @import "./estilos/produto.css";
@@ -12,24 +13,15 @@
 @import "./estilos/manifesto.css";
 @import "./estilos/footer.css";
 
+/* --------------utilidades---------------------- */
+@import "./utilidades/cores.css";
+@import "./utilidades/bg.css";
+
 body {
-  padding-top: 50px;
+
+  background-color: var(--w);
 }
 
-.bg-azul {
-  background-image: url('../img/bg1.png');
-  background-size: cover;
-}
-
-.bg-azul-claro {
-  background: linear-gradient(135deg, #E6F0F8 0%, #B3D4E8 100%);
-}
-
-
-.detalhebg {
-  background-image: url('../img/detalheBG.png');
-  background-size: cover;
-}
 
 
 

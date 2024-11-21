@@ -1,0 +1,14 @@
+.bg-azul {
+  background-image: url('../img/bg1.png');
+  background-size: cover;
+}
+
+.bg-azul-claro {
+  background: linear-gradient(135deg, #E6F0F8 0%, #B3D4E8 100%);
+}
+
+
+.detalhebg {
+  background-image: url('../img/detalheBG.png');
+  background-size: cover;
+}
