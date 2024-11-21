@@ -20,3 +20,11 @@ $(document).ready(function () {
     activateButton("#contact-button", "#contact-image");
   });
 });
+
+// diferenciais acordion
+
+document.querySelectorAll(".faq-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
