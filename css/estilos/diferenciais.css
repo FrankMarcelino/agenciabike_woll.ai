@@ -1,16 +1,27 @@
-.difereciais-section {
+.container-diferenciais {
   display: flex;
-  height: 695px;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.diferenciais {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   justify-content: center;
   gap: 20px;
-
+  max-width: 720px;
 }
+
+
 
 .faq-container {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 720px;
   margin: 0 auto;
   padding: 20px;
 }

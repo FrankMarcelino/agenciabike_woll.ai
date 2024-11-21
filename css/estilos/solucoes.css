@@ -1,8 +1,9 @@
 .solucoes-section {
   display: flex;
   flex-direction: column;
-
+  max-width: 1440px;
   height: 695px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
