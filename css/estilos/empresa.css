@@ -1,0 +1,82 @@
+.empresa-section {
+  display: grid;
+  height: 997px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  /* A segunda linha ocupa o restante do espaço disponível */
+  gap: 0;
+  padding-left: 80px;
+  background-color: #f3f4f3;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.imagem-container {
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+
+.imagem-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url('../../img/detalher.bg.empresa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.container-lideranca {
+  grid-column: span 2;
+  /* Span across both columns */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  /* Ensure it spans the full width of the grid */
+}
+
+.cards-lideranca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.lideranca-card {
+  width: 100%;
+  height: 336px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.lideranca-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  align-self: start;
+  justify-content: center;
+  align-items: center;
+}

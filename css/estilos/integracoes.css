@@ -11,7 +11,7 @@
   font-weight: 700;
   margin-top: 30px;
   position: relative;
-  background-color: rgba(1, 13, 48, 0.801);
+  background-color: #083b5be3;
 
 }
 
@@ -21,7 +21,6 @@
   font-size: 3.25em;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-
   padding-bottom: 30px;
   position: relative;
 
@@ -41,7 +40,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.8;
 
   /* Ajuste a opacidade conforme necessário */
   z-index: -1;

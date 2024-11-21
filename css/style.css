@@ -7,6 +7,7 @@
 @import "./estilos/case-secesso.css";
 @import "./estilos/integracoes.css";
 @import "./estilos/crm.css";
+@import "./estilos/empresa.css";
 
 body {
   padding-top: 50px;
@@ -22,13 +23,10 @@ body {
 }
 
 
-
 .detalhebg {
   background-image: url('../img/detalheBG.png');
   background-size: cover;
 }
-
-
 
 
 
