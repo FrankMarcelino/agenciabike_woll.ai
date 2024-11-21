@@ -1,11 +1,14 @@
 .container-diferenciais {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 40px;
+  align-items: center;
+  height: 603px;
   max-width: 1440px;
   margin: 0 auto;
+
 }
+
+
 
 .diferenciais {
   display: flex;
@@ -16,21 +19,31 @@
   max-width: 720px;
 }
 
-
+.faq-container::after {
+  position: relative;
+  background-image: url('../../img/detalhebg2.png');
+  top: 0px;
+  right: 0;
+  width: ;
+  z-index: -1;
+}
 
 .faq-container {
-  display: flex;
+  display: block;
   flex-direction: column;
+  position: absolute;
+  top: 60;
+  left: 60;
   max-width: 720px;
-  margin: 0 auto;
-  padding: 20px;
+
 }
 
 .faq-item {
-  background-color: #f0f0f0;
+  background-color: #fff;
   border-radius: 10px;
   margin-bottom: 10px;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -42,8 +55,12 @@
 }
 
 .faq-title {
+  display: flex;
   font-size: 18px;
-  font-weight: bold;
+  background-color: #e0e0e0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
   margin: 0;
 }
 
@@ -61,10 +78,14 @@
 
 .faq-content {
   display: none;
-  padding-top: 20px;
+  padding: 16px;
   border-top: 1px solid #d0d0d0;
+  width: auto;
 }
 
 .faq-item.active .faq-content {
   display: block;
+  background-color: var(--w);
+  width: 100%;
+  margin: 0;
 }
