@@ -1,9 +1,8 @@
 .empresa-section {
   display: grid;
   height: 997px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr;
-  /* A segunda linha ocupa o restante do espaço disponível */
   gap: 0;
   padding-left: 80px;
   background-color: #f3f4f3;
@@ -25,39 +24,55 @@
   position: relative;
 }
 
+.imagem-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .imagem-container::before {
   content: "";
-  display: block;
   position: absolute;
-  background-image: url('../../img/detalher.bg.empresa.png');
+  top: 0px;
+  /* Ajuste a posição conforme necessário */
+  left: -250px;
+  /* Ajuste a posição conforme necessário */
+  width: calc(100% + 250px);
+  /* Ajuste a largura conforme necessário */
+  height: calc(100% + 250px);
+  /* Ajuste a altura conforme necessário */
+  background-image: url('../../img/detalhe.foros.empresa.png');
+  /* Caminho para a imagem da borda */
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10;
+  z-index: 2;
+
+}
+
+.imagem-container img {
+  display: block;
+  width: auto;
+  height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .container-lideranca {
   grid-column: span 2;
-  /* Span across both columns */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 20px;
   padding: 20px;
-  background-color: white;
   width: 100%;
-  /* Ensure it spans the full width of the grid */
+  z-index: 3;
 }
 
 .cards-lideranca {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 20px;
 }
@@ -67,7 +82,7 @@
   height: 336px;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+
   border-radius: 8px;
 }
 
