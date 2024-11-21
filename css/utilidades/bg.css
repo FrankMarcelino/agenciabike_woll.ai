@@ -1,5 +1,5 @@
 .bg-azul {
-  background-image: url('../img/bg1.png');
+  background-image: url('../../img/bg1.png');
   background-size: cover;
 }
 
@@ -9,6 +9,6 @@
 
 
 .detalhebg {
-  background-image: url('../img/detalheBG.png');
+  background-image: url('../../img/detalheBG.png');
   background-size: cover;
 }
