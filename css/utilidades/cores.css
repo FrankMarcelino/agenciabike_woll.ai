@@ -14,25 +14,24 @@
   --c04: #cccccc;
   --c03: #dedede;
   --c02: #ededed;
-  --c01: #f7f7f7;
+  --c01: #f3f4f3;
   --w: #ffffff;
 
   /* tons de azul */
 
-  --p5: #083b5b;
-  --p4: #00a8e8;
-  --p3: #bd747b;
+  --p4: #083b5b;
+  --p3: #00a8e8;
   --p2: #d2959b;
   --p1: #efc0c5;
 
 }
 
 .cp5 {
-  color: var(--p5);
+  color: var(--p4);
 }
 
 .cp4 {
-  color: var(--p4);
+  color: var(--p3);
 }
 
 .p3 {
