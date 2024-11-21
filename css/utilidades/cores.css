@@ -26,3 +26,23 @@
   --p1: #efc0c5;
 
 }
+
+.cp5 {
+  color: var(--p5);
+}
+
+.cp4 {
+  color: var(--p4);
+}
+
+.p3 {
+  color: var(--p3);
+}
+
+.p2 {
+  color: var(--p2);
+}
+
+.p1 {
+  color: var(--p1);
+}
