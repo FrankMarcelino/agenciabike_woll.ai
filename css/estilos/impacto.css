@@ -1,0 +1,29 @@
+.impacto-section {
+  display: grid;
+  height: 997px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr;
+  gap: 0;
+  padding-left: 80px;
+  background-color: #f3f4f3;
+}
+
+.impacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.imagem-container-impacto {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  width: 466px;
+  height: 1064px;
+  size: cover;
+  overflow: hidden;
+}

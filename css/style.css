@@ -8,6 +8,8 @@
 @import "./estilos/integracoes.css";
 @import "./estilos/crm.css";
 @import "./estilos/empresa.css";
+@import "./estilos/impacto.css";
+@import "./estilos/manifesto.css";
 
 body {
   padding-top: 50px;
