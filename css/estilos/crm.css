@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 1036px;
+  height: 796px;
   margin: 0 auto;
 }
 
@@ -36,12 +37,35 @@
 
 }
 
+.crm-images {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+}
+
 .crm-images img {
-  max-width: 100%;
-  display: none;
-  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .crm-images img.active {
-  display: block;
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.crm-images img.slide-out-left {
+  left: -100%;
+  opacity: 0;
+}
+
+.crm-images img.slide-in-left {
+  left: 0;
+  opacity: 1;
+  z-index: 2;
 }
