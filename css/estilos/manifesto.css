@@ -1,33 +1,28 @@
 .manifesto-section {
-  display: grid;
-  height: 997px;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto 1fr;
-  gap: 0;
-  padding-left: 80px;
-  background-image: url('../../img/manifesto.bg.png');
+  background-image: url('../../img/homem._com\ _celular.png');
   background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  text-align: left;
   height: 670px;
+  max-width: 1600px;
+  border-bottom: #fff solid 21px;
+  margin: 0 auto;
 }
 
-.container {}
-
-
 .manifesto {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  transform: translate(-10%, -20%);
-  color: #007bff;
+  display: flex;
+  height: 100%;
+  align-items: center;
 
-
-  padding: 20px;
-  border-radius: 8px;
 }
 
 .manifesto p {
-  margin: 0;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.manifesto h4 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
 }

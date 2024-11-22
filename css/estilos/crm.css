@@ -41,6 +41,7 @@
 
 .crm-images img {
   position: absolute;
+  border-radius: 8px;
   top: 0;
   width: 100%;
   left: 0;

@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .querySelector(".carousel-track");
       const cardWidth =
         carouselTrack.querySelector(".card-container").offsetWidth;
-      const visibleCards = 3; // Número de cards visíveis por vez
+      const visibleCards = 1; // Número de cards visíveis por vez
       const totalCards = carouselTrack.children.length;
       const maxTranslateX = -(totalCards - visibleCards) * (cardWidth + 20); // 20px é a margem entre os cards
 
