@@ -37,8 +37,6 @@
   position: relative;
   width: 100%;
   height: auto;
-  /* overflow: hidden; */
-  /* Impede overflow */
 }
 
 .crm-images img {
