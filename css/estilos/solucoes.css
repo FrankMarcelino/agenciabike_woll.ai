@@ -35,11 +35,31 @@
   background-color: var(--p3);
 }
 
+.container-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .section-cards {
   display: flex;
   position: relative;
-  width: 100%;
   height: auto;
+  margin: 0 auto;
+}
+
+.card-container {
+  flex: 0 0 300px;
+  /* Largura de cada card */
+  height: 400px;
+  margin-right: 20px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .container-cards-industria {
@@ -57,6 +77,43 @@
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.cards-carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease;
+}
+
+.carousel-button.left {
+  display: absolute;
+  left: 10px;
+  z-index: 2;
+}
+
+.carousel-button.right {
+  display: absolute;
+  right: 10px;
+  z-index: 2;
 }
 
 .container-cards-segmento {

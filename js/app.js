@@ -1,4 +1,75 @@
 // animação solucoes
+// document.addEventListener("DOMContentLoaded", () => {
+//   const buttons = document.querySelectorAll(".btn--solucoes");
+//   const sections = {
+//     "container-cards-industria": document.querySelector(
+//       ".container-cards-industria"
+//     ),
+//     "container-cards-segmento": document.querySelector(
+//       ".container-cards-segmento"
+//     ),
+//   };
+
+//   buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       const targetClass = button.getAttribute("data-target");
+//       const activeButton = document.querySelector(".btn--solucoes.active");
+//       const activeSection = document.querySelector(
+//         ".section-cards > div.active"
+//       );
+
+//       if (activeButton !== button) {
+//         activeButton.classList.remove("active");
+//         button.classList.add("active");
+
+//         activeSection.classList.remove("active");
+//         activeSection.classList.add("exit");
+
+//         sections[targetClass].classList.add("active");
+
+//         setTimeout(() => {
+//           activeSection.classList.remove("exit");
+//         }, 500); // Tempo deve coincidir com a duração da transição
+//       }
+//     });
+//   });
+
+//   const carouselButtons = document.querySelectorAll(".carousel-button");
+//   carouselButtons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       console.log("click");
+//       const direction = button.getAttribute("data-direction");
+//       const carouselTrack = button
+//         .closest(".cards-carousel")
+//         .querySelector(".carousel-track");
+//       const cardWidth =
+//         carouselTrack.querySelector(".card-container").offsetWidth;
+//       const currentTransform = parseInt(
+//         carouselTrack.style.transform
+//           .replace("translateX(", "")
+//           .replace("px)", "") || 0
+//       );
+
+//       let newTransform = currentTransform;
+//       if (direction === "left") {
+//         console.log("left");
+//         newTransform = Math.min(currentTransform + cardWidth, 0);
+//       } else if (direction === "right") {
+//         newTransform = Math.max(
+//           currentTransform - cardWidth,
+//           -(
+//             carouselTrack.scrollWidth -
+//             carouselTrack.parentElement.offsetWidth +
+//             cardWidth
+//           )
+//         );
+//       }
+
+//       carouselTrack.style.transform = `translateX(${newTransform}px)`;
+//     });
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".btn--solucoes");
   const sections = {
@@ -19,22 +90,51 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (activeButton !== button) {
-        // Remover a classe ativa do botão atual
         activeButton.classList.remove("active");
         button.classList.add("active");
 
-        // Remover a classe ativa da seção atual e adicionar a classe de saída
         activeSection.classList.remove("active");
         activeSection.classList.add("exit");
 
-        // Adicionar a classe ativa à nova seção
         sections[targetClass].classList.add("active");
 
-        // Remover a classe de saída da seção após a transição
         setTimeout(() => {
           activeSection.classList.remove("exit");
         }, 500); // Tempo deve coincidir com a duração da transição
       }
+    });
+  });
+
+  const carouselButtons = document.querySelectorAll(".carousel-button");
+  carouselButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const direction = button.getAttribute("data-direction");
+      const carouselTrack = button
+        .closest(".cards-carousel")
+        .querySelector(".carousel-track");
+      const cardWidth =
+        carouselTrack.querySelector(".card-container").offsetWidth;
+      const visibleCards = 3; // Número de cards visíveis por vez
+      const totalCards = carouselTrack.children.length;
+      const maxTranslateX = -(totalCards - visibleCards) * (cardWidth + 20); // 20px é a margem entre os cards
+
+      const currentTransform = parseInt(
+        carouselTrack.style.transform
+          .replace("translateX(", "")
+          .replace("px)", "") || 0
+      );
+
+      let newTransform = currentTransform;
+      if (direction === "left") {
+        newTransform = Math.min(currentTransform + (cardWidth + 20), 0);
+      } else if (direction === "right") {
+        newTransform = Math.max(
+          currentTransform - (cardWidth + 20),
+          maxTranslateX
+        );
+      }
+
+      carouselTrack.style.transform = `translateX(${newTransform}px)`;
     });
   });
 });
