@@ -1,5 +1,24 @@
-.hero {
+.hero-section {
   display: flex;
-  height: 642px;
+  flex-direction: column;
+  max-width: 1440px;
+  height: 695px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
+
+.container-headers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.container-header {
+  display: flex;
+  flex-direction: row;
 }
