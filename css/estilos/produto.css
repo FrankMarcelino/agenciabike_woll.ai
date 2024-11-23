@@ -1,3 +1,14 @@
+.product-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  height: 695px;
+
+  margin-bottom: 30px;
+  margin: 0 auto;
+  border-top: #083b5b 20px solid;
+}
+
 .container-produto {
   display: flex;
   max-width: 1440px;
@@ -6,6 +17,7 @@
   align-items: center;
   height: 709px;
   gap: 79px;
+  margin: 0 auto;
 }
 
 .product-section .text-section {

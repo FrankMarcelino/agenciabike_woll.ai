@@ -3,8 +3,8 @@
   flex-direction: column;
   max-width: 1440px;
   height: 695px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: -26px;
 }
 
 
@@ -19,6 +19,20 @@
 
 
 .container-header {
+  justify-content: space-between;
   display: flex;
+  width: 100%;
   flex-direction: row;
+}
+
+.header-1-img::after {
+  content: "";
+  background-color: var(--p3);
+  display: flex;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
