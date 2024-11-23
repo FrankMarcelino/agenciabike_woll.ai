@@ -7,9 +7,15 @@
   background: linear-gradient(135deg, #E6F0F8 0%, #B3D4E8 100%);
 }
 
+.bg-azul-claro-1 {
+  background-color: var(--p3);
+}
+
 .bg-branco {
   background-color: #fff;
 }
+
+
 
 
 .detalhebg {
