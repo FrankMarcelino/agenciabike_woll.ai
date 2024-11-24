@@ -169,6 +169,18 @@
   background-image: url('../../img/card-5.jpg');
 }
 
+.s-card-1 {
+  background-image: url('../../img/s-card-1.jpg');
+}
+
+.s-card-2 {
+  background-image: url('../../img/s-card-2.jpg');
+}
+
+.s-card-3 {
+  background-image: url('../../img/s-card-3.jpg');
+}
+
 .card-container {
   position: relative;
   width: 300px;

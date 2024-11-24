@@ -47,7 +47,6 @@
   left: 0;
   height: auto;
   opacity: 0;
-  transform: translateX(100%);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
