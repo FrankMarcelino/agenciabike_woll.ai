@@ -102,8 +102,13 @@
 }
 
 .carousel {
-  display: flex;
+  display: block;
+
+  width: 100%;
+  height: auto;
+  top: 90%;
   align-items: center;
+  align-content: center;
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -118,6 +123,7 @@
 
 .carousel-indicators {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -142,16 +148,3 @@
   justify-content: center;
   z-index: 4;
 }
-
-/* .carousel-buttons button {
-    background-color: #ddd;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .carousel-buttons button.active {
-    background-color: #007bff;
-    color: #fff;
-  } */

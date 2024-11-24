@@ -176,37 +176,6 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 
 // hero carrousel
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const buttons = document.querySelectorAll(".carousel-nav");
-//   const headers = {
-//     "header-1": document.querySelector(".header-1"),
-//     "header-2": document.querySelector(".header-2"),
-//     "header-3": document.querySelector(".header-3"),
-//     "header-4": document.querySelector(".header-4"),
-//   };
-//   buttons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       const targetClass = button.getAttribute("data-target");
-//       const activeButton = document.querySelector(".carousel-nav.active");
-//       const activeHeader = document.querySelector(".container-header.active");
-//       if (activeButton !== button) {
-//         activeButton.classList.remove("active");
-//         button.classList.add("active");
-//         activeHeader.classList.remove("active");
-//         headers[targetClass].classList.add("active");
-//         // Atualiza o indicador
-//         const indicator = document.querySelector(".carousel-indicator");
-//         const slideIndex = Array.from(buttons).indexOf(button) + 1;
-//         indicator.textContent = `Slide ${slideIndex} de ${buttons.length}`;
-//       }
-//     });
-//   });
-//   // Inicializa o primeiro botão e indicador como ativo
-//   buttons[0].classList.add("active");
-//   const indicator = document.querySelector(".carousel-indicator");
-//   indicator.textContent = `Slide 1 de ${buttons.length}`;
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   const leftArrow = document.querySelector(".carousel-left");
   const rightArrow = document.querySelector(".carousel-right");
