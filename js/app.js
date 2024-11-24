@@ -214,6 +214,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const headers = {
     "header-1": document.querySelector(".header-1"),
     "header-2": document.querySelector(".header-2"),
+    "header-3": document.querySelector(".header-3"),
+    "header-4": document.querySelector(".header-4"),
   };
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
