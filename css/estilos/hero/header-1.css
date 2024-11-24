@@ -13,8 +13,10 @@
 .bg-1-img {
   background: linear-gradient(90deg, #fff 30%, #007bff 30%);
   size: cover;
+  display: flex;
   margin-top: -100px;
   height: 100%;
+  width: 100%;
 }
 
 .container-marcadores {
@@ -74,7 +76,7 @@
 }
 
 .marcador-4::after {
-  content: "%     ";
+  content: "% ";
   font-size: 32px;
   font-weight: 700;
   color: var(--p3);
