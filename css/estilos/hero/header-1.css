@@ -13,3 +13,24 @@
   height: 100%;
 
 }
+
+.container-marcadores {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+
+  align-items: center;
+  margin-top: px;
+  height: 201px;
+  max-width: 489px;
+  gap: 32px;
+}
+
+.container-marcadores li {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 96px;
+}
