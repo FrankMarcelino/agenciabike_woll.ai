@@ -25,3 +25,11 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.bg-2-img {
+  background-color: var(--p4);
+  display: flex;
+  margin-top: -100px;
+  height: 100%;
+  width: 100%;
+}

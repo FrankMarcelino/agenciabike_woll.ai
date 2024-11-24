@@ -13,6 +13,8 @@
 .bg-4-img {
   background: linear-gradient(90deg, #083b5b 30%, #007bff 30%);
   size: cover;
+  display: flex;
   margin-top: -100px;
   height: 100%;
+  width: 100%;
 }
