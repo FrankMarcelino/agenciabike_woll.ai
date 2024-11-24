@@ -73,6 +73,12 @@
   margin-top: -100px;
 }
 
+.card-tp-4-hero {
+  background-color: var(--p4);
+  height: 100%;
+  margin-top: -100px;
+}
+
 .bg-1-img {
   background: linear-gradient(90deg, #fff 30%, #007bff 30%);
   size: cover;
@@ -88,6 +94,46 @@
   max-width: 900px;
 }
 
+.bg-4-img {
+  background: linear-gradient(90deg, #083b5b 30%, #007bff 30%);
+  size: cover;
+  margin-top: -100px;
+  height: 100%;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.carousel-left,
+.carousel-right {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-indicators span {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.carousel-indicators span.active {
+  background-color: #007bff;
+}
+
+
 .carousel-buttons {
   display: flex;
   position: relative;
@@ -97,15 +143,15 @@
   z-index: 4;
 }
 
-.carousel-buttons button {
-  background-color: #ddd;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+/* .carousel-buttons button {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-.carousel-buttons button.active {
-  background-color: #007bff;
-  color: #fff;
-}
+  .carousel-buttons button.active {
+    background-color: #007bff;
+    color: #fff;
+  } */

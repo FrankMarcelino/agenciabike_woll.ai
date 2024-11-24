@@ -175,11 +175,14 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 });
 
 // hero carrousel
+
 // document.addEventListener("DOMContentLoaded", () => {
 //   const buttons = document.querySelectorAll(".carousel-nav");
 //   const headers = {
 //     "header-1": document.querySelector(".header-1"),
 //     "header-2": document.querySelector(".header-2"),
+//     "header-3": document.querySelector(".header-3"),
+//     "header-4": document.querySelector(".header-4"),
 //   };
 //   buttons.forEach((button) => {
 //     button.addEventListener("click", () => {
@@ -190,12 +193,7 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 //         activeButton.classList.remove("active");
 //         button.classList.add("active");
 //         activeHeader.classList.remove("active");
-//         activeHeader.classList.add("exit");
 //         headers[targetClass].classList.add("active");
-//         setTimeout(() => {
-//           activeHeader.classList.remove("exit");
-//         }, 500);
-//         // Tempo deve coincidir com a duração da transição
 //         // Atualiza o indicador
 //         const indicator = document.querySelector(".carousel-indicator");
 //         const slideIndex = Array.from(buttons).indexOf(button) + 1;
@@ -210,32 +208,39 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 // });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".carousel-nav");
-  const headers = {
-    "header-1": document.querySelector(".header-1"),
-    "header-2": document.querySelector(".header-2"),
-    "header-3": document.querySelector(".header-3"),
-    "header-4": document.querySelector(".header-4"),
-  };
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const targetClass = button.getAttribute("data-target");
-      const activeButton = document.querySelector(".carousel-nav.active");
-      const activeHeader = document.querySelector(".container-header.active");
-      if (activeButton !== button) {
-        activeButton.classList.remove("active");
-        button.classList.add("active");
-        activeHeader.classList.remove("active");
-        headers[targetClass].classList.add("active");
-        // Atualiza o indicador
-        const indicator = document.querySelector(".carousel-indicator");
-        const slideIndex = Array.from(buttons).indexOf(button) + 1;
-        indicator.textContent = `Slide ${slideIndex} de ${buttons.length}`;
-      }
+  const leftArrow = document.querySelector(".carousel-left");
+  const rightArrow = document.querySelector(".carousel-right");
+  const indicators = document.querySelectorAll(".carousel-indicators span");
+  const headers = document.querySelectorAll(".container-header");
+
+  let currentIndex = 0;
+
+  function updateCarousel(index) {
+    headers.forEach((header, i) => {
+      header.classList.toggle("active", i === index);
+    });
+
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle("active", i === index);
+    });
+  }
+
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      currentIndex = index;
+      updateCarousel(index);
     });
   });
-  // Inicializa o primeiro botão e indicador como ativo
-  buttons[0].classList.add("active");
-  const indicator = document.querySelector(".carousel-indicator");
-  indicator.textContent = `Slide 1 de ${buttons.length}`;
+
+  leftArrow.addEventListener("click", () => {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : headers.length - 1;
+    updateCarousel(currentIndex);
+  });
+
+  rightArrow.addEventListener("click", () => {
+    currentIndex = currentIndex < headers.length - 1 ? currentIndex + 1 : 0;
+    updateCarousel(currentIndex);
+  });
+
+  updateCarousel(0); // Initialize the first slide as active
 });
