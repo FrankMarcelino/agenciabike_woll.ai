@@ -21,24 +21,22 @@
 
   --p4: #083b5b;
   --p3: #00a8e8;
-  --p2: #d2959b;
+  --p2: #6B737D;
   --p1: #efc0c5;
 
 }
 
-.cp5 {
+
+
+.cp4 {
   color: var(--p4);
 }
 
-.cp4 {
+.cp3 {
   color: var(--p3);
 }
 
-.p3 {
-  color: var(--p3);
-}
-
-.p2 {
+.cp2 {
   color: var(--p2);
 }
 

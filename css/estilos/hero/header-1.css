@@ -1,0 +1,15 @@
+.card-tp-1-hero {
+  background-color: var(--w);
+  position: relative;
+  padding-left: 100px;
+  width: 130%;
+  z-index: -1;
+}
+
+.bg-1-img {
+  background: linear-gradient(90deg, #fff 30%, #007bff 30%);
+  size: cover;
+  margin-top: -100px;
+  height: 100%;
+
+}

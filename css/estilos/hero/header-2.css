@@ -1,0 +1,16 @@
+.card-tp-2-hero {
+  background-color: var(--p3);
+  position: relative;
+  left: 30%;
+  padding-left: 100px;
+  margin-left: -30%;
+  height: 100%;
+  margin-top: -100px;
+}
+
+.bg-2-img {
+  background-color: var(--p4);
+  margin-top: -100px;
+  height: 100%;
+  max-width: 900px;
+}

@@ -1,3 +1,9 @@
+@import "../estilos/hero/header-1.css";
+@import "../estilos/hero/header-2.css";
+@import "../estilos/hero/header-3.css";
+@import "../estilos/hero/header-4.css";
+
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -37,73 +43,8 @@
   visibility: visible;
 }
 
-.card-tp-1-hero,
-.card-tp-2-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  max-height: 695px;
-}
-
-.card-tp-1-hero {
-  background-color: var(--w);
-  position: relative;
-  width: 130%;
-  z-index: -1;
-}
-
-.card-tp-2-hero {
-  background-color: var(--p3);
-  position: relative;
-  left: 30%;
-  padding-left: 100px;
-  margin-left: -30%;
-  height: 100%;
-  margin-top: -100px;
-}
-
-.card-tp-3-hero {
-  background-color: var(--w);
-  position: relative;
-
-  padding-left: 100px;
-
-  height: 100%;
-  margin-top: -100px;
-}
-
-.card-tp-4-hero {
-  background-color: var(--p4);
-  height: 100%;
-  margin-top: -100px;
-}
-
-.bg-1-img {
-  background: linear-gradient(90deg, #fff 30%, #007bff 30%);
-  size: cover;
-  margin-top: -100px;
-  height: 100%;
-
-}
-
-.bg-2-img {
-  background-color: var(--p4);
-  margin-top: -100px;
-  height: 100%;
-  max-width: 900px;
-}
-
-.bg-4-img {
-  background: linear-gradient(90deg, #083b5b 30%, #007bff 30%);
-  size: cover;
-  margin-top: -100px;
-  height: 100%;
-}
-
 .carousel {
   display: block;
-
   width: 100%;
   height: auto;
   top: 90%;
