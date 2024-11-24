@@ -7,7 +7,7 @@
   background-color: none;
   height: 100%;
   margin-top: -100px;
-
+  gap: 40px;
 }
 
 .bg-1-img {
@@ -20,16 +20,20 @@
 .container-marcadores {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: left;
   align-items: center;
   height: 201px;
-  width: 489px;
+  max-width: 489px;
 }
 
 .container-marcador {
   display: flex;
   justify-content: left;
   align-items: center;
+  height: auto;
+
 
 }
 
@@ -37,7 +41,6 @@
   font-size: 32px;
   font-weight: 700;
   color: var(--p2);
-  margin-top: -15px;
 
 
 }
@@ -46,9 +49,42 @@
   font-size: 48px;
   font-weight: 700;
   color: var(--p4);
+  margin-left: -8px;
+}
+
+.marcador-1::before,
+.marcador-2::before {
+  content: "+";
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--p3);
+  position: relative;
+  top: -5px;
+  left: 8px;
+}
+
+.marcador-3::after {
+  content: "x";
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--p3);
+  position: relative;
+  top: -5px;
+  left: -8px;
+}
+
+.marcador-4::after {
+  content: "%     ";
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--p3);
+  position: relative;
+  top: -5px;
+  left: -8px;
 }
 
 .marcador-texto {
+  height: 100%;
   font-size: 16px;
   font-weight: 400;
   color: var(--p2);
