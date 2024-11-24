@@ -1,7 +1,27 @@
 .card-tp-3-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   background-color: var(--w);
   position: relative;
   padding-left: 100px;
   height: 100%;
   margin-top: -100px;
+  gap: 64px;
+}
+
+.cadastre-se {
+  display: flex;
+  width: 209px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--p3);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }

@@ -1,6 +1,7 @@
 .card-tp-1-hero {
-  background-color: var(--w);
+  /* background-color: var(--p3); */
   position: relative;
+  height: 100%;
   padding-left: 100px;
   width: 130%;
   z-index: -1;
@@ -11,26 +12,43 @@
   size: cover;
   margin-top: -100px;
   height: 100%;
-
 }
 
 .container-marcadores {
   display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-
-  align-items: center;
-  margin-top: px;
-  height: 201px;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
   max-width: 489px;
-  gap: 32px;
 }
 
-.container-marcadores li {
-  display: inline-block;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 96px;
+.container-marcadores>div {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  grid-template-rows: 1fr;
+  justify-self: left;
+  background-color: #f3f4f3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.container-marcadores .marcador-numero {
+  font-size: 2.5rem;
+  color: #000;
+  margin: 0;
+}
+
+.container-marcadores .font-2-m {
+  color: #555;
+  font-size: 1rem;
+}
+
+.container-marcadores .font-1-s {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
