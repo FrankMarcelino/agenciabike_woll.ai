@@ -1,29 +1,43 @@
 .impacto-section {
-  display: grid;
-  height: 997px;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto 1fr;
-  gap: 0;
-  padding-left: 80px;
-  background-color: #f3f4f3;
-}
-
-.impacto {
   display: flex;
-  flex-direction: column;
+  height: 722px;
+  width: 1600px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  max-width: 400px;
+  padding-bottom: 20px;
+  margin: 0 auto;
 }
 
-.imagem-container-impacto {
+.container-animacao {
   display: flex;
-  justify-content: right;
+  height: 100%;
+  width: 50%;
+  justify-content: left;
+  align-items: center;
+}
+
+
+.container-imagem {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  background-image: url('../../img/detalhe.bg.imapctop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   position: relative;
-  width: 466px;
-  height: 1064px;
-  size: cover;
-  overflow: hidden;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+.img-impacto-mulher {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+  top: 20px;
+  left: -150px;
+  justify-content: center;
+  align-items: flex-start;
 }
