@@ -1,75 +1,4 @@
 // animação solucoes
-// document.addEventListener("DOMContentLoaded", () => {
-//   const buttons = document.querySelectorAll(".btn--solucoes");
-//   const sections = {
-//     "container-cards-industria": document.querySelector(
-//       ".container-cards-industria"
-//     ),
-//     "container-cards-segmento": document.querySelector(
-//       ".container-cards-segmento"
-//     ),
-//   };
-
-//   buttons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       const targetClass = button.getAttribute("data-target");
-//       const activeButton = document.querySelector(".btn--solucoes.active");
-//       const activeSection = document.querySelector(
-//         ".section-cards > div.active"
-//       );
-
-//       if (activeButton !== button) {
-//         activeButton.classList.remove("active");
-//         button.classList.add("active");
-
-//         activeSection.classList.remove("active");
-//         activeSection.classList.add("exit");
-
-//         sections[targetClass].classList.add("active");
-
-//         setTimeout(() => {
-//           activeSection.classList.remove("exit");
-//         }, 500); // Tempo deve coincidir com a duração da transição
-//       }
-//     });
-//   });
-
-//   const carouselButtons = document.querySelectorAll(".carousel-button");
-//   carouselButtons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       console.log("click");
-//       const direction = button.getAttribute("data-direction");
-//       const carouselTrack = button
-//         .closest(".cards-carousel")
-//         .querySelector(".carousel-track");
-//       const cardWidth =
-//         carouselTrack.querySelector(".card-container").offsetWidth;
-//       const currentTransform = parseInt(
-//         carouselTrack.style.transform
-//           .replace("translateX(", "")
-//           .replace("px)", "") || 0
-//       );
-
-//       let newTransform = currentTransform;
-//       if (direction === "left") {
-//         console.log("left");
-//         newTransform = Math.min(currentTransform + cardWidth, 0);
-//       } else if (direction === "right") {
-//         newTransform = Math.max(
-//           currentTransform - cardWidth,
-//           -(
-//             carouselTrack.scrollWidth -
-//             carouselTrack.parentElement.offsetWidth +
-//             cardWidth
-//           )
-//         );
-//       }
-
-//       carouselTrack.style.transform = `translateX(${newTransform}px)`;
-//     });
-//   });
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".btn--solucoes");
   const sections = {
@@ -234,4 +163,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   startImageLoop(); // Inicia o loop
+});
+
+//animacao impacto
+
+document.addEventListener("DOMContentLoaded", () => {
+  const letters = document.querySelectorAll(".impacto-word .letter");
+  const words = document.querySelectorAll(".impacto-list .word");
+  let index = 0;
+
+  function showNextLetterAndWord() {
+    if (index < letters.length) {
+      letters[index].classList.add("cp3");
+      words[index].classList.add("show-word");
+      index++;
+      setTimeout(showNextLetterAndWord, 1000); // Muda a cada 1 segundo
+    }
+  }
+
+  showNextLetterAndWord(); // Inicia a animação
 });
