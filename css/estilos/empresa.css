@@ -1,11 +1,16 @@
+@import url('../estilos/lideranca/lideranca.css');
+
 .empresa-section {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   height: 997px;
   padding-left: 80px;
   background-color: #f3f4f3;
   width: 100%;
   max-width: 1600px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 
