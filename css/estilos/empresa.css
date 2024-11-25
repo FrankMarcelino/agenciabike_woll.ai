@@ -10,6 +10,7 @@
   width: 100%;
   max-width: 1600px;
   justify-content: center;
+  align-items: flex-start;
   margin: 0 auto;
 }
 
@@ -20,6 +21,8 @@
   height: 997px;
   width: 50%;
   justify-content: center;
+  padding-top: 152px;
+  padding-left: 100px;
   gap: 38px;
 }
 
