@@ -1,97 +1,57 @@
 .empresa-section {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   height: 997px;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 0;
   padding-left: 80px;
   background-color: #f3f4f3;
+  width: 100%;
+  max-width: 1600px;
 }
 
-.text-container {
+
+.container-empresa {
   display: flex;
   flex-direction: column;
+  height: 997px;
+  width: 50%;
   justify-content: center;
-
-  gap: 20px;
-  padding: 20px;
-
+  gap: 38px;
 }
 
-.imagem-container {
+.container-img-empresa {
   display: flex;
   justify-content: right;
   position: relative;
+  width: 50%;
+  height: 70%;
+  size: cover;
+  overflow: hidden;
 }
 
-.imagem-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
-.imagem-container::before {
+.container-img-empresa::before {
   content: "";
+  background-image: url('../../img/detalhe-bg-empresa-fotos.svg');
   position: absolute;
-  top: 0px;
-  /* Ajuste a posição conforme necessário */
-  left: -250px;
-  /* Ajuste a posição conforme necessário */
-  width: calc(100% + 250px);
-  /* Ajuste a largura conforme necessário */
-  height: calc(100% + 250px);
-  /* Ajuste a altura conforme necessário */
-  background-image: url('../../img/detalhe.foros.empresa.png');
-  /* Caminho para a imagem da borda */
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 2;
-
-}
-
-.imagem-container img {
-  display: block;
-  width: auto;
-  height: auto;
-  position: relative;
+  top: 6px;
+  left: 50px;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
-.container-lideranca {
-  grid-column: span 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 20px;
-  padding: 20px;
-  width: 100%;
-  z-index: 3;
-}
+.img-empresa {
 
-.cards-lideranca {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  gap: 20px;
-}
-
-.lideranca-card {
-  width: 100%;
-  height: 336px;
-  display: flex;
-  flex-direction: column;
-
-  border-radius: 8px;
-}
-
-.lideranca-card img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px 8px 0 0;
+  width: 65%;
+  height: 80%;
   object-fit: cover;
-  align-self: start;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 6px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* Transição suave de opacidade */
+}
+
+.img-empresa.active {
+  opacity: 1;
 }
