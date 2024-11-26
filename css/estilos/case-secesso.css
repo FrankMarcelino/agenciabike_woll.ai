@@ -1,7 +1,7 @@
 .case-sucesso-section {
   display: flex;
   flex-direction: row;
-  /* height: 670px; */
+  height: 670px;
   width: 100%;
   justify-content: center;
   align-items: center;

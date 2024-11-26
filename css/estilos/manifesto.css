@@ -2,7 +2,7 @@
   background-image: url('../../img/homem._com\ _celular.png');
   background-size: cover;
   height: 670px;
-  max-width: 1600px;
+  width: 100%;
   border-bottom: #fff solid 21px;
   margin: 0 auto;
 }

@@ -1,11 +1,12 @@
 .footer {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  width: 100%;
   color: white;
   padding-top: 30px;
   text-align: left;
-  height: 600px;
+  height: 427px;
   border-top: #007bff 5px solid;
+  margin: 0 auto;
 }
 
 .logo-footer {

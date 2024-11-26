@@ -1,9 +1,8 @@
 .product-section {
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
-  height: 695px;
-
+  width: 100%;
+  height: 709px;
   margin-bottom: 30px;
   margin: 0 auto;
   border-top: #083b5b 20px solid;
