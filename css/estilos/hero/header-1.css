@@ -1,22 +1,22 @@
 .card-tp-1-hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: none;
   height: 642px;
-  width: 100%;
-  gap: 40px;
+  width: 720px;
+  justify-content: center;
+  align-items: start;
+  justify-items: left;
+
 }
 
 .bg-1-img {
   background: linear-gradient(90deg, #fff 40%, #007bff 40%);
   object-fit: contain;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 642px;
-  width: 100%;
+  height: 100%;
+  width: 760px;
+  justify-content: right;
+  align-items: center
 }
 
 .container-marcadores {
