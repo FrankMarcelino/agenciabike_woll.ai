@@ -1,9 +1,19 @@
+.case-sucesso-section {
+  display: flex;
+  flex-direction: row;
+  /* height: 670px; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .case1 {
   display: flex;
-  background-image: url('../../img/case1.png');
+  background-image: url('../../img/slider-case.png');
   align-items: center;
   justify-content: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 670px;
   width: 100%;
@@ -44,10 +54,14 @@
 
 .card-white {
   background-color: white;
-  align-self: end;
-  max-width: 458px;
-  height: auto;
-  border-radius: 8px 8px 0px 0px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-self: flex-end;
+  justify-content: center;
+  position: relative;
+  display: block;
+  left: -60px;
+  top: -80px;
+  width: 334px;
+  max-width: 334px;
+  height: 160px;
+  font-size: 12px;
 }

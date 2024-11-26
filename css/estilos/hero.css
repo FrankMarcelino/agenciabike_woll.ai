@@ -6,7 +6,7 @@
 
 .hero-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   width: 100%;
   height: 642px;
@@ -16,8 +16,6 @@
 .container-headers {
   position: relative;
   width: 100%;
-  max-width: 1600px;
-  /* Define o tamanho máximo */
   height: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -28,6 +26,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 1440px;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -36,6 +35,7 @@
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   opacity: 0;
   visibility: hidden;
+
 }
 
 .container-header.active {
