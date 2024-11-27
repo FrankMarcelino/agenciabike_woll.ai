@@ -1,22 +1,21 @@
 .card-tp-1-hero {
   display: flex;
   flex-direction: column;
+  background-color: var(--w);
   height: 642px;
-  width: 720px;
+  padding-left: 0px;
   justify-content: center;
-  align-items: start;
-  justify-items: left;
 
 }
 
 .bg-1-img {
-  background: linear-gradient(90deg, #fff 40%, #007bff 40%);
-  object-fit: contain;
   display: flex;
-  height: 100%;
-  width: 760px;
-  justify-content: right;
-  align-items: center
+  height: 642px;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(90deg, #fff 40%, #007bff 40%);
+  size: contain;
+  padding-right: 0px;
 }
 
 .container-marcadores {
@@ -84,7 +83,7 @@
   color: var(--p3);
   position: relative;
   top: -5px;
-  left: -8px;
+
 }
 
 .marcador-texto {

@@ -1,11 +1,9 @@
 .case-sucesso-section {
-  display: flex;
-  flex-direction: row;
-  height: 670px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 1200px;
+  left: 0;
   margin: 0 auto;
+  border-top: #083b5b 20px solid;
 }
 
 .case1 {

@@ -1,3 +1,11 @@
+.bg-p4 {
+  background-color: var(--p4);
+}
+
+.bg-p3 {
+  background-color: var(--p3);
+}
+
 .bg-azul {
   background-image: url('../../img/bg1.png');
   background-size: cover;

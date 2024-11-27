@@ -3,30 +3,20 @@
 @import "../estilos/hero/header-3.css";
 @import "../estilos/hero/header-4.css";
 
-
 .hero-section {
   display: flex;
-  max-width: 100%;
-  /* background-color: aquamarine; */
-  width: 100%;
-  height: 642px;
-  justify-content: center;
+  width: 1440px;
+  height: auto;
   margin: 0 auto;
 }
 
-
 .container-header {
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  max-width: 1440px;
-  height: 642px;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   opacity: 0;
-  visibility: hidden;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 
 .container-header.active {
@@ -35,16 +25,14 @@
 }
 
 /* comandos do carousel*/
-
-.carousel {
-  display: block;
-  width: 100%;
-  height: auto;
-  top: 0;
-  align-items: center;
-  align-content: center;
+.carousel-headers {
+  position: relative;
+  top: 580px;
+  display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1;
 }
 
 .carousel-left,
@@ -55,13 +43,7 @@
   cursor: pointer;
 }
 
-.carousel-indicators {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.carousel-indicators span {
+.carousel-headers span {
   width: 10px;
   height: 10px;
   background-color: #ccc;
@@ -69,10 +51,9 @@
   display: inline-block;
 }
 
-.carousel-indicators span.active {
+.carousel-headers span.active {
   background-color: #007bff;
 }
-
 
 .carousel-buttons {
   display: flex;

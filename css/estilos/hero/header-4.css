@@ -1,20 +1,19 @@
 .card-tp-4-hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  padding-left: 100px;
   background-color: var(--p4);
-  height: 100%;
-  margin-top: -100px;
-  gap: 64px;
+  height: 642px;
+  width: 100%;
+  justify-content: center;
 }
 
 .bg-4-img {
-  background: linear-gradient(90deg, #083b5b 30%, #007bff 30%);
-  size: cover;
   display: flex;
-  margin-top: -100px;
   height: 100%;
   width: 100%;
+  justify-content: left;
+  background: var(--p3);
+  size: contain;
+  object-fit: cover;
+  padding-left: 0px;
 }

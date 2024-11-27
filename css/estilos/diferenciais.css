@@ -1,72 +1,30 @@
 .difericiais-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
-  grid-template-rows: auto;
+  display: flex;
   width: 100%;
-  height: 603px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  gap: 20px;
-  margin: 0 auto;
+  height: 895px;
+  align-items: center;
 }
 
 .container-diferenciais {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-.diferenciais {
-  grid-area: 1 / 1 / 2 / 2;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  gap: 20px;
-  max-width: 720px;
-  height: 100%;
+  width: 1028px;
 }
 
-.faq-container::after {
-  position: relative;
-  background-image: url('../../img/detalhebg2.png');
-  top: -95px;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  content: "";
-}
-
-.faq-container {
-  grid-area: 1 / 2 / 2 / 3;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  max-width: 720px;
-  z-index: 2;
-  justify-content: center;
-
-}
 
 .faq-item {
+  display: flex;
+  width: 100%;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
   position: relative;
+
+  cursor: pointer;
+
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
+
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -82,7 +40,6 @@
   height: 100%;
   padding: 16px;
   margin: 0;
-
 
 }
 

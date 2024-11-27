@@ -1,20 +1,17 @@
 .solucoes-section {
+  position: relative;
+  top: 590px;
   display: flex;
-  flex-direction: column;
   width: 100%;
-  margin: 0 auto;
   height: 895px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  align-items: center;
 }
 
-.container-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.container-solucoes {
   align-items: center;
-  gap: 10px;
+  width: 1028px;
 }
+
 
 .btn--solucoes {
   background-color: #f3f4f3;
@@ -47,7 +44,8 @@
 .section-cards {
   display: flex;
   position: relative;
-  height: auto;
+  height: 422px;
+  width: 1230px;
   margin: 0 auto;
 }
 
