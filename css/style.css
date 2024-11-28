@@ -1,3 +1,4 @@
+@import "./estilos/reset.css";
 @import "./estilos/navbar.css";
 @import "./estilos/hero.css";
 @import "./estilos/carrosel.css";
@@ -16,4 +17,4 @@
 @import "./utilidades/cores.css";
 @import "./utilidades/bg.css";
 @import "./utilidades/tipografia.css";
-@import "./estilos/reset.css";
+@import "./utilidades/coponentes.css";

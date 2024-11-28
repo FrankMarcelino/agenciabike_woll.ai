@@ -11,28 +11,24 @@
 }
 
 
-.bg-azul {
-  background-image: url('../../img/bg1.png');
-  background-size: cover;
-}
+/* bg-gradiente */
 
 .bg-azul-claro {
   background: linear-gradient(135deg, #E6F0F8 0%, #B3D4E8 100%);
 }
 
-.bg-azul-claro-1 {
-  background-color: var(--p3);
+/* bg-imagens */
+
+.bg-azul-img {
+  background-image: url('../../img/bg1.png');
+  background-size: cover;
 }
 
-.bg-branco {
-  background-color: #fff;
-}
 
+/* Detalhes-bg */
 
-
-
-.detalhebg {
+.detalhebg-1 {
   height: 100%;
-  background-image: url('../../img/detalheBG.png');
+  background-image: url('../../img/bg/detalhebg-1.png');
   background-size: cover;
 }

@@ -1,3 +1,7 @@
+.header-1 {
+  gap: 40px;
+}
+
 .bg-1-img {
   background: linear-gradient(90deg, #fff 40%, #007bff 40%);
 }
