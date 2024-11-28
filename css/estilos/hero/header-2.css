@@ -1,13 +1,13 @@
 .header-2 {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 50%;
-  max-width: 50%;
-  justify-content: left;
+  gap: 64px;
+  width: 640px;
+  height: 100%;
+  max-width: 640px;
+  justify-content: center;
   align-items: flex-start;
-  background-color: blueviolet;
+  padding-left: 80px;
 }
 
 .container-marcadores-header-2 {
@@ -17,24 +17,19 @@
 }
 
 .img-header-2 {
-  flex: 1;
   display: flex;
-  width: 100%;
   height: 100%;
-  max-width: 50%;
-  background-color: aqua;
-  justify-content: right;
-  align-items: flex-end;
+  object-fit: cover;
 }
 
 .container-marcador-header-2 {
   display: flex;
-  background-color: aqua;
 }
 
 .marcador-header-2 {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
 .marcador-numero-header-2::after {

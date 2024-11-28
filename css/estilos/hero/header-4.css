@@ -1,3 +1,20 @@
+.header-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 640px;
+  height: 100%;
+  max-width: 640px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+}
+
 .bg-4-img {
   background: linear-gradient(90deg, var(--p4) 40%, #007bff 40%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }

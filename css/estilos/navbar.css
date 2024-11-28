@@ -12,7 +12,8 @@
 
 nav {
   display: flex;
-  width: 1440px;
+  width: 100%;
+  max-width: 1550px;
   height: 84px;
   justify-content: space-around;
   align-items: center;
@@ -21,7 +22,7 @@ nav {
 
 .logo {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 23px;
   width: 123px;

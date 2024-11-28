@@ -1,7 +1,9 @@
 .card-header-1 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-1 {
@@ -9,46 +11,40 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 100%;
-  gap: 40px;
   background-color: var(--w);
+  gap: 40px;
 }
 
 .bg-1-img {
+  background: linear-gradient(90deg, var(--w) 40%, #007bff 40%);
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
-  background: linear-gradient(90deg, #fff 40%, #007bff 40%);
-  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .container-marcadores {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: start;
-  height: 201px;
-  width: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 40px;
+  padding-left: 70px;
+  width: 640px;
+  max-width: 640px;
+  height: 100%;
 }
 
 .container-marcador {
   display: flex;
-  align-items: center;
-}
-
-.container-3-marcadores {
-  display: flex;
   flex-direction: row;
-  width: auto;
-  height: 100%;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 32px;
-
+  width: 100%;
+  align-items: center;
+  justify-content: start;
 }
 
-.marcador-4 {
-  display: flex;
-}
 
 .container-marcador span {
   font-size: 2rem;
@@ -91,7 +87,7 @@
   font-weight: 700;
   color: var(--p3);
   position: relative;
-  top: 8px;
+  top: -5px;
   left: -8px;
 }
 
