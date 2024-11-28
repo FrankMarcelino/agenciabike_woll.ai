@@ -10,11 +10,23 @@
   height: 642px;
   position: relative;
   margin: 0 auto;
+}
+
+.container-img-hero {
+  flex: 1;
+  display: flex;
+  height: 642px;
+  object-fit: contain;
 
 }
 
 .container-header {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   width: 100%;
   height: 642px;
   position: absolute;
@@ -23,33 +35,31 @@
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   opacity: 0;
   visibility: hidden;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+  flex-direction: row;
 }
 
-.container-img-hero {
-  display: flex;
-  height: 100%;
-  width: 100;
-  object-fit: contain;
-  size: cover;
-}
+
 
 .container-header.active {
   opacity: 1;
   visibility: visible;
 }
 
+
+
+
+
 /* comandos do carousel*/
 .carousel-headers {
   position: relative;
-  top: 560px;
-  left: calc(50% - 50px);
+  top: 0px;
+  left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  z-index: 5;
+  background-color: black;
 }
 
 .carousel-left,

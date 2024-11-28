@@ -2,12 +2,14 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>woll.ai</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>woll.AI</title>
+    <meta name="description" content="Site da woll" />
+
+    <!-- estilos -->
+
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -126,51 +128,48 @@
             />
           </div>
         </div>
-        <!-- <div class="container-header">
-          <div class="card bg-p3 header-2">
-            <div class="container-marcadores-header-2">
-              <h1>
+        <div class="container-header">
+          <div class="header-2">
+            <div class="container-marcadores-header-2 bg-p3">
+              <h1 class="font-titulo">
                 Teste Gratis<br />
-                <strong class="cp1"> Woll AI</strong>
+                <strong class="cpw"> Woll AI</strong>
               </h1>
               <div class="container-marcador-header-2">
                 <div class="marcador-header-2">
-                  <p class="marcador-numero-header-2">20</p>
+                  <p class="marcador-numero-header-2 font-titulo-bold">20</p>
                   <span
                     >mais tempo <br />
                     com a familia
                   </span>
                 </div class="marcador-header-2">
-                  <p class="marcador-numero-header-2">30</p>
-                  <span>mais<br />renda</span>
+                  <p class="marcador-numero-header-2 font-titulo-bold">30</p>
+                  <span class="cpw">mais<br />renda</span>
                 </div>
               </div>
+              <button class="btn--p4">Saiba Mais</button>
             </div>
-            <button class="btn--p4">Saiba Mais</button>
           </div>
-          <div class="container-img-hero bg-p4">
-            <img
-              src="img/header2.png"
-              alt="Imagem representativa"
-              class="bg-2-img"
-            />
+
+          <div class="img-header-2 ">
+            <img src="img/header2.png" alt="Imagem representativa" />
           </div>
         </div>
-        <div class="container-header header-3 active">
-          <div class="card bg-W">
-            <h1>
+        <div class="container-header">
+          <div class="header-3 bg-w">
+            <h1 class="font-titulo cp4">
               Possui um <strong>petshop</strong> <br />
               e quer <strong>automatizar</strong> <br />
               parte do seu<br />
               <strong>atendimento?</strong>
             </h1>
-            <p>
+            <p class="font-p cp4">
               Cadastre-se aqui e entre na lista dos primeiros que<br />
               irão testar um Agente de IA gratuitamente.
             </p>
-            <button class="btn cadastre-se">Cadastre-se</button>
+            <button class="btn cpw bg-p4">Cadastre-se</button>
           </div>
-          <div class="container-img-hero bg-p4">
+          <div class="container-img-hero-2 bg-p4">
             <img src="img/header3.png" alt="Imagem representativa" />
           </div>
         </div>
@@ -193,7 +192,7 @@
           <div class="container-img-hero bg-4-img">
             <img src="img/header4.png" alt="Imagem representativa" class="" />
           </div>
-        </div> -->
+        </div>
         <div class="carousel-headers">
           <button class="carousel-left">
             <img src="img/icones/Left.svg" alt="" />
@@ -209,7 +208,7 @@
       </div>
     </section>
 
-    <section class="produto detalhebg-1 bg-p4" id="produto">
+    <!-- <section class="produto detalhebg-1 bg-p4" id="produto">
       <div class="container-produto">
         <div class="card">
           <h2 class="font-1-s cpw">Produto</h2>
@@ -228,8 +227,8 @@
           />
         </div>
       </div>
-    </section>
-    <section class="solucoes-section" id="solucoes">
+    </section> -->
+    <!-- <section class="solucoes-section" id="solucoes">
       <div class="container container-solucoes">
         <div class="row">
           <h2 class="text-section font-1-s cp4">Soluções</h2>
@@ -363,8 +362,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section
+    </section> -->
+    <!-- <section
       class="col-md-12 bg-azul-claro diferenciais-section"
       id="diferenciais"
     >
@@ -482,117 +481,117 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- <section class="case-sucesso-section" id="cases">
-        <div id="carrosel-case-sucesso" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carrosel-case-sucesso"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carrosel-case-sucesso"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
+      <div id="carrosel-case-sucesso" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carrosel-case-sucesso"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carrosel-case-sucesso"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="case1">
+              <div class="case1-texto col-md-4">
+                <span>Case de sucesso</span>
+                <h2 class="font-1-s cp3">FloresOnline</h2>
+                <p class="text-white">
+                  FloresOnline é um marketplace para venda de buquês e cestas de
+                  presentes.
+                </p>
+                <p class="text-white">
+                  O objetivo da Flores Online era melhorar a camada de
+                  pré-vendas por meio de um agente de inteligência artificial.
+                </p>
+                <p class="text-white">
+                  Os resultados rapidamente apareceram, a ponto de logo a Flores
+                  Online adotar um agente de IA para pós-venda também.
+                </p>
+              </div>
+              <div class="card-white col-md-6">
+                <h3>Benefícios alcançados:</h3>
+
+                <ul>
+                  <li>98% de automação na etapa de pré-vendas</li>
+                  <li>75% de automação na etapa de pós-vendas</li>
+                  <li>Taxa de conversão de 4,5% para 13%</li>
+                  <li>
+                    Diminuição da equipe de 7 para 1 pessoa (pessoas<br />
+                    transferidas para exercerem outras atividades)
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-item">
             <div class="carousel-item active">
-              <div class="case1">
-                <div class="case1-texto col-md-4">
-                  <span>Case de sucesso</span>
-                  <h2 class="font-1-s cp3">FloresOnline</h2>
+              <div class="case2">
+                <div class="case2-texto col-md-4">
+                  <h2 class="font-1-s cp3">Case</h2>
                   <p class="text-white">
-                    FloresOnline é um marketplace para venda de buquês e cestas de
-                    presentes.
+                    A company could use a platform-agnostic LLM platform to
+                    integrate models from OpenAI and Google, using OpenAI’s GPT
+                    for conversational agents and Google’s PaLM for specialized
+                    knowledge extraction. If a new, more efficient model becomes
+                    available, they can easily integrate and transition without
+                    re-engineering their entire system.
                   </p>
                   <p class="text-white">
-                    O objetivo da Flores Online era melhorar a camada de
-                    pré-vendas por meio de um agente de inteligência artificial.
-                  </p>
-                  <p class="text-white">
-                    Os resultados rapidamente apareceram, a ponto de logo a Flores
-                    Online adotar um agente de IA para pós-venda também.
+                    In summary, a platform-agnostic LLM platform allows
+                    organizations to maximize flexibility, performance, and
+                    cost-efficiency by seamlessly integrating multiple LLMs into
+                    their workflows, regardless of the model provider or
+                    infrastructure.
                   </p>
                 </div>
                 <div class="card-white col-md-6">
                   <h3>Benefícios alcançados:</h3>
-      
+
                   <ul>
                     <li>98% de automação na etapa de pré-vendas</li>
                     <li>75% de automação na etapa de pós-vendas</li>
                     <li>Taxa de conversão de 4,5% para 13%</li>
                     <li>
-                      Diminuição da equipe de 7 para 1 pessoa (pessoas<br />
+                      Diminuição da equipe de 7 para 1 pessoa (pessoas
                       transferidas para exercerem outras atividades)
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-        <div class="carousel-item">
-              <div class="carousel-item active">
-                <div class="case2">
-                  <div class="case2-texto col-md-4">
-                    <h2 class="font-1-s cp3">Case</h2>
-                    <p class="text-white">
-                      A company could use a platform-agnostic LLM platform to
-                      integrate models from OpenAI and Google, using OpenAI’s GPT
-                      for conversational agents and Google’s PaLM for specialized
-                      knowledge extraction. If a new, more efficient model becomes
-                      available, they can easily integrate and transition without
-                      re-engineering their entire system.
-                    </p>
-                    <p class="text-white">
-                      In summary, a platform-agnostic LLM platform allows
-                      organizations to maximize flexibility, performance, and
-                      cost-efficiency by seamlessly integrating multiple LLMs into
-                      their workflows, regardless of the model provider or
-                      infrastructure.
-                    </p>
-                  </div>
-                  <div class="card-white col-md-6">
-                    <h3>Benefícios alcançados:</h3>
-      
-                    <ul>
-                      <li>98% de automação na etapa de pré-vendas</li>
-                      <li>75% de automação na etapa de pós-vendas</li>
-                      <li>Taxa de conversão de 4,5% para 13%</li>
-                      <li>
-                        Diminuição da equipe de 7 para 1 pessoa (pessoas
-                        transferidas para exercerem outras atividades)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carrosel-case-sucesso"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carrosel-case-sucesso"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-          </a>
         </div>
-      </section> -->
+        <a
+          class="carousel-control-prev"
+          href="#carrosel-case-sucesso"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carrosel-case-sucesso"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </section> -->
     <!-- <section class="integracoes-section bg-integracoes" id="integracoes">
         <h2>Integrações</h2>
         <div class="unique-carousel-wrapper">
@@ -879,6 +878,6 @@
       </div>
     </footer> -->
 
-    <script type="text/javascript" src="js/app.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

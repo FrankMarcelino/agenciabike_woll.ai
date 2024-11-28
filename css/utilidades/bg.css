@@ -1,12 +1,13 @@
 .bg-p4 {
   background-color: var(--p4);
+  background-size: contain;
 }
 
 .bg-p3 {
   background-color: var(--p3);
 }
 
-.bg-W {
+.bg-w {
   background-color: var(--w);
 }
 

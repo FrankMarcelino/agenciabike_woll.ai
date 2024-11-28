@@ -1,14 +1,19 @@
-.cadastre-se {
+.container-img-hero-2 {
   display: flex;
-  width: 209px;
-  height: 56px;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 165px;
+}
+
+.header-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 640px;
+  height: 100%;
+  max-width: 640px;
   justify-content: center;
-  align-items: center;
-  background-color: var(--p3);
-  color: #fff;
-  font-weight: 700;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  align-items: flex-start;
+  margin-top: 170px;
+  padding-left: 80px;
 }

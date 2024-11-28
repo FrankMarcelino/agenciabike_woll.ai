@@ -10,7 +10,7 @@
 }
 
 
-/* card */
+/* card
 .card {
   flex: 1;
   display: flex;
@@ -21,18 +21,16 @@
   align-items: left;
   padding-left: 100px;
 
-}
+} */
 
 /* botoes */
 
-.btn--p4 {
-  display: inline-block;
+.btn {
+  display: flex;
   width: 249px;
   height: 56px;
   justify-content: center;
   align-items: center;
-  background-color: var(--p4);
-  color: var(--w);
   font-weight: 700;
   font-size: 1.75rem;
   border-radius: 5px;
