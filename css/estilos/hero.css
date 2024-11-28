@@ -3,8 +3,6 @@
 @import "../estilos/hero/header-3.css";
 @import "../estilos/hero/header-4.css";
 
-
-
 .heros {
   display: flex;
   width: 100%;
@@ -12,6 +10,7 @@
   height: 642px;
   position: relative;
   margin: 0 auto;
+
 }
 
 .container-header {
@@ -24,6 +23,7 @@
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   opacity: 0;
   visibility: hidden;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
@@ -31,7 +31,7 @@
 .container-img-hero {
   display: flex;
   height: 100%;
-  width: 642px;
+  width: 100;
   object-fit: contain;
   size: cover;
 }

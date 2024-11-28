@@ -1,7 +1,7 @@
 .header-1 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   width: 600px;
   height: 238px;
@@ -15,23 +15,39 @@
 }
 
 .bg-1-img {
+  display: flex;
   background: linear-gradient(90deg, #fff 40%, #007bff 40%);
+  background-size: cover;
 }
 
 .container-marcadores {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 32px;
-  align-items: center;
+  align-items: start;
+  justify-content: ;
   height: 201px;
-  width: 600px;
+  width: 500px;
 }
 
 .container-marcador {
   display: flex;
   align-items: center;
+}
 
+.container-3-marcadores {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+
+}
+
+.marcador-4 {
+  display: flex;
 }
 
 .container-marcador span {
@@ -75,7 +91,7 @@
   font-weight: 700;
   color: var(--p3);
   position: relative;
-  top: -5px;
+  top: 8px;
   left: -8px;
 }
 
