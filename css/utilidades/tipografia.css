@@ -1,11 +1,16 @@
 /* ---- tipo grafia ----- */
 
-.font-1-xs {
-  font: 700 4rem/1.35 "helvetica", sans-serif;
+.font-titulo-bold {
+  font: 700 3rem/1.35 "helvetica", sans-serif;
 }
 
-.font-2-xs {
-  font: 400 4rem/1.43 "helvetica", sans-serif;
+.font-titulo {
+  font: 400 3rem/1.35 "helvetica", sans-serif;
+}
+
+
+.font-p {
+  font: 400 1.125rem/1.35 "helvetica", sans-serif;
 }
 
 .font-1-s {

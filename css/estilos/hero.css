@@ -3,6 +3,8 @@
 @import "../estilos/hero/header-3.css";
 @import "../estilos/hero/header-4.css";
 
+
+
 .heros {
   display: flex;
   width: 100%;
@@ -23,16 +25,15 @@
   opacity: 0;
   visibility: hidden;
   align-items: center;
+  margin: 0 auto;
 }
 
 .container-img-hero {
-  flex: 1;
   display: flex;
   height: 100%;
   width: 642px;
   object-fit: contain;
   size: cover;
-  padding-right: 0px;
 }
 
 .container-header.active {
@@ -42,7 +43,7 @@
 
 /* comandos do carousel*/
 .carousel-headers {
-  position: absolute;
+  position: relative;
   top: 560px;
   left: calc(50% - 50px);
   display: flex;

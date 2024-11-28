@@ -18,11 +18,12 @@
   --w: #ffffff;
 
   /* tons de azul */
-
+  --p5: #003F64;
   --p4: #083b5b;
   --p3: #00a8e8;
   --p2: #6B737D;
-  --p1: #DBDDDC;
+  --p2-1: #585F69;
+  --p1: #7F8792;
 
 }
 
@@ -38,6 +39,10 @@
 
 .cp2 {
   color: var(--p2);
+}
+
+.cp1 {
+  color: var(--p1);
 }
 
 .cpw {
