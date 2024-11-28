@@ -16,31 +16,4 @@
 @import "./utilidades/cores.css";
 @import "./utilidades/bg.css";
 @import "./utilidades/tipografia.css";
-
-* {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-
-body {
-
-  background-color: var(--w);
-}
-
-
-
-
-@media (max-width: 767px) {
-  #home-quote .display-4 {
-    font-size: 2.5rem;
-  }
-
-  body {
-    padding-top: 0px;
-  }
-
-  .fixed-top {
-    position: relative;
-  }
-}
+@import "./estilos/reset.css";

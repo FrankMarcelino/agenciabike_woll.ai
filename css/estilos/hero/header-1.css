@@ -1,21 +1,5 @@
-.card-tp-1-hero {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--w);
-  height: 642px;
-  padding-left: 0px;
-  justify-content: center;
-
-}
-
 .bg-1-img {
-  display: flex;
-  height: 642px;
-  width: 100%;
-  justify-content: center;
   background: linear-gradient(90deg, #fff 40%, #007bff 40%);
-  size: contain;
-  padding-right: 0px;
 }
 
 .container-marcadores {

@@ -1,20 +1,3 @@
-.card-tp-2-hero {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--p3);
-  height: 642px;
-  justify-content: center;
-}
-
-.bg-2-img {
-  display: flex;
-  height: 642px;
-  width: 100%;
-  justify-content: center;
-  background: var(--p4);
-  size: contain;
-}
-
 .saiba-mais {
   display: flex;
   width: 209px;
