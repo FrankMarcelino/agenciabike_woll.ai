@@ -1,52 +1,20 @@
 .integracoes-section {
   display: flex;
   flex-direction: column;
+  background-image: url('../../img/bg.integracoes.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #00a8e8;
-  font-weight: 700;
   height: 320px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
   margin-top: 30px;
-  position: relative;
-  background-color: #083b5be3;
   width: 100%;
   margin: 0 auto;
-
 }
 
 .integracoes-section h2 {
-  color: #00a8e8;
-  font-weight: 700;
-  font-size: 3.25em;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  padding-bottom: 30px;
-  position: relative;
-
-}
-
-
-
-.integracoes-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../img/bg.integracoes.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-position: center;
-  opacity: 0.8;
-
-  /* Ajuste a opacidade conforme necessário */
-  z-index: -1;
-  /* Garante que o fundo fique atrás do conteúdo */
+  margin-bottom: 60px;
 }
 
 .unique-carousel-wrapper {
@@ -59,12 +27,11 @@
 .unique-carousel-content {
   display: flex;
   animation: unique-scroll 20s linear infinite;
-
 }
 
 .unique-carousel-item img {
-  width: 100vw;
-  height: auto;
+  max-width: 100%;
+  height: 100%;
   align-self: end;
   z-index: 1;
 }
