@@ -8,6 +8,14 @@
   margin: 0 auto;
 }
 
+.container-impacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 1440px;
+}
+
 .container-animacao {
   display: flex;
   height: 100%;
