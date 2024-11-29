@@ -31,5 +31,7 @@
 .detalhebg-1 {
   height: 100%;
   background-image: url('../../img/bg/bg-produto.png');
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: var(--p4);
 }

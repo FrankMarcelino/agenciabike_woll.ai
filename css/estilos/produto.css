@@ -3,7 +3,7 @@
   width: 100%;
   height: 709px;
   margin: 0 auto;
-  border-top: solid 20px var(--p4);
+  border-top: solid 24px var(--p5);
 }
 
 .container-produto {
@@ -16,6 +16,7 @@
   align-items: center;
   margin: 0 auto;
   gap: 79px;
+
 }
 
 
@@ -27,6 +28,10 @@
   justify-content: center;
   align-items: flex-start;
   gap: 79px;
+}
+
+.card-produto>p {
+  line-height: 24px;
 }
 
 
