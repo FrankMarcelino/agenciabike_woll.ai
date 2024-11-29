@@ -1,16 +1,23 @@
 .manifesto-section {
-  background-image: url('../../img/homem._com\ _celular.png');
+  display: flex;
+  background-image: url('../../img/Manifesto.png');
   background-size: cover;
   height: 670px;
-  width: 100%;
+  width: 1440px;
+  justify-content: left;
+  align-items: center;
+  margin: 0 auto;
   border-bottom: #fff solid 21px;
   margin: 0 auto;
 }
 
-.manifesto {
+.container-manifesto {
   display: flex;
   height: 100%;
+  width: 100%;
+  justify-content: left;
   align-items: center;
+  margin-left: 100px;
 
 }
 
