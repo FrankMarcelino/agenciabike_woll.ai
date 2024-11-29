@@ -8,6 +8,16 @@
   font: 400 3rem/1.35 "helvetica", sans-serif;
 }
 
+@media (max-width: 600px) {
+  .font-titulo-bold {
+    font: 700 2rem/1.35 "helvetica", sans-serif;
+  }
+
+  .font-titulo {
+    font: 400 2rem/1.35 "helvetica", sans-serif;
+  }
+}
+
 
 .font-p {
   font: 400 1.125rem/1.35 "helvetica", sans-serif;

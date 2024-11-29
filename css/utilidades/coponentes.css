@@ -28,6 +28,13 @@
   transition: background-color 0.3s ease;
 }
 
+@media (max-width: 600px) {
+  .btn {
+    width: auto;
+    padding: 12px 24px;
+  }
+}
+
 
 
 .btn-navbar-login {
