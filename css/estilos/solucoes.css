@@ -23,11 +23,6 @@
   margin-bottom: 117px;
 }
 
-.container-buttons {
-  position: relative;
-  top: -60%;
-  margin: 0 auto;
-}
 
 .container-titulo-solucoes {
   display: flex;
@@ -35,6 +30,17 @@
   justify-content: left;
   width: 100%;
   margin-top: 117px;
+}
+
+.container-buttons {
+  position: relative;
+  top: -60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .btn--solucoes {
@@ -57,15 +63,6 @@
   background-color: var(--p3);
 }
 
-.container-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-
 
 .card-container {
   flex: 0 0 300px;
@@ -83,13 +80,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
   padding-top: 30px;
   position: absolute;
   top: 0;
   width: 100%;
-  left: 100px;
+  left: 80px;
   height: auto;
   opacity: 0;
   transform: translateX(-100%);
@@ -110,15 +107,18 @@
 
 .cards-carousel {
   display: flex;
+  justify-content: flex-start;
   overflow: hidden;
   width: 100%;
   position: relative;
 }
 
+
 .carousel-track {
   display: flex;
   flex-direction: row;
   transition: transform 0.5s ease;
+  margin: 0 auto;
 }
 
 .carousel-button.left {
@@ -135,7 +135,6 @@
 
 .container-cards-segmento {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -143,17 +142,19 @@
   position: absolute;
   top: 0;
   width: 100%;
-  left: 0;
+  left: 80px;
   height: auto;
   opacity: 0;
   transform: translatey(100%);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  margin: 0 auto;
 }
 
 .container-cards-industria.active,
 .container-cards-segmento.active {
   opacity: 1;
   transform: translateX(0);
+  transform: translateY(0);
 }
 
 
@@ -248,4 +249,106 @@
 
 .card-container:hover .text-overlay {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .solucoes-section {
+    display: flex;
+    width: 390px;
+    height: 654px;
+    align-items: center;
+  }
+
+
+  .container-solucoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    height: 654px;
+    padding: 0 16px;
+    margin: 0 auto;
+    gap: 100px;
+  }
+
+  .container-titulo-solucoes {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    margin-top: 64px;
+  }
+
+  .container-buttons {
+    position: relative;
+    top: -60%;
+    margin: 0 auto;
+    display: flex;
+    width: 350px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn--solucoes {
+    background-color: #f3f4f3;
+    color: var(--p4);
+    width: 390px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn--solucoes.active {
+    background-color: var(--p4);
+    color: #fff;
+  }
+
+  .section-cards {
+    display: flex;
+    position: relative;
+    height: 422px;
+    width: 300px;
+    margin-bottom: 117px;
+  }
+
+  .container-cards-segmento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    left: 0;
+    height: auto;
+    opacity: 0;
+    transform: translatey(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  .container-cards-industria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    left: 0;
+    height: auto;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+
 }

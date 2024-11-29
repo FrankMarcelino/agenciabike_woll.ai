@@ -25,7 +25,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   gap: 79px;
 }
