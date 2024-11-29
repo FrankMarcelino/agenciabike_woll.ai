@@ -1,29 +1,51 @@
-.poduto {
+.produto {
   display: flex;
   width: 100%;
   height: 709px;
   margin: 0 auto;
-  background-image: url("../../img/produto.png");
+  border-top: solid 20px var(--p4);
 }
 
 .container-produto {
   display: flex;
-
   width: 100%;
+  height: 100%;
   max-width: 1028px;
   height: 709px;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  gap: 79px;
 }
 
+
+.card-produto {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+  gap: 79px;
+}
+
+
 .container-img-produto {
-  flex: 1;
+
   display: flex;
   max-width: 500px;
   max-height: 500px;
   border-radius: 16px;
-  width: 100%;
-  height: 100%;
+  justify-content: right;
+  align-items: right;
+  gap: 79px;
+}
+
+.container-img-produto>img {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 16px;
   object-fit: contain;
 }

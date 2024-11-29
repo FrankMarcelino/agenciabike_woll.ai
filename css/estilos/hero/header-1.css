@@ -97,3 +97,33 @@
   font-weight: 400;
   color: var(--p2);
 }
+
+@media (max-width: 600px) {
+  .container-marcadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .container-marcadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding-left: 70px;
+    width: 223px;
+    max-width: 223px;
+    height: 100%;
+  }
+
+  .bg-1-img {
+    display: flex;
+    width: 30%;
+    height: 30%;
+  }
+
+
+}
