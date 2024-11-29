@@ -2,29 +2,50 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: 895px;
+  height: 603px;
   align-items: center;
 }
 
 .container-diferenciais {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1028px;
+  margin: 0 auto;
+  gap: 142px;
 }
 
 
+.card-diferenciais {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 744px;
+  height: 100%;
+  margin: 0 auto;
+  gap: 42px;
+}
+
+.acordion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  margin: 0 auto;
+}
+
 .faq-item {
   display: flex;
-  width: 100%;
+  width: 443px;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 10px;
   position: relative;
-
   cursor: pointer;
-
   overflow: hidden;
-
-
   transition: all 0.3s ease-in-out;
 }
 
