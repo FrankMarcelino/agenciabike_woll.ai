@@ -1,7 +1,5 @@
 .manifesto-section {
   display: flex;
-  background-image: url('../../img/Manifesto.png');
-  background-size: cover;
   height: 670px;
   width: 1440px;
   justify-content: left;
@@ -9,6 +7,16 @@
   margin: 0 auto;
   border-bottom: #fff solid 21px;
   margin: 0 auto;
+}
+
+.manifesto-bg-desktop {
+  background-image: url('../../img/Manifesto.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.manifesto-bg-mobile {
+  display: none;
 }
 
 .container-manifesto {
@@ -32,4 +40,39 @@
   font-weight: 400;
   font-size: 28px;
   color: #fff;
+}
+
+@media (max-width: 600px) {
+  .manifesto-section {
+    display: flex;
+    flex-direction: column;
+    height: 670px;
+    width: 100%;
+    justify-content: left;
+    align-items: end;
+    padding: 0 25px;
+    border-bottom: #fff solid 0px;
+
+  }
+
+  .container-manifesto {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+    align-items: end;
+    margin-left: 0px;
+    padding-bottom: 100px;
+  }
+
+  .manifesto-bg-desktop {
+    display: none;
+  }
+
+  .manifesto-bg-mobile {
+    display: flex;
+    background-image: url('../../img/mobille/m-manifesto.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
