@@ -43,3 +43,13 @@ nav {
   align-items: center;
   gap: 10px;
 }
+
+@media (max-width: 600px) {
+  .menu-nav-page {
+    display: none;
+  }
+
+  .container-btn-funtion {
+    display: none;
+  }
+}

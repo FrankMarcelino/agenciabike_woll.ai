@@ -23,6 +23,12 @@
   font: 400 1.125rem/1.35 "helvetica", sans-serif;
 }
 
+@media (max-width: 600px) {
+  .font-p {
+    font: 400 0.75rem/1.35 "helvetica", sans-serif;
+  }
+}
+
 .font-1-s {
   font: 700 3.25rem/1.5 "helvetica", sans-serif;
 }

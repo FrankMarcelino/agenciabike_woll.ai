@@ -9,13 +9,25 @@
 
 .case1 {
   display: flex;
-  background-image: url('../../img/slider-case.png');
   align-items: center;
   justify-content: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   height: 670px;
   width: 100%;
+  position: relative;
+}
+
+
+.case1-bg-mobile {
+  display: none;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../img/mobille/m-case-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: ;
+  position: absolute;
+  z-index: -1;
 }
 
 .container-case {
@@ -25,6 +37,8 @@
   justify-content: space-around;
   align-items: center;
   gap: 40px;
+  position: absolute;
+  z-index: 1;
 }
 
 .case2 {
@@ -79,4 +93,37 @@
   flex-direction: column;
   line-height: 16px;
   gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .case1-bg-desktop {
+    display: none;
+  }
+
+  .case-sucesso-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 670px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .case1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 670px;
+    width: 100%;
+  }
+
+  .case1-bg-mobile {
+    display: flex;
+  }
+
+  .case2 {
+    display: none;
+  }
 }

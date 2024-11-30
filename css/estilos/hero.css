@@ -91,16 +91,12 @@
 @media (max-width: 600px) {
   .heros {
     width: 100%;
-    max-width: 1440px;
+    max-width: 100%;
     height: 642px;
   }
 
   .container-img-hero {
-    flex: 1;
-    display: flex;
-    size: contain;
-    width: 30%;
-
+    display: none;
   }
 
   .container-header {
@@ -108,11 +104,24 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
     margin: 0 auto;
     width: 100%;
-    height: 100%;
+    height: 493PX;
+  }
+
+  .carousel-headers {
+    position: relative;
+    top: 90%;
+    left: calc(60% - 8rem);
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 5;
+
   }
 
 

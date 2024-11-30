@@ -7,16 +7,19 @@
   margin: 0 auto;
   border-bottom: #fff solid 21px;
   margin: 0 auto;
+  position: relative;
 }
 
 .manifesto-bg-desktop {
-  background-image: url('../../img/Manifesto.png');
+  display: block;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .manifesto-bg-mobile {
   display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .container-manifesto {
@@ -26,7 +29,8 @@
   justify-content: left;
   align-items: center;
   margin-left: 100px;
-
+  position: absolute;
+  z-index: 1;
 }
 
 .manifesto p {
@@ -71,8 +75,5 @@
 
   .manifesto-bg-mobile {
     display: flex;
-    background-image: url('../../img/mobille/m-manifesto.png');
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 }
