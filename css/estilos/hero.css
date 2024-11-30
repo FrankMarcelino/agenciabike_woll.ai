@@ -35,8 +35,6 @@
   display: block;
   max-width: 100%;
   height: 642px;
-  align-items: center;
-  justify-content: center;
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,12 +42,11 @@
 
 .bg-img-mobile {
   display: none;
+  height: 100%;
   max-width: 100%;
   align-items: center;
-  justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
 }
 
 
@@ -115,14 +112,14 @@
   .heros {
     width: 100%;
     max-width: 100%;
-    height: 642px;
+    height: 493px;
   }
 
 
   .container-img-hero {
     display: flex;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .bg-img-desktop {
@@ -132,12 +129,11 @@
   .bg-img-mobile {
     display: flex;
     max-width: 100%;
-    height: 100%;
-    align-items: flex-end;
+    height: 493px;
     justify-content: right;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-color: aquamarine;
+
 
   }
 

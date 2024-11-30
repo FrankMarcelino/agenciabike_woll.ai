@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  width: 50%;
+  width: 100%;
   height: 100%;
   max-width: 640px;
   justify-content: center;
@@ -41,26 +41,21 @@
   .header-2 {
     display: flex;
     flex-direction: column;
-    gap: 64px;
-    width: 640px;
-    height: 100%;
-    max-width: 640px;
-    justify-content: left;
+    gap: 0px;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
     align-items: flex-start;
-    padding-left: 80px;
+    padding-left: 0px;
+    background-color: aqua;
   }
 
   .container-marcadores-header-2 {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
 
-  .img-header-2 {
-    display: flex;
-    height: 100%;
-    object-fit: cover;
-  }
 
   .container-marcador-header-2 {
     display: flex;
@@ -73,13 +68,5 @@
     align-items: center;
   }
 
-  .marcador-numero-header-2::after {
-    content: "% ";
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--w);
-    position: relative;
-    top: -5px;
-    left: -8px;
-  }
+
 }

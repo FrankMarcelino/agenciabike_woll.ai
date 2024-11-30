@@ -2,10 +2,24 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  width: 640px;
+  width: 50%;
   height: 100%;
   max-width: 640px;
   justify-content: center;
   align-items: flex-start;
   padding-left: 40px;
+}
+
+@media (max-width: 600px) {
+  .header-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 100%;
+    max-width: 100%;
+    padding-left: 00px;
+    justify-content: space-around;
+    align-items: flex-start;
+
+  }
 }
