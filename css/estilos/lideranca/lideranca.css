@@ -5,17 +5,19 @@
   width: 100%;
   justify-content: left;
   align-items: flex-start;
-  gap: 44px;
+  gap: 34px;
 }
 
 .container-cards-lideranca {
   display: flex;
   flex-direction: row;
+  margin-top: 44px;
   flex-wrap: nowrap;
   position: relative;
-  width: 1030px;
+  width: 100%;
   height: 100%;
-  justify-content: center;
+  max-width: 1030px;
+  justify-content: left;
   gap: 20px;
   z-index: 5;
 }

@@ -5,9 +5,9 @@
   flex-direction: row;
   flex-wrap: nowrap;
   height: 997px;
-  padding-left: 80px;
   background-color: #f3f4f3;
   width: 100%;
+  max-width: 1440px;
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
@@ -17,8 +17,9 @@
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
-  width: 1440px;
+  justify-content: right;
+  padding-left: 150px;
+
 }
 
 
@@ -27,17 +28,22 @@
   flex-direction: column;
   height: 997px;
   width: 50%;
-  justify-content: center;
+  justify-content: left;
   padding-top: 152px;
-  padding-left: 100px;
+
   gap: 38px;
+  margin-bottom: 44px;
+}
+
+.container-empresa>p {
+  margin-bottom: 44px;
 }
 
 .container-img-empresa {
   display: flex;
   justify-content: right;
   position: relative;
-  width: 50%;
+  width: 100%;
   height: 70%;
   size: cover;
   overflow: hidden;
@@ -51,14 +57,14 @@
   background-size: contain;
   justify-content: right;
   position: absolute;
-  left: 50px;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
 
 .img-empresa {
-  width: 65%;
+  width: 70%;
   height: 80%;
   object-fit: cover;
   position: absolute;

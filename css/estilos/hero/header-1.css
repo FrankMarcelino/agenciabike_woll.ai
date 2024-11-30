@@ -108,9 +108,7 @@
 .container-marcador-3 {
   display: flex;
   flex-direction: column;
-
   align-self: baseline;
-
   max-width: 123px;
 }
 
@@ -149,7 +147,6 @@
     gap: 20px;
     padding-left: 70px;
     width: 100%;
-    max-width: 100%;
     height: auto;
   }
 

@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   height: 84px;
-  max-width: auto;
+  width: 100%;
   margin: 0 auto;
   background-color: var(--p4);
   background-size: cover;
@@ -13,9 +13,9 @@
 nav {
   display: flex;
   width: 100%;
-  max-width: 1550px;
+  max-width: 1300px;
   height: 84px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
