@@ -18,6 +18,14 @@
   background: linear-gradient(135deg, #E6F0F8 0%, #B3D4E8 100%);
 }
 
+.bg-img-header-1 {
+  background: linear-gradient(90deg, #fff 40%, #00a8e8 40%);
+}
+
+.bg-img-header-4 {
+  background: linear-gradient(90deg, #083b5b 40%, #00a8e8 40%);
+}
+
 /* bg-imagens */
 
 .bg-azul-img {

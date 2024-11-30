@@ -10,11 +10,11 @@
 
 @media (max-width: 600px) {
   .font-titulo-bold {
-    font: 700 2rem/1.35 "helvetica", sans-serif;
+    font: 700 2rem "helvetica", sans-serif;
   }
 
   .font-titulo {
-    font: 400 2rem/1.35 "helvetica", sans-serif;
+    font: 400 2rem "helvetica", sans-serif;
   }
 }
 
