@@ -57,7 +57,7 @@
   font-size: 3rem;
   font-weight: 700;
   color: var(--p4);
-  margin-left: -25px;
+  padding-left: 25px;
 }
 
 .marcador-1::before,

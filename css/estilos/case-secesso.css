@@ -17,6 +17,16 @@
   position: relative;
 }
 
+.case1-bg-desktop {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
 
 .case1-bg-mobile {
   display: none;
@@ -28,6 +38,7 @@
   background-repeat: no-repeat;
   background-position: ;
   position: absolute;
+
   z-index: -1;
 }
 
