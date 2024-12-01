@@ -24,14 +24,6 @@
 
 .manifesto-bg-mobile {
   display: none;
-  max-width: 100%;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: ;
-  position: absolute;
-  z-index: -1;
 }
 
 .container-manifesto {
@@ -42,6 +34,11 @@
   align-items: center;
   position: absolute;
   z-index: 1
+}
+
+.container-manifesto h2 {
+  font-size: 3rem;
+  color: var(--p3);
 }
 
 .manifesto p {
@@ -60,24 +57,15 @@
 @media (max-width: 600px) {
   .manifesto-section {
     display: flex;
-    flex-direction: column;
     height: 670px;
     width: 100%;
-    justify-content: left;
-    align-items: end;
-    padding: 0 25px;
-    border-bottom: #fff solid 0px;
+    max-width: 100%;
+    max-height: 670px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
-  }
 
-  .container-manifesto {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: left;
-    align-items: end;
-    margin-left: 0px;
-    padding-bottom: 100px;
   }
 
   .manifesto-bg-desktop {
@@ -86,5 +74,49 @@
 
   .manifesto-bg-mobile {
     display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
   }
+
+  .container-manifesto {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+    align-items: flex-end;
+    position: absolute;
+    padding-left: 35px;
+    padding-bottom: 80px;
+    top: 0;
+    z-index: 1;
+
+  }
+
+  .container-manifesto h2 {
+    font-size: 2rem;
+    color: var(--w);
+    margin-bottom: 20px;
+  }
+
+  .manifesto p {
+    font-size: 20px;
+    color: var(--p1);
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .manifesto h4 {
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--p1);
+  }
+
 }
