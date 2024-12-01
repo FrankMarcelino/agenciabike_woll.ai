@@ -28,6 +28,11 @@
 
 }
 
+.container-marcadores-header-2>h1 {
+  width: 300px;
+  max-width: 300px;
+}
+
 .marcador-header-2 {
   display: flex;
   flex-wrap: nowrap;
@@ -71,6 +76,11 @@
     width: 100%;
     max-width: 100%;
 
+  }
+
+  .container-marcadores-header-2>h1 {
+    width: 200px;
+    max-width: 300px;
   }
 
 
