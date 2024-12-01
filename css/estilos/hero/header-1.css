@@ -26,20 +26,46 @@
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
   padding-left: 70px;
   width: 100%;
   max-width: 700px;
   height: auto;
 }
 
+.container-marcador-1,
+.container-marcador-2 {
+  display: inline-block;
+  flex-direction: column;
+  max-width: 147px;
+  max-height: 96px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container-marcador-3 {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 128px;
+  max-height: 76px;
+  position: relative;
+}
+
+.container-marcador-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 .container-marcador {
   display: flex;
   flex-direction: row;
-  width: auto;
-  height: auto;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: left;
 }
 
 
@@ -53,28 +79,28 @@
   font-size: 3rem;
   font-weight: 700;
   color: var(--p4);
-  padding-left: 25px;
+  padding-left: 0px;
 }
 
 .marcador-1::before,
 .marcador-2::before {
   content: "+";
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--p3);
-  position: relative;
-  top: -5px;
-  left: 25px;
+  position: absolute;
+  top: 15px;
+  left: -10px;
 }
 
 .marcador-3::after {
   content: "x";
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--p3);
-  position: relative;
-  top: -5px;
-  left: -20px;
+  position: absolute;
+  top: 25px;
+  left: 18px;
 }
 
 
@@ -96,66 +122,45 @@
 }
 
 .m3 {
-  position: relative;
-  top: 0;
-  left: -15px;
+  margin-left: 15px;
 }
 
-.container-marcador-3 {
-  display: flex;
-  flex-direction: column;
-  align-self: baseline;
-  max-width: 123px;
-}
 
 .m4 {
   position: relative;
   top: 0;
   left: -20px;
-
 }
 
-.container-marcador-4 {
-  display: flex;
-  flex-direction: column;
-}
 
 @media (max-width: 600px) {
   .card-header-1 {
-    display: flex;
-    flex-direction: column;
-
     gap: 0px;
-    width: 100%;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: left;
   }
 
   .header-1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    align-items: left;
-    justify-content: flex-start;
-    background-color: var(--w);
-    gap: 0px;
-  }
 
+    width: 75%;
+    height: 693px;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 0px 35px;
+  }
 
 
   .container-marcadores {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: left;
-    align-items: flex-start;
+    align-items: center;
     gap: 0px;
     padding-left: 0px;
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 693px;
   }
 
   .container-marcadores>p {
@@ -165,15 +170,15 @@
   .container-marcador {
     display: flex;
     flex-direction: row;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: left;
   }
 
 
   .container-marcador span {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--p2);
   }
@@ -188,33 +193,33 @@
   .marcador-1::before,
   .marcador-2::before {
     content: "+";
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--p3);
     position: relative;
     top: -5px;
-    left: 25px;
+    left: 10px;
   }
 
   .marcador-3::after {
     content: "x";
-    font-size: 32px;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--p3);
     position: relative;
     top: -5px;
-    left: -20px;
+    left: -10px;
   }
 
 
   .marcador-4::after {
     content: "% ";
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--p3);
     position: relative;
     top: -5px;
-    left: -20px;
+    left: -10px;
   }
 
   .marcador-texto {
@@ -234,14 +239,13 @@
     display: flex;
     flex-direction: column;
     align-self: baseline;
-    max-width: 123px;
+    max-width: 100%;
   }
 
   .m4 {
     position: relative;
     top: 0;
     left: -20px;
-
   }
 
   .container-marcador-4 {

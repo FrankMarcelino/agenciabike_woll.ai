@@ -110,9 +110,6 @@
     margin: 0 auto;
   }
 
-  .container-header {
-    padding: 0 0 0 35px;
-  }
 
 
   .container-img-hero {
@@ -145,27 +142,5 @@
   .carousel-right {
     font-size: 1rem;
   }
-
-  .carousel-headers span {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
-  .carousel-headers span.active {
-    background-color: #007bff;
-  }
-
-  .carousel-buttons {
-    display: flex;
-    position: relative;
-    bottom: 0;
-    left: 0%;
-    justify-content: center;
-    z-index: 4;
-  }
-
 
 }
