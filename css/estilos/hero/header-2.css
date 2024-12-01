@@ -1,35 +1,44 @@
 .header-2 {
   display: flex;
   flex-direction: column;
-  gap: 64px;
-  width: 100%;
-  height: 100%;
-  max-width: 640px;
-  justify-content: center;
   align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  gap: 40px;
   padding-left: 80px;
 }
 
 .container-marcadores-header-2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 305px;
+  width: 100%;
   gap: 40px;
 }
 
 
 .container-marcador-header-2 {
   display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+
 }
 
 .marcador-header-2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .marcador-numero-header-2::after {
   content: "% ";
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--w);
   position: relative;
@@ -41,32 +50,60 @@
   .header-2 {
     display: flex;
     flex-direction: column;
-    gap: 0px;
     width: 100%;
+    height: 100%;
     max-width: 100%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0px;
     padding-left: 0px;
-    background-color: aqua;
   }
 
   .container-marcadores-header-2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+
   }
 
 
   .container-marcador-header-2 {
     display: flex;
     flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 0px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 
   .marcador-header-2 {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    position: relative;
   }
 
-
+  .marcador-numero-header-2::after {
+    content: "% ";
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--w);
+    position: absolute;
+    top: 8px;
+    left: 30px;
+  }
 }

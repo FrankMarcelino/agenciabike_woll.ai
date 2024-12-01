@@ -1,22 +1,13 @@
-.card-header-1 {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-
-}
-
 .header-1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 50%;
   height: auto;
-  justify-content: center;
+  justify-content: left;
   background-color: var(--w);
   gap: 40px;
-
+  padding-right: 30px;
 }
 
 
@@ -39,7 +30,7 @@
   flex-direction: column;
   max-width: 147px;
   max-height: 96px;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   position: relative;
 }
@@ -139,12 +130,15 @@
   .card-header-1 {
     justify-content: left;
     gap: 0px;
+
   }
 
   .header-1 {
     justify-content: left;
+    align-items: flex-start;
     width: 75%;
     gap: 0px;
+
   }
 
 
@@ -153,12 +147,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
-    padding-left: 70px;
+    padding-left: 35px;
     width: 100%;
     max-width: 700px;
     height: auto;
+
   }
 
   .container-marcadores>p {
@@ -205,6 +200,7 @@
     font-size: 1rem;
     font-weight: 700;
     color: var(--p2);
+    margin-left: 5px;
   }
 
   .marcador-numero {
@@ -261,7 +257,7 @@
   .m4 {
     position: relative;
     top: 0;
-    left: 10px;
+    left: 0;
   }
 
 

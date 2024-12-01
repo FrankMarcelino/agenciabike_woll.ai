@@ -21,6 +21,7 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
+
 }
 
 
@@ -115,7 +116,9 @@
   .container-img-hero {
     height: 693px;
     width: 100%;
+    height: 100%;
     object-fit: contain;
+    justify-content: left;
   }
 
   .bg-img-desktop {
@@ -123,11 +126,12 @@
   }
 
   .bg-img-mobile {
-    display: flex;
-    height: 100%;
+    display: block;
+    height: 693px;
+
     max-width: 100%;
-    align-items: center;
-    background-size: cover;
+    width: auto;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
