@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 75%;
   height: auto;
   justify-content: center;
   background-color: var(--w);
@@ -124,11 +124,13 @@
   .card-header-1 {
     display: flex;
     flex-direction: column;
+
     gap: 0px;
     width: 100%;
     max-width: 100%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 
   .header-1 {

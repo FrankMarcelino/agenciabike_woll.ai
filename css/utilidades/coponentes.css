@@ -30,8 +30,12 @@
 
 @media (max-width: 600px) {
   .btn {
+    display: flex;
     width: auto;
-    padding: 12px 24px;
+    height: 44px;
+    padding: 24px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
   }
 }
 

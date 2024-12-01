@@ -42,11 +42,6 @@
 
 .bg-img-mobile {
   display: none;
-  height: 100%;
-  max-width: 100%;
-  align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 
@@ -110,16 +105,20 @@
 
 @media (max-width: 600px) {
   .heros {
-    width: 100%;
     max-width: 100%;
-    height: 493px;
+    height: 693px;
+    margin: 0 auto;
+  }
+
+  .container-header {
+    padding: 0 0 0 35px;
   }
 
 
   .container-img-hero {
-    display: flex;
-    height: 100%;
-    object-fit: cover;
+    height: 693px;
+    width: 100%;
+    object-fit: contain;
   }
 
   .bg-img-desktop {
@@ -128,37 +127,44 @@
 
   .bg-img-mobile {
     display: flex;
+    height: 100%;
     max-width: 100%;
-    height: 493px;
-    justify-content: right;
-    background-size: contain;
+    align-items: center;
+    background-size: cover;
     background-repeat: no-repeat;
-
-
   }
 
-  .container-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    height: 493PX;
-  }
 
+  /* comandos do carousel*/
   .carousel-headers {
-    position: relative;
     top: 90%;
-    left: calc(60% - 8rem);
-    display: flex;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    z-index: 5;
+    left: calc(50% - 6rem);
+  }
 
+  .carousel-left,
+  .carousel-right {
+    font-size: 1rem;
+  }
+
+  .carousel-headers span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .carousel-headers span.active {
+    background-color: #007bff;
+  }
+
+  .carousel-buttons {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    left: 0%;
+    justify-content: center;
+    z-index: 4;
   }
 
 
