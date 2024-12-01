@@ -105,10 +105,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 670px;
+    height: 100%;
     width: 100%;
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
+    margin-bottom: 64px;
   }
 
   .case1 {
@@ -145,13 +146,30 @@
 
   .card-1-case-1-mobile {
     display: flex;
-    background-color: var(--p1);
-
+    width: 370px;
+    height: 276px;
+    padding: 30px 24px;
+    justify-content: center;
+    align-items: center;
   }
 
   .card-2-case-1-mobile {
     display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 100%;
+    padding: 24px;
+    gap: 5px;
+    border-radius: 0 0 16px 16px;
     background-color: var(--p3);
+  }
+
+  .card-2-case-1-mobile>ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
   }
 
   .card-case-1 {
