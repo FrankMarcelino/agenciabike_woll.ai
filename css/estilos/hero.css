@@ -10,6 +10,7 @@
   height: 642px;
   position: relative;
   margin: 0 auto;
+  margin-top: 84px;
 }
 
 .container-header {
@@ -20,7 +21,8 @@
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 642px;
+
 
 }
 
@@ -28,14 +30,16 @@
 .container-img-hero {
   display: flex;
   height: 642px;
+  max-height: 642px;
   width: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .bg-img-desktop {
   display: block;
   max-width: 100%;
   height: 642px;
+  max-height: 642px;
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,7 +68,7 @@
 /* comandos do carousel*/
 .carousel-headers {
   position: relative;
-  top: 85%;
+  top: 90%;
   left: calc(50% - 8rem);
   display: flex;
   height: fit-content;
@@ -140,7 +144,7 @@
 
   /* comandos do carousel*/
   .carousel-headers {
-    top: 90%;
+    top: 105%;
     left: calc(50% - 6rem);
   }
 
