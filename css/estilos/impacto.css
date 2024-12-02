@@ -14,7 +14,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   height: 100%;
-  width: 1440px;
+  width: 1028px;
 }
 
 .container-animacao {
@@ -37,6 +37,7 @@
   position: relative;
   justify-content: right;
   align-items: flex-start;
+  left: 300px;
 }
 
 .img-impacto-mulher {
@@ -46,7 +47,7 @@
   object-fit: contain;
   position: relative;
   top: 20px;
-  left: -150px;
+  left: 20px;
   justify-content: center;
   align-items: flex-start;
 }
