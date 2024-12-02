@@ -26,6 +26,11 @@
   height: 100%;
   width: 190px;
   border-radius: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-lideranca:hover {
+  transform: scale(1.05);
 }
 
 .card-lideranca img {
@@ -94,7 +99,7 @@
   border-radius: 8px;
   padding: 4px 8px;
   width: fit-content;
-  background-color: var(--p1);
+  background-color: #DBDDDC;
   text-align: left;
   color: var(--p2);
   align-items: center;
@@ -147,6 +152,7 @@
     height: 100%;
     width: 190px;
     border-radius: 16px;
+
   }
 
   .card-lideranca>img {
