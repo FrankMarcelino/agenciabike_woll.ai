@@ -6,18 +6,30 @@
   max-width: 100%;
   align-items: center;
   margin: 0 auto;
+
+}
+
+.container-diferenciais-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   background-image: url('../../img/bg/bg-diferenciais.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .container-diferenciais {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 1028px;
+  width: 1240px;
+  height: 100%;
   margin: 0 auto;
   gap: 142px;
+
 }
 
 
@@ -40,6 +52,7 @@
   padding-top: 170px;
   padding-bottom: 170px;
   margin: 0 auto;
+  position: relative;
 }
 
 .faq-item {
@@ -50,7 +63,7 @@
   border-radius: 10px;
   margin-bottom: 10px;
   position: relative;
-  cursor: pointer;
+  cursor: absolute;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
