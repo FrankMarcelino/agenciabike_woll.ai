@@ -90,34 +90,95 @@
 }
 
 @media (max-width: 600px) {
+  .impacto-section {
+    display: flex;
+    height: 891px;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
   .container-impacto {
+    display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     height: 100%;
     width: 100%;
   }
 
   .container-animacao {
-    justify-content: flex-start;
-    padding-left: 35px;
-    align-items: center;
+    display: flex;
+    height: 100%;
     width: 100%;
-    height: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 35px;
   }
 
+
   .container-imagem {
-    justify-content: flex-end;
-    padding-left: 0px;
-    align-items: flex-end;
+    display: flex;
+    height: 60%;
     width: 100%;
-    height: 50%;
+    background-image: url('../../img/bg/detalhe.bg.imapctop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    left: 10px;
+    margin: 0 auto;
   }
 
   .img-impacto-mulher {
-    top: 10%;
-    left: -12%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    top: 20px;
+    left: 0px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  /* animacao imapacto */
+
+
+  .impacto-container {
+    text-align: left;
   }
 
   .impacto-word {
-    font-size: 3rem;
+    display: flex;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    opacity: 1;
+  }
+
+
+  .word {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  }
+
+  .show-word {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
