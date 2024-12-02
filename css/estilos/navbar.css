@@ -35,12 +35,19 @@ nav {
 
 
 .navbar-nav {
+
+  justify-content: space-between;
   list-style: none;
+
 }
 
 .menu-nav-page {
+  justify-content: space-between;
+  width: 100%;
+  max-width: 594px;
   display: flex;
-  gap: 10px;
+  gap: 16px;
+
 }
 
 .container-btn-funtion {
