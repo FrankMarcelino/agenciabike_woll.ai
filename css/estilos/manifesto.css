@@ -6,8 +6,6 @@
   justify-content: left;
   align-items: center;
   margin: 0 auto;
-  border-bottom: #fff solid 21px;
-  margin: 0 auto;
   position: relative;
 }
 
@@ -18,8 +16,7 @@
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
+  width: 100%;
 }
 
 .manifesto-bg-mobile {
@@ -33,8 +30,21 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  gap: 32px;
   z-index: 1
 }
+
+.card-manifesto {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 120px;
+  gap: 32px;
+}
+
 
 .container-manifesto h2 {
   font-size: 3rem;
@@ -48,10 +58,11 @@
   margin-bottom: 32px;
 }
 
-.manifesto h4 {
+.container-list-manifesto {
   font-weight: 400;
   font-size: 28px;
   color: #fff;
+  gap: 30px;
 }
 
 @media (max-width: 600px) {
@@ -64,7 +75,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-
 
   }
 
@@ -91,32 +101,35 @@
     height: 100%;
     width: 100%;
     justify-content: left;
-    align-items: flex-end;
+    align-items: flex-start;
     position: absolute;
     padding-left: 35px;
     padding-bottom: 80px;
-    top: 0;
+    top: 20%;
+    left: -30%;
     z-index: 1;
-
   }
 
   .container-manifesto h2 {
     font-size: 2rem;
     color: var(--w);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .container-list-manifesto {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    gap: 30px;
   }
 
   .manifesto p {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--p1);
     margin-top: 32px;
     margin-bottom: 32px;
   }
 
-  .manifesto h4 {
-    font-weight: 400;
-    font-size: 28px;
-    color: var(--p1);
-  }
+
 
 }
