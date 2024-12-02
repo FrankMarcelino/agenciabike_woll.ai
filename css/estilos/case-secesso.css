@@ -54,12 +54,6 @@
   display: none;
 }
 
-.card-2-case-1 {
-  display: flex;
-  flex-direction: column;
-  line-height: 16px;
-  gap: 16px;
-}
 
 .container-card-1-case-1 {
   display: flex;
@@ -69,7 +63,28 @@
   justify-content: left;
   color: #fff;
   text-align: left;
-  gap: 40px;
+  gap: 20px;
+}
+
+.card-2-case-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 16px;
+  height: 215px;
+  position: absolute;
+  top: 65%;
+  left: 58%;
+}
+
+.card-2-case-1>ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+  list-style: none;
+  padding: 0;
 }
 
 .slide-cases {
@@ -91,13 +106,14 @@
 
 .carousel-cases {
   position: absolute;
-  bottom: 10px;
-  /* Ajuste conforme necessário */
-  left: 50%;
+  bottom: 10%;
+  left: 20%;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 40px;
+  width: 120px;
+  height: 24px;
+  gap: 5px;
   z-index: 5;
 }
 
@@ -106,6 +122,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
+
 }
 
 .carousel-cases span {
