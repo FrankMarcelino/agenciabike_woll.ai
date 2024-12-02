@@ -1,24 +1,10 @@
-.header-1 {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-  width: 720px;
-  height: 642px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  padding-right: 80px;
-}
-
-
 .container-marcadores {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 30px;
-  padding-left: 70px;
+
   width: 100%;
   max-width: 700px;
   height: auto;
@@ -29,7 +15,17 @@
   font-size: 3rem;
 }
 
-
+.card-marcadores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  gap: 30px;
+}
 
 .container-marcador-1,
 .container-marcador-2 {

@@ -6,49 +6,64 @@
 .heros {
   display: flex;
   width: 100%;
-  max-width: 2000px;
-  height: 642px;
+  max-width: 100%;
+  height: 726px;
   justify-content: center;
   align-items: center;
-
   margin: 0 auto;
-  margin-top: 84px;
   position: relative;
+
 }
 
 .container-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 1440px;
+  position: absolute;
+  width: 100%;
   max-width: 1440px;
   height: 642px;
-  position: relative;
-  padding: 200px;
   top: 0;
+  left: calc(50% - 720px);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 84px;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
 }
+
+.container-header.active {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.header-side-right {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 800px;
+  height: 642px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+}
+
 
 
 .container-img-hero {
   display: flex;
-  height: 642px;
-  max-height: 642px;
-  width: 720px;
   object-fit: contain;
   justify-content: right;
-  position: absolute;
-  left: 70%;
-
+  object-fit: cover;
+  height: 642px;
 }
 
 .bg-img-desktop {
   display: block;
-  width: 720px;
-  max-width: 720px;
-  height: 642px;
-  max-height: 642px;
-
+  width: 100%;
+  height: 100%;
+  size: cover;
   background-repeat: no-repeat;
 }
 
@@ -58,19 +73,9 @@
 
 
 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-}
 
-.slide.active {
-  opacity: 1;
-  visibility: visible;
-}
+
+
 
 /* comandos do carousel*/
 .carousel-headers {

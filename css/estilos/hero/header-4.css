@@ -1,16 +1,3 @@
-.header-4 {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-  width: 720px;
-  height: 642px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  padding-right: 180px;
-
-}
-
 .header-4 p {
   max-width: 450px;
   color: var(--p1);
