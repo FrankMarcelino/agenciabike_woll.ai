@@ -29,10 +29,11 @@
   width: 100%;
   justify-content: center;
   align-items: flex-start;
-  gap: 79px;
+  gap: 48px;
 }
 
 .card-produto>p {
+  width: 350px;
   line-height: 24px;
 }
 
@@ -47,6 +48,16 @@
   gap: 79px;
 }
 
+.btn-produto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 24px;
+  gap: 8px;
+}
 
 
 @media (max-width: 600px) {
