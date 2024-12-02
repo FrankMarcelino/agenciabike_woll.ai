@@ -15,7 +15,7 @@
 /* botoes */
 
 .btn {
-  display: flex;
+  display: block;
   width: 249px;
   height: 56px;
   justify-content: center;

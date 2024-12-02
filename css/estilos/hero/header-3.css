@@ -10,6 +10,11 @@
   padding-left: 40px;
 }
 
+.header-3 p {
+  max-width: 450px;
+  );
+}
+
 @media (max-width: 600px) {
   .header-3 {
     display: flex;

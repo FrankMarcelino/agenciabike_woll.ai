@@ -11,6 +11,11 @@
   padding-left: 80px;
 }
 
+.header-4 p {
+  max-width: 450px;
+  color: var(--p1);
+}
+
 @media (max-width: 600px) {
   .header-4 {
     display: flex;
