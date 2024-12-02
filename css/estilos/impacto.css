@@ -14,7 +14,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   height: 100%;
-  width: 1028px;
+  width: 1440px;
 }
 
 .container-animacao {
@@ -23,6 +23,7 @@
   width: 50%;
   justify-content: center;
   align-items: center;
+  margin-left: 150px;
 }
 
 
@@ -31,13 +32,13 @@
   height: 100%;
   width: 50%;
   background-image: url('../../img/bg/detalhe.bg.imapctop.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   position: relative;
   justify-content: right;
   align-items: flex-start;
-  left: 300px;
+  left: 150px;
 }
 
 .img-impacto-mulher {
