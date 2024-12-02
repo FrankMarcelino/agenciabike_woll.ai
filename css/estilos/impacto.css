@@ -20,7 +20,7 @@
 .container-animacao {
   display: flex;
   height: 100%;
-  width: 50%;
+  width: 40%;
   justify-content: center;
   align-items: center;
   margin-left: 150px;
@@ -30,7 +30,7 @@
 .container-imagem {
   display: flex;
   height: 100%;
-  width: 50%;
+  width: 60%;
   background-image: url('../../img/bg/detalhe.bg.imapctop.png');
   background-size: cover;
   background-repeat: no-repeat;
