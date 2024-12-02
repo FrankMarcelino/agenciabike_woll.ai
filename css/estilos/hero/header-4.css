@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  width: 50%;
-  height: 100%;
-  max-width: 100%;
-  border-right: solid 4px var(--p4);
+  width: 720px;
+  height: 642px;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 80px;
+  align-items: center;
+  position: absolute;
+  padding-right: 180px;
+
 }
 
 .header-4 p {

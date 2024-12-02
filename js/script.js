@@ -115,10 +115,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // diferenciais acordion
+let lastActiveItem = null;
 
 document.querySelectorAll(".faq-item").forEach((item) => {
   item.addEventListener("click", () => {
+    if (lastActiveItem && lastActiveItem !== item) {
+      lastActiveItem.classList.remove("active");
+    }
     item.classList.toggle("active");
+    if (item.classList.contains("active")) {
+      lastActiveItem = item;
+    } else {
+      lastActiveItem = null;
+    }
   });
 });
 

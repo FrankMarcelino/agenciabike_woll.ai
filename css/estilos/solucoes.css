@@ -243,6 +243,8 @@
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 24px;
+  border-radius: 8px;
   background-color: var(--p4);
   color: white;
   display: flex;
@@ -259,42 +261,59 @@
 }
 
 @media (max-width: 600px) {
+
   .solucoes-section {
     display: flex;
-    width: 390px;
-    height: 654px;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
     align-items: center;
+    margin: 0 auto;
   }
-
 
   .container-solucoes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 390px;
-    height: 654px;
-    padding: 0 16px;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 895px;
+    max-width: 100%;
+    max-height: 895px;
     margin: 0 auto;
-    gap: 100px;
+    margin-left: 35px;
+    margin-right: 0;
+
   }
 
-  .container-titulo-solucoes {
+  .section-cards {
     display: flex;
-    align-items: center;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
     width: 100%;
-    margin-top: 64px;
+    position: relative;
+
   }
+
+  .section-cards>h2 {
+    position: absolute;
+    top: 117px;
+    left: 0;
+  }
+
+
 
   .container-buttons {
-    position: relative;
-    top: -60%;
+    position: absolute;
+    top: 241px;
+    left: 15%;
     margin: 0 auto;
     display: flex;
-    width: 350px;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     gap: 10px;
   }
@@ -302,7 +321,7 @@
   .btn--solucoes {
     background-color: #f3f4f3;
     color: var(--p4);
-    width: 390px;
+    width: 171px;
     padding: 12px 24px;
     border-radius: 8px;
     border: none;
@@ -315,46 +334,195 @@
     color: #fff;
   }
 
-  .section-cards {
-    display: flex;
-    position: relative;
-    height: 422px;
-    width: 300px;
-    margin-bottom: 117px;
+  .btn--solucoes:hover {
+    background-color: var(--p3);
   }
 
-  .container-cards-segmento {
+
+  .card-container {
+    height: 400px;
+    margin-right: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+
+  .cards-carousel {
     display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+
+
+  .card-container {
+    flex: 0 0 calc(90% - 30px);
+    margin-right: 20px;
+  }
+
+
+  .carousel-track {
+    display: flex;
+    height: 100%;
+    width: 100%;
     flex-direction: row;
+    transition: transform 0.5s ease;
+
+  }
+
+  .carousel-button {
+    color: var(--p5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
     align-items: center;
-    justify-content: left;
-    gap: 20px;
-    padding-top: 30px;
-    position: absolute;
-    top: 0;
-    width: 300px;
-    left: 0;
-    height: auto;
-    opacity: 0;
-    transform: translatey(100%);
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    justify-content: center;
+    height: 100%;
   }
 
   .container-cards-industria {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
     gap: 20px;
-    padding-top: 30px;
     position: absolute;
-    top: 0;
-    width: 300px;
-    left: 0;
+    top: 333px;
+    left: -5%;
+    width: 100%;
+    overflow: hidden;
     height: auto;
     opacity: 0;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+
+  .container-cards-segmento {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    max-width: 1030px;
+    gap: 20px;
+    position: absolute;
+    top: 333px;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translatey(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    margin: 0 auto;
+
+  }
+
+  .container-cards-industria.active,
+  .container-cards-segmento.active {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+
+
+
+  .container-cards-industria.exit {
+    transform: translateX(-100%);
+  }
+
+  .container-cards-segmento.exit {
+    transform: translateY(100%);
+  }
+
+  .card-1 {
+    background-image: url('../../img/cards-solution/card-1.jpg');
+  }
+
+  .card-2 {
+    background-image: url('../../img/cards-solution/card-2.jpg');
+  }
+
+  .card-3 {
+    background-image: url('../../img/cards-solution/card-3.jpg');
+  }
+
+  .card-4 {
+    background-image: url('../../img/cards-solution/card-4.jpg');
+  }
+
+  .card-5 {
+    background-image: url('../../img/cards-solution/card-5.jpg');
+  }
+
+  .s-card-1 {
+    background-image: url('../../img/cards-solution/s-card-1.jpg');
+  }
+
+  .s-card-2 {
+    background-image: url('../../img/cards-solution/s-card-2.jpg');
+  }
+
+  .s-card-3 {
+    background-image: url('../../img/cards-solution/s-card-3.jpg');
+  }
+
+  .card-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card-container h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    background: #083b5be8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .card-container:hover {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    background-color: var(--p4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .card-container:hover .text-overlay {
+    opacity: 1;
   }
 
 

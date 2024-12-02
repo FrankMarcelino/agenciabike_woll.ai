@@ -2,17 +2,16 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  width: 50%;
-  height: 100%;
-  max-width: 640px;
+  width: 720px;
+  height: 642px;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 40px;
+  align-items: center;
+  position: absolute;
+  padding-right: 180px;
 }
 
 .header-3 p {
   max-width: 450px;
-  );
 }
 
 @media (max-width: 600px) {

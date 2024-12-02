@@ -6,24 +6,27 @@
 .heros {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 2000px;
   height: 642px;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+
   margin: 0 auto;
   margin-top: 84px;
+  position: relative;
 }
 
 .container-header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 100%;
+  width: 1440px;
+  max-width: 1440px;
   height: 642px;
-
-
+  position: relative;
+  padding: 200px;
+  top: 0;
 }
 
 
@@ -31,17 +34,21 @@
   display: flex;
   height: 642px;
   max-height: 642px;
-  width: 50%;
+  width: 720px;
   object-fit: contain;
+  justify-content: right;
+  position: absolute;
+  left: 70%;
+
 }
 
 .bg-img-desktop {
   display: block;
-  max-width: 100%;
+  width: 720px;
+  max-width: 720px;
   height: 642px;
   max-height: 642px;
-  object-fit: cover;
-  background-size: cover;
+
   background-repeat: no-repeat;
 }
 
@@ -67,7 +74,7 @@
 
 /* comandos do carousel*/
 .carousel-headers {
-  position: relative;
+  position: absolute;
   top: 90%;
   left: calc(50% - 8rem);
   display: flex;
@@ -101,7 +108,7 @@
 
 .carousel-buttons {
   display: flex;
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0%;
   justify-content: center;
