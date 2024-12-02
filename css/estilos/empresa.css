@@ -64,7 +64,7 @@
 
 .container-img-empresa::before {
   content: "";
-  background-image: url('../../img/detalhe-bg-empresa-fotos.svg');
+  background-image: url('../../img/bg/detalhe-bg-empresa-fotos.svg');
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: right;

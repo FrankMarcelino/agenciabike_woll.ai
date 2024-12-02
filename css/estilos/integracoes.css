@@ -1,7 +1,7 @@
 .integracoes-section {
   display: flex;
   flex-direction: column;
-  background-image: url('../../img/bg.integracoes.jpg');
+  background-image: url('../../img/bg/bg.integracoes.jpg');
   background-size: auto;
   background-repeat: no-repeat;
   align-items: center;
