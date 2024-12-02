@@ -75,42 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // carrousel solucoes cards industria
-  // const carouselButtons = document.querySelectorAll(".carousel-button");
-  // carouselButtons.forEach((button) => {
-  //   button.addEventListener("click", () => {
-  //     const direction = button.getAttribute("data-direction");
-  //     const carouselTrack = button
-  //       .closest(".cards-carousel")
-  //       .querySelector(".carousel-track");
-  //     const cardWidth =
-  //       carouselTrack.querySelector(".card-container").offsetWidth;
-  //     const visibleCards = 3; // Número de cards visíveis por vez
-  //     const totalCards = carouselTrack.children.length;
-  //     const maxTranslateX = -(totalCards - visibleCards) * (cardWidth + 20); // 20px é a margem entre os cards
-
-  //     const currentTransform = parseInt(
-  //       carouselTrack.style.transform
-  //         .replace("translateX(", "")
-  //         .replace("px)", "") || 0
-  //     );
-
-  //     let newTransform = currentTransform;
-  //     if (direction === "left") {
-  //       newTransform = Math.min(
-  //         currentTransform + (cardWidth + 20) * visibleCards,
-  //         0
-  //       );
-  //     } else if (direction === "right") {
-  //       newTransform = Math.max(
-  //         currentTransform - (cardWidth + 20) * visibleCards,
-  //         maxTranslateX
-  //       );
-  //     }
-
-  //     carouselTrack.style.transform = `translateX(${newTransform}px)`;
-  //   });
-  // });
-
   const carouselButtons = document.querySelectorAll(".carousel-button");
 
   carouselButtons.forEach((button) => {
@@ -224,4 +188,47 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   showNextLetterAndWord(); // Inicia a animação
+});
+
+// carrousel cases de sucesso
+document.addEventListener("DOMContentLoaded", () => {
+  const leftArrow = document.querySelector(".carousel-left-cases");
+  const rightArrow = document.querySelector(".carousel-right-cases");
+  const indicators = document.querySelectorAll(".carousel-cases span");
+  const slides = document.querySelectorAll(
+    ".case-sucesso-section .slide-cases"
+  );
+
+  let currentIndex = 0;
+
+  function updateCarousel(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle("active", i === index);
+    });
+  }
+
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      currentIndex = index;
+      updateCarousel(index);
+    });
+  });
+
+  leftArrow.addEventListener("click", () => {
+    console.log("ok esquerda");
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+    updateCarousel(currentIndex);
+  });
+
+  rightArrow.addEventListener("click", () => {
+    console.log("ok direita");
+    currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+    updateCarousel(currentIndex);
+  });
+
+  updateCarousel(currentIndex); // Inicializa com o primeiro slide ativo
 });
