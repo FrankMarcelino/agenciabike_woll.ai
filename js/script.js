@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // carrousel solucoes cards industria
   // const carouselButtons = document.querySelectorAll(".carousel-button");
   // carouselButtons.forEach((button) => {
   //   button.addEventListener("click", () => {
@@ -83,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //       .querySelector(".carousel-track");
   //     const cardWidth =
   //       carouselTrack.querySelector(".card-container").offsetWidth;
-  //     const visibleCards = 1; // Número de cards visíveis por vez
+  //     const visibleCards = 3; // Número de cards visíveis por vez
   //     const totalCards = carouselTrack.children.length;
   //     const maxTranslateX = -(totalCards - visibleCards) * (cardWidth + 20); // 20px é a margem entre os cards
 
@@ -95,10 +96,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //     let newTransform = currentTransform;
   //     if (direction === "left") {
-  //       newTransform = Math.min(currentTransform + (cardWidth + 20), 0);
+  //       newTransform = Math.min(
+  //         currentTransform + (cardWidth + 20) * visibleCards,
+  //         0
+  //       );
   //     } else if (direction === "right") {
   //       newTransform = Math.max(
-  //         currentTransform - (cardWidth + 20),
+  //         currentTransform - (cardWidth + 20) * visibleCards,
   //         maxTranslateX
   //       );
   //     }
@@ -106,13 +110,16 @@ document.addEventListener("DOMContentLoaded", () => {
   //     carouselTrack.style.transform = `translateX(${newTransform}px)`;
   //   });
   // });
+
   const carouselButtons = document.querySelectorAll(".carousel-button");
+
   carouselButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const direction = button.getAttribute("data-direction");
-      const carouselTrack = button
-        .closest(".cards-carousel")
-        .querySelector(".carousel-track");
+      const containerSegmento =
+        button.closest(".container-cards-segmento") ||
+        button.closest(".container-cards-industria");
+      const carouselTrack = containerSegmento.querySelector(".carousel-track");
       const cardWidth =
         carouselTrack.querySelector(".card-container").offsetWidth;
       const visibleCards = 3; // Número de cards visíveis por vez

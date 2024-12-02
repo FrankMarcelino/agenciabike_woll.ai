@@ -2,7 +2,8 @@
   display: flex;
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  max-height: 100%;
+  max-width: 100%;
   align-items: center;
   margin: 0 auto;
 }
@@ -10,33 +11,38 @@
 .container-solucoes {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
   width: 1028px;
+  height: 895px;
+  max-width: 1028px;
+  max-height: 895px;
   margin: 0 auto;
-  gap: 100px;
 }
 
 .section-cards {
   display: flex;
-  position: relative;
-  height: 422px;
-  width: 1230px;
-  margin-bottom: 117px;
-}
-
-
-.container-titulo-solucoes {
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
   width: 100%;
-  margin-top: 117px;
+  position: relative;
+
 }
+
+.section-cards>h2 {
+  position: absolute;
+  top: 117px;
+  left: 0;
+}
+
+
 
 .container-buttons {
-  position: relative;
-  top: -60%;
+  position: absolute;
+  top: 241px;
+  left: 15%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -67,47 +73,14 @@
 
 
 .card-container {
-  flex: 0 0 300px;
-  /* Largura de cada card */
   height: 400px;
   margin-right: 20px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.container-cards-industria {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-  padding-top: 30px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  max-width: 1030px;
-  overflow: hidden;
-  left: 80px;
-  height: auto;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: #fff;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 2;
-}
 
 .cards-carousel {
   display: flex;
@@ -118,54 +91,70 @@
 }
 
 
+
 .card-container {
-  flex: 0 0 calc(33, 3% - 20px);
+  flex: 0 0 calc(33.33% - 30px);
   margin-right: 20px;
 }
-
 
 
 .carousel-track {
   display: flex;
   height: 100%;
   width: 100%;
-  max-width: 1030px;
-  justify-content: flex-start;
   flex-direction: row;
   transition: transform 0.5s ease;
-  margin: 0 auto;
+
 }
 
-.carousel-button.left {
-  display: absolute;
-  left: 10px;
-  z-index: 2;
+.carousel-button {
+  color: var(--p5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.carousel-button.right {
-  display: absolute;
-  right: 10px;
-  z-index: 2;
+.container-cards-industria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  position: absolute;
+  top: 333px;
+  left: -5%;
+  width: 1230px;
+  overflow: hidden;
+
+  height: auto;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
+
 
 .container-cards-segmento {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
   max-width: 1030px;
   gap: 20px;
-  padding-top: 30px;
   position: absolute;
-  top: 0;
+  top: 333px;
   width: 100%;
-  left: 80px;
   height: auto;
   opacity: 0;
   transform: translatey(100%);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   margin: 0 auto;
+
 }
 
 .container-cards-industria.active,
