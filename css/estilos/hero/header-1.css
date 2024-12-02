@@ -7,7 +7,7 @@
   justify-content: left;
   background-color: var(--w);
   gap: 40px;
-  padding-right: 30px;
+  padding-right: 50px;
 
 }
 
@@ -136,54 +136,54 @@
 
 
 @media (max-width: 600px) {
-  .card-header-1 {
-    justify-content: left;
-
-    align-items: center;
-    gap: 0px;
-
-  }
-
   .header-1 {
-    padding-top: 35px;
-    justify-content: left;
-    align-items: center;
-    width: 75%;
-    gap: 0px;
-
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    max-height: 493px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
 
   .container-marcadores {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    gap: 20px;
-    padding-left: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 0px;
     width: 100%;
     max-width: 700px;
     height: auto;
   }
 
   .container-marcadores>h1 {
-    width: 190px;
-    font-size: 1.5rem;
+    direction: flex;
+    width: 100%;
+    max-width: 200px;
+    font-size: 2rem;
   }
 
   .container-marcadores>p {
     display: none;
   }
 
+
+
+
   .container-marcador-1,
   .container-marcador-2 {
     display: inline-block;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     max-width: 100%;
-    max-height: 100%;
-    justify-content: center;
+    max-height: 96px;
+    justify-content: left;
     align-items: center;
     position: relative;
   }
@@ -210,6 +210,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: left;
+
   }
 
 
@@ -217,11 +218,11 @@
     font-size: 1rem;
     font-weight: 700;
     color: var(--p2);
-    margin-left: 5px;
+    padding-left: 5px;
   }
 
   .marcador-numero {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--p4);
     padding-left: 0px;
@@ -235,7 +236,7 @@
     color: var(--p3);
     position: absolute;
     top: 10px;
-    left: -8px;
+    left: -10px;
   }
 
   .marcador-3::after {
@@ -272,9 +273,11 @@
 
 
   .m4 {
+    display: flex;
     position: relative;
+
     top: 0;
-    left: 0;
+    left: -10px;
   }
 
 

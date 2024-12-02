@@ -110,20 +110,38 @@
 
 @media (max-width: 600px) {
   .heros {
+    display: flex;
+    width: 100%;
     max-width: 100%;
-    height: 493px;
-    max-height: 493px;
+    height: 500px;
+    max-height: 500px;
+    position: relative;
     margin: 0 auto;
+    margin-top: 84px;
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+
+
   }
 
 
-
   .container-img-hero {
-    height: 493px;
-    max-height: 493px;
-    width: 100%;
-    object-fit: contain;
-    justify-content: left;
+    display: flex;
+    height: 500px;
+    max-height: 500px;
+    width: 50%;
+    object-fit: cover;
+    size: cover;
   }
 
   .bg-img-desktop {
@@ -131,26 +149,67 @@
   }
 
   .bg-img-mobile {
-    display: block;
-    height: 100%;
-    width: 100%;
-
-    max-width: 100%;
-    width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
   }
 
 
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
   /* comandos do carousel*/
   .carousel-headers {
-    top: 105%;
-    left: calc(50% - 6rem);
+    position: relative;
+    top: 90%;
+    left: calc(50% - 5rem);
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 5;
+
   }
 
   .carousel-left,
   .carousel-right {
-    font-size: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
   }
+
+  .carousel-headers span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .carousel-headers span.active {
+    background-color: #007bff;
+  }
+
+  .carousel-buttons {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    left: 0%;
+    justify-content: center;
+    z-index: 4;
+  }
+
 
 }
