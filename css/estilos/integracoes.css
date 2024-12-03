@@ -12,6 +12,7 @@
   width: 100%;
   margin: 0 auto;
   max-width: 100%;
+  border-top: 24px solid var(--w);
 }
 
 .integracoes-section h2 {
