@@ -6,6 +6,10 @@
   height: 796px;
   margin: 0 auto;
   position: relative;
+  background-image: url('../../img/bg/crm-detalhe-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-crm {
