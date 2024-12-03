@@ -130,7 +130,6 @@
   left: -5%;
   width: 1130px;
   overflow: hidden;
-
   height: auto;
   opacity: 0;
   transform: translateX(-100%);
@@ -176,34 +175,67 @@
 
 .card-1 {
   background-image: url('../../img/cards-solution/card-1.jpg');
+  background-size: contain;
+  background-position: right;
+  width: 100%;
+  height: 100%;
 }
 
 .card-2 {
   background-image: url('../../img/cards-solution/card-2.jpg');
+  background-size: contain;
+  background-position: left;
+  width: 100%;
+  height: 100%;
 }
 
 .card-3 {
   background-image: url('../../img/cards-solution/card-3.jpg');
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .card-4 {
   background-image: url('../../img/cards-solution/card-4.jpg');
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .card-5 {
   background-image: url('../../img/cards-solution/card-5.jpg');
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 100%;
 }
 
 .s-card-1 {
   background-image: url('../../img/cards-solution/s-card-1.jpg');
+  background-size: contain;
+  background-position: left;
+  width: 100%;
+  height: 100%;
 }
 
 .s-card-2 {
   background-image: url('../../img/cards-solution/s-card-2.jpg');
+  background-size: contain;
+  background-position: right;
+  width: 100%;
+  height: 100%;
 }
+
 
 .s-card-3 {
   background-image: url('../../img/cards-solution/s-card-3.jpg');
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .card-container {
@@ -212,7 +244,8 @@
   height: 400px;
   overflow: hidden;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -220,14 +253,18 @@
 
 .card-container h3 {
   position: absolute;
+  display: flex;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 68px;
   font-size: 20px;
   background: #083b5be8;
   color: white;
   text-align: center;
-  padding: 10px;
+  justify-content: center;
+  padding-top: 5%;
+  border-top: solid 2px var(--p3);
 }
 
 .card-container:hover {

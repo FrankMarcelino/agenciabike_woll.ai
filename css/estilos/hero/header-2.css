@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 255px;
+  height: auto;
   width: 100%;
-  gap: 00px;
+  gap: 24px;
 }
 
 

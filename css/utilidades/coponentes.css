@@ -15,9 +15,10 @@
 /* botoes */
 
 .btn {
-  display: block;
+  display: flex;
   width: 249px;
   height: 56px;
+  padding: 24px 12px;
   justify-content: center;
   align-items: center;
   font-weight: 700;
@@ -26,6 +27,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
 }
 
 @media (max-width: 600px) {
