@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-
   width: 100%;
   max-width: 700px;
   height: auto;
@@ -132,8 +131,6 @@
 
 @media (max-width: 600px) {
 
-
-
   .container-marcadores {
     display: flex;
     flex-direction: column;
@@ -141,16 +138,16 @@
     align-items: flex-start;
     gap: 10px;
     padding-left: 0px;
-    width: 60%;
-    max-width: 60%;
-    height: auto;
+    width: 100%;
+    max-width: 100%;
+    height: 493px;
   }
 
   .container-marcadores>h1 {
     direction: flex;
-    width: 100%;
+    width: 200px;
     max-width: 200px;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .container-marcadores>p {
@@ -164,9 +161,9 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    max-width: 100%;
-    height: 100%;
-    gap: 30px;
+    max-width: 500px;
+    height: auto;
+    gap: 10px;
     position: relative;
   }
 
@@ -174,9 +171,9 @@
   .container-marcador-2 {
     display: inline-block;
     flex-direction: column;
-    width: 300px;
-    max-width: 100%;
-    max-height: 96px;
+    width: 100%;
+    max-width: 500px;
+    max-height: auto;
     justify-content: left;
     align-items: center;
     position: relative;
@@ -188,7 +185,7 @@
     justify-content: center;
     align-items: center;
     max-width: 128px;
-    max-height: 76px;
+    max-height: auto;
     top: 0;
     left: 0;
   }
@@ -196,7 +193,6 @@
   .container-marcador-4 {
     display: flex;
     flex-direction: column;
-
     top: 0;
     left: 0;
   }
@@ -220,7 +216,7 @@
   }
 
   .marcador-numero {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--p4);
     padding-left: 0px;

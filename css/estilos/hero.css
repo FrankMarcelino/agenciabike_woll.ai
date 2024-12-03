@@ -191,7 +191,7 @@
   /* comandos do carousel*/
   .carousel-headers {
     position: absolute;
-    top: 90%;
+    top: 110%;
     left: calc(50% - 8rem);
     display: flex;
     height: fit-content;
