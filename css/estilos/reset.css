@@ -9,6 +9,8 @@ li,
 a {
   margin: 0px;
   padding: 0px;
+  font-style: none;
+  font-weight: unset;
 }
 
 body {
