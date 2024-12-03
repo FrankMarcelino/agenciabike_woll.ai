@@ -123,7 +123,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 679px;
+    height: 779px;
     align-items: center;
     justify-content: center;
     padding: 0 25px;
@@ -135,22 +135,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 679px;
     width: 100%;
+    padding: 0 35px;
     margin: 0 auto;
     gap: 50px;
+    position: relative;
   }
+
+
 
   .card-diferenciais {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
     width: 100%;
     height: auto;
     margin: 0 auto;
     gap: 30px;
+    padding: 0px 35px;
+    position: absolute;
+    top: 77px;
+    left: 0;
+
+  }
+
+  .diferenciais-p-mobile {
+    display: flex;
+  }
+
+  .diferenciais-p-desktop {
+    display: none;
   }
 
   .acordion-container {
@@ -160,7 +177,7 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding-top: 0;
+    padding-top: 172px;
     padding-bottom: 0;
   }
 
