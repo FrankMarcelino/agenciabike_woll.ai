@@ -1,8 +1,8 @@
 .integracoes-section {
   display: flex;
   flex-direction: column;
-  background-image: url('../../img/bg/bg.integracoes.jpg');
-  background-size: auto;
+  background-image: url('../../img/bg/bg-integracoes.svg');
+  background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
