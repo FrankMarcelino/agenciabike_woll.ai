@@ -17,6 +17,7 @@
   flex-wrap: nowrap;
   height: 100%;
   width: 1440px;
+
 }
 
 .container-animacao {
@@ -26,6 +27,7 @@
   justify-content: center;
   align-items: center;
   padding-left: 200px;
+
 }
 
 
@@ -42,9 +44,6 @@
   align-items: flex-end;
   left: calc(100% - 700px);
   bottom: 0;
-
-
-
 }
 
 .img-impacto-mulher {
@@ -66,13 +65,16 @@
 
 
 .impacto-container {
+
   text-align: left;
 }
+
 
 .impacto-word {
   display: flex;
   font-size: 6rem;
   font-weight: 700;
+  padding-bottom: 64px;
 
   display: flex;
   opacity: 1;
@@ -86,7 +88,8 @@
   text-align: left;
   height: 100%;
   width: 100%;
-  font-size: 1.5rem;
+  padding-bottom: 4px;
+  font-size: 1.75rem;
   font-weight: 700;
   opacity: 0;
   transform: translateX(100px);
