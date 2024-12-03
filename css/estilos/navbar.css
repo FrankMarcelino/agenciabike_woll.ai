@@ -58,13 +58,16 @@ nav {
 
 .btn-menu-mobile {
   display: none;
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
   z-index: -10;
+
 }
 
-.btn-menu-mobile {}
+.menu-mobile {
+  display: none;
+}
 
 @media (max-width: 600px) {
   nav {
