@@ -205,6 +205,8 @@
   .case-1-bg-mobile,
   .case-2-bg-mobile {
     display: flex;
+    height: 50%;
+    width: 100%;
     max-width: 100%;
     align-items: flex-start;
     justify-content: center;
