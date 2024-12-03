@@ -4,7 +4,7 @@
   width: 100%;
   height: 427px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
   border-top: #007bff 5px solid;
   gap: 55px;
@@ -19,7 +19,7 @@
   max-width: 1300px;
   padding-top: 30px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
 
 }
@@ -28,10 +28,10 @@
   display: flex;
   flex-direction: column;
   width: 301px;
-  height: 93px;
+  height: 100%;
   gap: 26px;
   padding-left: 0px;
-  align-self: flex-end;
+  align-self: flex-start;
   justify-content: left;
 }
 
@@ -48,7 +48,7 @@
   height: 100%;
   width: 60%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
 
 }
