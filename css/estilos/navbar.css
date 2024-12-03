@@ -59,8 +59,8 @@ nav {
 .btn-menu-mobile {
   display: none;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 30%;
+  left: 90%;
   z-index: -10;
 
 }
@@ -104,8 +104,8 @@ nav {
     align-items: flex-start;
     flex-direction: column;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     padding: 35px;
     color: var(--w);
     z-index: 9;
