@@ -54,6 +54,34 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
+
+}
+
+.btn-linguagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+
+.select-language {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 85px;
+  right: calc(45% - 600px);
+  z-index: 12;
+  background-color: var(--p4);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: solid 1px var(--w);
+}
+
+.select-language.active {
+  display: flex;
 }
 
 .btn-menu-mobile {
@@ -68,6 +96,8 @@ nav {
 .menu-mobile {
   display: none;
 }
+
+
 
 @media (max-width: 600px) {
   nav {

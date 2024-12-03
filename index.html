@@ -9,152 +9,115 @@
     <!-- estilos -->
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- bibliotecas -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <header>     
+    <header>
       <div class="container-navbar" id="navbar">
-        <nav>
-          <div class="logo">
-            <a href="index.html" class="navbar-brand">
-              <img src="img/LogoWollAi.svg" alt="logo" />
-            </a>
-          </div>
-
-          <ul class="menu-nav-page">
-            <li class="">
-              <a class="cpw" href="#produto">Produto</a>
-            </li>
-            <li class="">
-              <a class="cpw" href="#solucoes">Solução</a>
-            </li>
-            <li class="">
-              <a class="cpw" href="#diferenciais">Diferenciais</a>
-            </li>
-            <li class="">
-              <a class="cpw" href="#cases">Cases</a>
-            </li>
-            <li class="">
-              <a class="cpw" href="#empresa">Empresa</a>
-            </li>
-            <li class="">
-              <a class="cpw" href="#footer">Contato</a>
-            </li>
-          </ul>
-
-          <ul class="container-btn-funtion">
-            <li class="">
-              <a href="#" class="btn-navbar-login cpw">
-                <img src="./img/icones/Perfil.svg" alt="" />Login
-              </a>
-            </li>
-            <li class="">
-              <a class="btn-navbar-cadastre-se cpw" href="inscricao.html"
-                >Cadastre-se</a
-              >
-            </li>
-            <li class="">
-              <a href="#" id="navbarDropdown">
-                <img src="./img/icones/Lnaguage.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-          <div class="btn-menu-mobile">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 7H16" stroke="#00A8E8" stroke-linecap="round"/>
-              <path d="M3 12H21" stroke="#00A8E8" stroke-linecap="round"/>
-              <path d="M3 17H20.5" stroke="#00A8E8" stroke-linecap="round"/>
-            </svg>
-              
-          </div>
-          <div class="menu-mobile bg-p4">
-            <img src="./img/LogoWollAi.svg" alt="">
-            <ul>
-              <li class="cpw"><a class="cpw" href="#produto">Produto</a></li>
-              <li class="cpw"><a class="cpw" href="#solucoes">Solução</a></li>
-              <li class="cpw"><a class="cpw" href="#diferenciais">Diferenciais</a></li>
-              <li class="cpw"><a class="cpw" href="#cases">Cases</a></li>
-              <li class="cpw"><a class="cpw" href="#empresa">Empresa</a></li>
-              <li class="cpw"><a class="cpw" href="#footer">Contato</a></li>
-            </ul>
-            <ul class="container-btn-funtion-mobile">
-              <li class="">
-                <a href="#" class="btn-navbar-login cpw">
-                  <img src="./img/icones/Perfil.svg" alt="" />Login
-                </a>
-              </li>
-              <li class="">
-                <a class="btn-navbar-cadastre-se cpw" href="inscricao.html"
-                  >Cadastre-se</a
-                >
-              </li>
-              <li class="">
-                <a href="#" id="navbarDropdown">
-                  <img src="./img/icones/Lnaguage.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </nav>
+          <nav>
+              <div class="logo">
+                  <a href="index.html" class="navbar-brand">
+                      <img src="img/LogoWollAi.svg" alt="logo" />
+                  </a>
+              </div>
+              <ul class="menu-nav-page">
+                  <li class=""><a class="cpw" href="#produto" data-translate="produto">Produto</a></li>
+                  <li class=""><a class="cpw" href="#solucoes" data-translate="solucoes">Solução</a></li>
+                  <li class=""><a class="cpw" href="#diferenciais" data-translate="diferenciais">Diferenciais</a></li>
+                  <li class=""><a class="cpw" href="#cases" data-translate="cases">Cases</a></li>
+                  <li class=""><a class="cpw" href="#empresa" data-translate="empresa">Empresa</a></li>
+                  <li class=""><a class="cpw" href="#footer" data-translate="contato">Contato</a></li>
+              </ul>
+              <ul class="container-btn-funtion">
+                  <li class=""><a href="#" class="btn-navbar-login cpw" data-translate="login"><img src="./img/icones/Perfil.svg" alt="" />Login</a></li>
+                  <li class=""><a class="btn-navbar-cadastre-se cpw" href="inscricao.html" data-translate="cadastreSe">Cadastre-se</a></li>
+              </ul>
+              <div class="btn-menu-mobile">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 7H16" stroke="#00A8E8" stroke-linecap="round"/>
+                      <path d="M3 12H21" stroke="#00A8E8" stroke-linecap="round"/>
+                      <path d="M3 17H20.5" stroke="#00A8E8" stroke-linecap="round"/>
+                  </svg>
+              </div>
+              <div class="menu-mobile bg-p4">
+                  <img src="./img/LogoWollAi.svg" alt="">
+                  <ul>
+                      <li class="cpw"><a class="cpw" href="#produto" data-translate="produto">Produto</a></li>
+                      <li class="cpw"><a class="cpw" href="#solucoes" data-translate="solucoes">Solução</a></li>
+                      <li class="cpw"><a class="cpw" href="#diferenciais" data-translate="diferenciais">Diferenciais</a></li>
+                      <li class="cpw"><a class="cpw" href="#cases" data-translate="cases">Cases</a></li>
+                      <li class="cpw"><a class="cpw" href="#empresa" data-translate="empresa">Empresa</a></li>
+                      <li class="cpw"><a class="cpw" href="#footer" data-translate="contato">Contato</a></li>
+                  </ul>
+                  <ul class="container-btn-funtion-mobile">
+                      <li class=""><a href="#" class="btn-navbar-login cpw" data-translate="login"><img src="./img/icones/Perfil.svg" alt="" />Login</a></li>
+                      <li class=""><a class="btn-navbar-cadastre-se cpw" href="inscricao.html" data-translate="cadastreSe">Cadastre-se</a></li>
+                  </ul>
+              </div>
+          </nav>
       </div>
-    </header>
-
+  </header>
+  
     <section >
       <div class="heros">
+        <div class="select-language">
+          <ul>
+            <li>
+              <a href="#" class="cpw">Português</a>
+            </li>
+            <li>
+              <a href="#" class="cpw">English</a>
+            </li>
+            <li>
+              <a href="#" class="cpw">Español</a>
+            </li>
+          </ul>
+        </div>
+    
         <div class="container-header slide active">
           <div class="header-side-right header-1">
             <div class="container-marcadores bg-w">
               <h1 class="cp4">
-                <strong class="cp3">Inteligência Artificial</strong>
-                simples e acessível para o
-                <strong class="cp3">seu negócio</strong>
+                <strong class="cp3" data-translate="inteligenciaArtificial">Inteligência Artificial</strong>
+                <span data-translate="simplesEacessivel">simples e acessível para o</span>
+                <strong class="cp3" data-translate="seuNegocio">seu negócio</strong>
               </h1>
-              <p class="font-p cp2">
-                Já estamos transformando milhares de empresas e impactando<br />
-                positivamente a vida de muitas pessoas.
+              <p class="font-p cp2" data-translate="impactandoVidas">
+                Já estamos transformando milhares de empresas e impactando<br />positivamente a vida de muitas pessoas.
               </p>
-              
               <div class="card-marcadores">
                 <div class="container-marcador-1">
                   <div class="container-marcador">
-                    <p class="font-titulo-bold cp4 marcador-numero marcador-1">
-                      1
-                    </p>
-                    <span>milhão</span>
+                    <p class="font-titulo-bold cp4 marcador-numero marcador-1">1</p>
+                    <span data-translate="milhao">milhão</span>
                   </div>
-                  <p class="marcador-texto">de conversas já trocadas</p>
+                  <p class="marcador-texto" data-translate="conversasTrocadas">de conversas já trocadas</p>
                 </div>
                 <div class="container-marcador-2">
                   <div class="container-marcador">
-                    <p class="font-titulo-bold cp4 marcador-numero marcador-2">
-                      6
-                    </p>
-                    <span>mil</span>
+                    <p class="font-titulo-bold cp4 marcador-numero marcador-2">6</p>
+                    <span data-translate="mil">mil</span>
                   </div>
-                  <p class="marcador-texto">estabelecimentos conectados</p>
+                  <p class="marcador-texto" data-translate="estabelecimentosConectados">estabelecimentos conectados</p>
                 </div>
                 <div class="container-marcador-3">
-                  <span class="marcador-texto">Aumento</span>
+                  <span class="marcador-texto" data-translate="aumento">Aumento</span>
                   <div class="container-marcador">
-                    <p class="font-titulo-bold cp4 marcador-numero marcador-3">
-                      4
-                    </p>
-                    <p class="marcador-texto m3">
-                      <strong class="">taxas de conversão</strong>
-                    </p>
+                    <p class="font-titulo-bold cp4 marcador-numero marcador-3">4</p>
+                    <p class="marcador-texto m3" data-translate="taxasConversao"><strong>taxas de conversão</strong></p>
                   </div>
                 </div>
                 <div class="container-marcador-4">
                   <div class="container-marcador">
-                    <p class="font-titulo-bold cp4 marcador-numero marcador-4">
-                      98
-                    </p>
-                    <span class="m4">automação</span>
+                    <p class="font-titulo-bold cp4 marcador-numero marcador-4">98</p>
+                    <span class="m4" data-translate="automacao">automação</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
           <div class="container-img-hero">
             <img
               src="./img/bg/bgs-headers/header1.png"
@@ -172,26 +135,27 @@
         <div class="container-header slide">
           <div class="header-side-right header-2 bg-p3">
             <div class="container-marcadores-header-2">
-              <h1 class="font-titulo">
+              <h1 class="font-titulo" data-translate="testeGratis">
                 Teste Gratis
-                <strong class="cpw"> Woll AI</strong>
+                <strong class="cpw" data-translate="wollAI"> Woll AI</strong>
               </h1>
               <div class="container-marcador-header-2">
                 <div class="marcador-header-2">
                   <p class="marcador-numero-header-2 font-titulo-bold">20</p>
-                  <span class="cpw"
-                    >mais tempo <br />
-                    com a familia</span
-                  >
+                  <span class="cpw" data-translate="maisTempoFamilia">
+                    mais tempo <br />
+                    com a familia
+                  </span>
                 </div>
                 <div class="marcador-header-2">
                   <p class="marcador-numero-header-2 font-titulo-bold">30</p>
-                  <span class="cpw">mais<br />renda</span>
+                  <span class="cpw" data-translate="maisRenda">mais<br />renda</span>
                 </div>
               </div>
-              <button class="btn cpw bg-p4">Saiba Mais</button>
+              <button class="btn cpw bg-p4" data-translate="saibaMais">Saiba Mais</button>
             </div>
           </div>
+          
 
           <div class="container-img-hero bg-p4">
             <img
@@ -204,19 +168,18 @@
         </div>
 
         <div class="container-header slide">
-          <div class="header-side-right-3 header-3 bg-w">
-            <h1 class="font-titulo cp4">
-              Possui um <strong>petshop</strong> <br />
-              e quer <strong>automatizar</strong> <br />
-              parte do seu<br />
-              <strong>atendimento?</strong>
+          <div class="header-side-right-4 header-4 bg-w">
+            <h1 class="font-titulo cp4" data-translate="temFloriculturaHeader4">
+              Tem uma <strong>floricultura</strong> <br />
+              e quer <strong>aumentar</strong> <br />
+              suas vendas?
             </h1>
-            <p class="font-p cp4">
-              Cadastre-se aqui e entre na lista dos primeiros que irão testar um
-              Agente de IA gratuitamente.
+            <p class="font-p cp4" data-translate="cadastreAquiHeader4">
+              Cadastre-se aqui e entre na lista dos primeiros que irão testar um Agente de IA gratuitamente.
             </p>
-            <button class="btn cpw bg-p4">Cadastre-se</button>
+            <button class="btn cpw bg-p4" data-translate="cadastreSeHeader4">Cadastre-se</button>
           </div>
+                  
           <div class="container-img-hero bg-p4">
             <img
               src="./img/bg/bgs-headers/header3.png"
@@ -1085,22 +1048,23 @@
           </div>
         </div>
       </div>
-      <!-- <div class="language-selector">
+      <div class="language-selector">
         <div class="text-center">
-          <select>
+          <select id="language-selector">
             <option value="pt">Português</option>
             <option value="en">English</option>
             <option value="es">Español</option>
           </select>
         </div>
-      </div> -->
+      </div>
+      
       <div class="copyright">
         <div class="col-md-12 text-center copyright">
           WollAi® 2024 Todos os direitos reservados
         </div>
       </div>
     </footer>
-
+    <script src="./js/translate.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
