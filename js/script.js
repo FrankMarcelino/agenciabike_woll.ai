@@ -241,3 +241,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateCarousel(currentIndex); // Inicializa com o primeiro slide ativo
 });
+
+//menu mobile
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector(".btn-menu-mobile");
+  const menu = document.querySelector(".menu-mobile");
+  const menuItems = document.querySelectorAll(".menu-mobile a");
+
+  menuButton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+});
