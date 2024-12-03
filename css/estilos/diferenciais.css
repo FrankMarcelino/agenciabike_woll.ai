@@ -6,7 +6,6 @@
   max-width: 100%;
   align-items: center;
   margin: 0 auto;
-
 }
 
 .container-diferenciais-bg {
@@ -23,12 +22,15 @@
 
 .container-diferenciais {
   display: flex;
-
   width: 1028px;
   height: 100%;
   margin: 0 auto;
   gap: 142px;
 
+}
+
+.diferenciais-p-mobile {
+  display: none;
 }
 
 
@@ -47,14 +49,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   width: 50%;
   height: 603px;
-
-
   margin: 0 auto;
   position: relative;
-
 }
 
 .faq-item {
@@ -82,7 +80,6 @@
   height: 100%;
   padding: 16px;
   margin: 0;
-
 }
 
 .faq-icon {
@@ -94,7 +91,6 @@
   align-items: center;
   justify-content: center;
   top: 15px;
-
 }
 
 .faq-item.active .faq-icon {
