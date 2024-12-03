@@ -162,8 +162,22 @@
     max-height: 493px;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 0px;
+  }
+
+  .header-side-right-3,
+  .header-side-right-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 493px;
+    max-height: 493px;
+    justify-content: center;
+    align-items: flex-start;
     padding-left: 35px;
   }
+
 
 
   .container-img-hero {
