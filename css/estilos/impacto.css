@@ -41,7 +41,7 @@
   justify-content: right;
   align-items: flex-end;
   left: calc(100% - 700px);
-  background-color: tomato;
+
 }
 
 .img-impacto-mulher {
@@ -96,45 +96,58 @@
 @media (max-width: 600px) {
   .impacto-section {
     display: flex;
+    flex-direction: column;
     height: 891px;
     width: 100%;
     max-width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding-bottom: 20px;
     margin: 0 auto;
+
   }
 
   .container-impacto {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
     flex-wrap: nowrap;
-    height: 100%;
+    height: 891px;
     width: 100%;
+    position: relative;
+
   }
 
   .container-animacao {
+
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 35px;
+    justify-content: left;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 10%;
+    left: -30%;
   }
 
 
   .container-imagem {
+
     display: flex;
-    height: 60%;
+    height: 61%;
     width: 100%;
     background-image: url('../../img/bg/detalhe.bg.imapctop.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    justify-content: center;
-    align-items: flex-end;
-    left: 10px;
+    position: absolute;
+    justify-content: left;
+    align-items: flex-start;
+    top: 335px;
+    left: 0px;
     margin: 0 auto;
   }
 
@@ -143,7 +156,7 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 0px;
     justify-content: center;
@@ -159,7 +172,7 @@
 
   .impacto-word {
     display: flex;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 20px;
     display: flex;
@@ -174,7 +187,7 @@
     text-align: left;
     height: 100%;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     opacity: 0;
     transform: translateX(100px);
