@@ -56,12 +56,32 @@ nav {
   gap: 10px;
 }
 
+.btn-menu-mobile {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  nav {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 84px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .menu-nav-page {
     display: none;
   }
 
   .container-btn-funtion {
     display: none;
+  }
+
+  .btn-menu-mobile {
+    display: flex;
   }
 }
