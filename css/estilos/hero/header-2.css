@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 305px;
+  height: 255px;
   width: 100%;
-  gap: 40px;
+  gap: 00px;
 }
 
 
@@ -41,8 +41,6 @@
 }
 
 @media (max-width: 600px) {
-
-
 
   .container-marcadores-header-2 {
     display: flex;

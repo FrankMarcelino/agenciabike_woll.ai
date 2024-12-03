@@ -24,7 +24,7 @@
   top: 0;
   left: calc(50% - 720px);
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
   margin-top: 84px;
@@ -68,17 +68,18 @@
 
 .container-img-hero {
   display: flex;
+  justify-content: center;
   object-fit: contain;
-  justify-content: right;
-  object-fit: cover;
   height: 642px;
+  width: 100%;
 }
 
 .bg-img-desktop {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
-  size: cover;
+
+
   background-repeat: no-repeat;
 }
 
@@ -90,7 +91,7 @@
 .carousel-headers {
   position: absolute;
   top: 90%;
-  left: calc(50% - 8rem);
+  left: calc(50% - 5rem);
   display: flex;
   height: fit-content;
   justify-content: center;
