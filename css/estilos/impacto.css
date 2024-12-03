@@ -1,5 +1,6 @@
 .impacto-section {
   display: flex;
+
   height: 722px;
   width: 100%;
   max-width: 100%;
@@ -10,7 +11,8 @@
 }
 
 .container-impacto {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   flex-direction: row;
   flex-wrap: nowrap;
   height: 100%;
@@ -20,25 +22,26 @@
 .container-animacao {
   display: flex;
   height: 100%;
-  width: 40%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-left: 150px;
+  padding-left: 200px;
 }
 
 
 .container-imagem {
   display: flex;
-  height: 100%;
-  width: 60%;
+  height: 702px;
+  width: 700px;
   background-image: url('../../img/bg/detalhe.bg.imapctop.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  position: relative;
+  position: absolute;
   justify-content: right;
-  align-items: flex-start;
-  left: 150px;
+  align-items: flex-end;
+  left: calc(100% - 700px);
+  background-color: tomato;
 }
 
 .img-impacto-mulher {
@@ -46,11 +49,12 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
-  position: relative;
-  top: 20px;
-  left: 20px;
-  justify-content: center;
-  align-items: flex-start;
+  position: absolute;
+
+  justify-content: flex-start;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
 }
 
 /* animacao imapacto */
