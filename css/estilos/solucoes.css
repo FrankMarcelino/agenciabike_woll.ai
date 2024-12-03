@@ -304,8 +304,6 @@
     left: 0;
   }
 
-
-
   .container-buttons {
     position: absolute;
     top: 241px;
@@ -357,6 +355,9 @@
     overflow: hidden;
     width: 100%;
     position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: auto;
   }
 
 
@@ -377,12 +378,13 @@
   }
 
   .carousel-button {
+
     color: var(--p5);
     border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 100%;
