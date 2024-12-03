@@ -120,7 +120,8 @@
     display: flex;
     width: 100%;
     max-width: 100%;
-    height: 726px;
+    height: 493px;
+    max-height: 493px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -131,7 +132,8 @@
     position: absolute;
     width: 100%;
     max-width: 100%;
-    height: 642px;
+    height: 493px;
+    max-height: 493px;
     top: 0;
     left: 0;
     display: grid;
@@ -156,7 +158,8 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    height: 642px;
+    height: 493px;
+    max-height: 493px;
     justify-content: center;
     align-items: flex-start;
     padding-left: 35px;
@@ -167,8 +170,9 @@
     display: flex;
     object-fit: contain;
     justify-content: right;
-    object-fit: cover;
-    height: 642px;
+    object-fit: contain;
+    height: 493px;
+    max-height: 493px;
     width: 100%;
   }
 
@@ -178,7 +182,7 @@
   }
 
   .bg-img-mobile {
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
   }
