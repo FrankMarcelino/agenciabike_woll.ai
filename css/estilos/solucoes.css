@@ -6,9 +6,7 @@
   max-width: 100%;
   align-items: center;
   margin: 0 auto;
-  position: relative;
-  top: 0px;
-  left: 0px;
+
 }
 
 .container-solucoes {
@@ -21,6 +19,7 @@
   max-width: 1028px;
   max-height: 895px;
   margin: 0 auto;
+
 }
 
 .section-cards {
@@ -30,9 +29,7 @@
   align-items: flex-start;
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  position: relative;
 
 }
 
@@ -109,7 +106,9 @@
   width: 100%;
   flex-direction: row;
   transition: transform 0.5s ease;
-
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: hidden;
 }
 
 .carousel-button {
@@ -308,7 +307,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    max-height: 100%;
+    max-height: 654px;
     max-width: 100%;
     align-items: center;
     margin: 0 auto;
@@ -323,9 +322,9 @@
     align-items: flex-start;
     justify-content: space-around;
     width: 100%;
-    height: 895px;
+    height: auto;
     max-width: 100%;
-    max-height: 895px;
+    max-height: 654px;
     margin: 0 auto;
     margin-left: 35px;
     margin-right: 0;
@@ -335,22 +334,18 @@
   .section-cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    height: 100%;
+    height: 654px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-
-
   }
 
   .section-cards>h2 {
-    position: absolute;
-    top: 117px;
-    top: 0;
-    left: 0;
+    position: none;
+
   }
 
   .container-buttons {
@@ -423,11 +418,13 @@
     width: 100%;
     flex-direction: row;
     transition: transform 0.5s ease;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: auto;
 
   }
 
   .carousel-button {
-
     color: var(--p5);
     border: none;
     padding: 10px;
@@ -476,54 +473,6 @@
 
   }
 
-  .container-cards-industria.active,
-  .container-cards-segmento.active {
-    opacity: 1;
-    transform: translateX(0);
-    transform: translateY(0);
-  }
-
-
-
-  .container-cards-industria.exit {
-    transform: translateX(-100%);
-  }
-
-  .container-cards-segmento.exit {
-    transform: translateY(100%);
-  }
-
-  .card-1 {
-    background-image: url('../../img/cards-solution/card-1.jpg');
-  }
-
-  .card-2 {
-    background-image: url('../../img/cards-solution/card-2.jpg');
-  }
-
-  .card-3 {
-    background-image: url('../../img/cards-solution/card-3.jpg');
-  }
-
-  .card-4 {
-    background-image: url('../../img/cards-solution/card-4.jpg');
-  }
-
-  .card-5 {
-    background-image: url('../../img/cards-solution/card-5.jpg');
-  }
-
-  .s-card-1 {
-    background-image: url('../../img/cards-solution/s-card-1.jpg');
-  }
-
-  .s-card-2 {
-    background-image: url('../../img/cards-solution/s-card-2.jpg');
-  }
-
-  .s-card-3 {
-    background-image: url('../../img/cards-solution/s-card-3.jpg');
-  }
 
   .card-container {
     position: relative;
@@ -556,23 +505,6 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 
-  .text-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 24px;
-    background-color: var(--p4);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    text-align: left;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
 
   .card-container:hover .text-overlay {
     opacity: 1;
