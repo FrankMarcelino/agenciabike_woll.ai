@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  width: 100%;
+  width: 400px;
   max-width: 700px;
   height: auto;
 }
@@ -105,7 +105,7 @@
   color: var(--p3);
   position: relative;
   top: -5px;
-  left: -20px;
+  left: -10px;
 }
 
 .marcador-texto {
@@ -125,7 +125,7 @@
   position: relative;
 
   top: 0;
-  left: -20px;
+  left: -10px;
 }
 
 

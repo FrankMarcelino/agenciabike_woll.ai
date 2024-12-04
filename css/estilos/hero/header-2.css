@@ -50,7 +50,7 @@
     gap: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 493px;
+    height: auto;
     width: 70%;
     max-width: 70%;
 
@@ -84,6 +84,8 @@
     height: auto;
     max-width: 100%;
     position: relative;
+    top: 0px;
+    left: 0px;
   }
 
   .marcador-numero-header-2::after {

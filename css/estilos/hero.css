@@ -3,6 +3,14 @@
 @import "../estilos/hero/header-3.css";
 @import "../estilos/hero/header-4.css";
 
+.hero-section {
+  width: 100%;
+  max-width: 1440px;
+  height: 726px;
+  max-height: 726px;
+  margin: 0 auto;
+}
+
 .heros {
   display: flex;
   width: 100%;
@@ -23,8 +31,7 @@
   max-height: 642px;
   top: 0;
   left: calc(50% - 720px);
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 84px;
@@ -43,12 +50,13 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  width: 720px;
+  width: 100%;
   height: 642px;
   max-height: 642px;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 80px;
+  position: absolute;
+  padding-left: 70px;
 }
 
 .header-side-right-3,
@@ -61,26 +69,16 @@
   max-height: 642px;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 80px;
-}
-
-
-
-.container-img-hero {
-  display: flex;
-  justify-content: center;
-  object-fit: contain;
-  height: 642px;
-  width: 100%;
+  padding-left: 70px;
 }
 
 .bg-img-desktop {
   display: flex;
   width: 100%;
   height: 100%;
-
-
   background-repeat: no-repeat;
+  background-position: absolute;
+  background-size: cover;
 }
 
 .bg-img-mobile {
@@ -136,8 +134,8 @@
     display: flex;
     width: 100%;
     max-width: 100%;
-    height: 493px;
-    max-height: 493px;
+    height: 593px;
+    max-height: 593px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -148,12 +146,12 @@
     position: absolute;
     width: 100%;
     max-width: 100%;
-    height: 493px;
-    max-height: 493px;
+    height: 593px;
+    max-height: 593px;
     top: 0;
     left: 0;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+
     justify-content: center;
     align-items: center;
     margin-top: 84px;
@@ -174,8 +172,9 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    height: 493px;
-    max-height: 493px;
+    height: 593px;
+    max-height: 593px;
+    position: absolute;
     justify-content: center;
     align-items: flex-start;
     padding-left: 0px;
@@ -195,33 +194,23 @@
   }
 
 
-
-  .container-img-hero {
-    display: flex;
-    object-fit: contain;
-    justify-content: right;
-    object-fit: contain;
-    height: 493px;
-    max-height: 493px;
-    width: 100%;
-  }
-
   .bg-img-desktop {
     display: none;
-
   }
 
   .bg-img-mobile {
     display: flex;
     width: 100%;
     height: 100%;
+    background-position: absolute;
+    background-size: cover;
   }
 
 
   /* comandos do carousel*/
   .carousel-headers {
     position: absolute;
-    top: 110%;
+    top: 70%;
     left: calc(50% - 8rem);
     display: flex;
     height: fit-content;
