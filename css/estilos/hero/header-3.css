@@ -8,10 +8,11 @@
 
 
   .header-3>h1 {
-    width: 230px;
+    width: 200px;
+    font-size: 1.8rem;
   }
 
   .header-3 p {
-    width: 230px;
+    width: 200px;
   }
 }

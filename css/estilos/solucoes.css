@@ -6,6 +6,9 @@
   max-width: 100%;
   align-items: center;
   margin: 0 auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
 .container-solucoes {
@@ -27,7 +30,9 @@
   align-items: flex-start;
   height: 100%;
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 
 }
 
@@ -307,6 +312,9 @@
     max-width: 100%;
     align-items: center;
     margin: 0 auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
   }
 
   .container-solucoes {
@@ -331,13 +339,17 @@
     align-items: flex-start;
     height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 
   }
 
   .section-cards>h2 {
     position: absolute;
     top: 117px;
+    top: 0;
     left: 0;
   }
 

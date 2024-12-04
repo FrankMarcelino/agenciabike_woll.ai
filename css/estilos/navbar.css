@@ -100,7 +100,8 @@ nav {
   top: 30%;
   left: 90%;
   z-index: -10;
-
+  width: 24px;
+  height: 24px;
 }
 
 .menu-mobile {
