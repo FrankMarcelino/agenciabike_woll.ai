@@ -6,8 +6,6 @@
   width: 100%;
   position: relative;
   margin: 0 auto;
-  overflow: hidden;
-  /* Adicionado para evitar rolagem */
 }
 
 .manifesto-bg-desktop {
@@ -33,30 +31,24 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0 20px;
-  /* Adicionado para espaço interno */
   z-index: 1;
 }
 
 .card-manifesto {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 500px;
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
 }
 
-.container-manifesto h2 {
+
+.card-manifesto h2 {
   font-size: 3rem;
-  color: var(--p3);
+
 }
 
-.manifesto p {
-  font-size: 20px;
-  color: #fff;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
 
 .container-list-manifesto {
   font-weight: 400;
@@ -65,7 +57,7 @@
   width: auto;
   height: 100%;
   font-size: 28px;
-  color: #fff;
+
   gap: 12px;
 
 }
@@ -81,7 +73,7 @@
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    /* Adicionado para evitar rolagem */
+
   }
 
   .manifesto-bg-desktop {
@@ -126,7 +118,7 @@
 
   .manifesto p {
     font-size: 20px;
-    color: #fff;
+
     margin-top: 32px;
     margin-bottom: 32px;
   }
@@ -134,10 +126,6 @@
   .container-list-manifesto {
     font-weight: 400;
     font-size: 28px;
-    color: #fff;
     gap: 30px;
   }
-
-
-
 }
