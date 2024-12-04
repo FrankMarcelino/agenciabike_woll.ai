@@ -118,6 +118,67 @@ const translationsProduto = {
   },
 };
 
+const translationsSolution = {
+  pt: {
+    solutionTitulo: "Soluções",
+    solutionBtnIndustria: "Por Indústria",
+    solutionBtnSegmento: "Por Segmento",
+    solutionDescricaoMarketplace:
+      "Aumente a eficiência, a experiência do usuário e as operações dentro de um mercado online, automatizando tarefas-chave, fornecendo recomendações personalizadas e melhorando as interações entre compradores, vendedores e a própria plataforma.",
+    solutionTituloMarketplace: "Marketplace",
+    solutionDescricaoEducacao:
+      "O agente de IA irá proporcionar suporte aos alunos e professores ao fornecer experiências de aprendizagem personalizadas, melhorando o processo de aprendizagem por meio de tutores virtuais, ajudando os alunos a ter sucesso acadêmico e auxiliando os educadores a gerenciar sua carga de trabalho.",
+    solutionTituloEducacao: "Educação",
+    solutionDescricaoAtendimentoClienteInd:
+      "O agente de IA para atendimento ao cliente lida com vários aspectos do atendimento ao cliente, desde responder a perguntas comuns até resolver problemas complexos, gerenciar dados do cliente e fornecer suporte personalizado, de forma automatizada ou híbrida.",
+    solutionTituloAtendimentoClienteInd: "Atendimento ao cliente",
+    solutionDescricaoNegociosLocais:
+      "O agente de IA ajuda pequenas e médias empresas locais a melhorar suas operações, interações com clientes e esforços de marketing, automatizando tarefas, fornecendo serviço personalizado aos clientes, otimizando fluxos de trabalho, melhorando a experiência do cliente e a eficiência do negócio.",
+    solutionTituloNegociosLocais: "Negócios locais",
+    solutionDescricaoMentoria:
+      "O agente de IA é projetado para fornecer orientação personalizada, feedback e suporte a indivíduos em vários aspectos de seu desenvolvimento profissional ou pessoal, atuando como um mentor virtual, oferecendo insights e sugerindo recursos.",
+    solutionTituloMentoria: "Mentoria",
+    solutionDescricaoNutricaoVendas:
+      "O agente de IA é projetado para envolver e orientar clientes em potencial pelo funil de vendas, fornecendo interações personalizadas, oportunas e relevantes, automatizando vários estágios do processo de nutrição, garantindo que os leads sejam movidos para mais perto de tomar uma decisão de compra.",
+    solutionTituloNutricaoVendas: "Nutrição de vendas com IA",
+    solutionDescricaoAtendimentoClienteSeg:
+      "O agente de IA é projetado para auxiliar os clientes automatizando respostas, fornecendo assistência em tempo real e resolvendo problemas de forma eficiente, operando em vários canais de comunicação, como chat, e-mail e mídia social para aprimorar a experiência geral de atendimento ao cliente.",
+    solutionTituloAtendimentoClienteSeg: "Suporte ao cliente com IA",
+    solutionDescricaoCoachIA:
+      "O agente de IA é projetado para aprimorar o aprendizado e o desenvolvimento de pessoas, automatizando e personalizando o processo de treinamento, oferecendo suporte à entrega do treinamento, rastreia o progresso e se adapta às necessidades individuais de aprendizado.",
+    solutionTituloCoachIA: "Coach com IA",
+  },
+  en: {
+    solutionTitulo: "Solutions",
+    solutionBtnIndustria: "By Industry",
+    solutionBtnSegmento: "By Specialization",
+    solutionDescricaoMarketplace:
+      "Increase efficiency, user experience and operations within an online marketplace by automating key tasks, providing personalized recommendations and improving interactions between buyers, sellers and the platform itself.",
+    solutionTituloMarketplace: "Marketplace",
+    solutionDescricaoEducacao:
+      "The AI agent will support students and teachers by providing personalized learning experiences, enhancing the learning process through virtual tutors, helping students succeed academically, and assisting educators in managing their workload.",
+    solutionTituloEducacao: "Education",
+    solutionDescricaoAtendimentoClienteInd:
+      "AI customer service agents handle various aspects of customer service, from answering common questions to resolving complex issues, managing customer data, and providing personalized support, in an automated or hybrid way.",
+    solutionTituloAtendimentoClienteInd: "Customer service",
+    solutionDescricaoNegociosLocais:
+      "The AI agent supports local small and medium-sized businesses improve their operations, customer interactions, and marketing efforts by automating tasks, providing personalized service to customers, optimizing workflows, improving customer experience, and business efficiency.",
+    solutionTituloNegociosLocais: "Local business",
+    solutionDescricaoMentoria:
+      "The AI agent is designed to provide personalized guidance, feedback and support to individuals on various aspects of their professional or personal development, acting as a virtual mentor, offering insights and suggesting resources.",
+    solutionTituloMentoria: "Mentoring",
+    solutionDescricaoNutricaoVendas:
+      "The AI agent is designed to engage and guide prospects through the sales funnel by providing personalized, timely, and relevant interactions, automating multiple stages of the nurturing process, ensuring leads are moved closer to making a purchasing decision.",
+    solutionTituloNutricaoVendas: "Sales Nurturing with AI",
+    solutionDescricaoAtendimentoClienteSeg:
+      "The AI agent is designed to assist customers by automating responses, providing real-time assistance, and resolving issues efficiently, operating across multiple communication channels such as chat, email, and social media to enhance the overall customer service experience.",
+    solutionTituloAtendimentoClienteSeg: "AI-Powered Customer Support",
+    solutionDescricaoCoachIA:
+      "The AI agent is designed to enhance people's learning and development by automating and personalizing the training process, supporting training delivery, tracking progress, and adapting to individual learning needs.",
+    solutionTituloCoachIA: "AI Coach",
+  },
+};
+
 $(document).ready(function () {
   $("#language-selector").on("change", function () {
     const selectedLanguage = $(this).val();
@@ -132,6 +193,7 @@ $(document).ready(function () {
     updateLanguageSection(translationsHeader3, lang);
     updateLanguageSection(translationsHeader4, lang);
     updateLanguageSection(translationsProduto, lang);
+    updateLanguageSection(translationsSolution, lang);
   }
 
   function updateLanguageSection(translations, lang) {
