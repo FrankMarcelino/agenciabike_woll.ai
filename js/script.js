@@ -282,7 +282,7 @@ $(document).ready(function () {
     updateLanguageSection(translationsHeader1, lang);
     updateLanguageSection(translationsHeader2, lang);
     updateLanguageSection(translationsHeader3, lang);
-    updateLanguageSection(translationsHeader4, lang);
+    updateLanguageSection(translationsHeaderFloricultura, lang);
     updateLanguageSection(translationsProduto, lang);
     updateLanguageSection(translationsSolution, lang);
     updateLanguageSection(translationsDiferenciais, lang);

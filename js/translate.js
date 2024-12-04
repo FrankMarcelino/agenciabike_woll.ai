@@ -54,7 +54,7 @@ const translationsHeader1 = {
 
 const translationsHeader2 = {
   pt: {
-    testeGratis: "Teste Gratis",
+    testeGratis: "Teste Gratis ",
     wollAI: "Woll AI",
     maisTempoFamilia: "mais tempo com a família",
     maisRenda: "mais renda",
@@ -76,6 +76,12 @@ const translationsHeader3 = {
     cadastreAquiHeader3:
       "Cadastre-se aqui e entre na lista dos primeiros que irão testar um Agente de IA gratuitamente.",
     cadastreSeHeader3: "Cadastre-se",
+    header3TituloParte1: "Possui um",
+    header3TituloParte2: "petshop",
+    header3TituloParte3: "e quer",
+    header3TituloParte4: "automatizar",
+    header3TituloParte6: "parte do seu",
+    header3TituloParte5: "atendimento?",
   },
   en: {
     possuiPetshopHeader3:
@@ -83,23 +89,29 @@ const translationsHeader3 = {
     cadastreAquiHeader3:
       "Register here and be on the list of the first to test an AI Agent for free.",
     cadastreSeHeader3: "Register",
+    header3TituloParte1: "Are you a",
+    header3TituloParte2: "petshop",
+    header3TituloParte3: "and want to",
+    header3TituloParte4: "automate",
+    header3TituloParte6: "part of your",
+    header3TituloParte5: "service?",
   },
 };
 
-const translationsHeader4 = {
+const translationsHeaderFloricultura = {
   pt: {
-    temFloriculturaHeader4:
+    headerFloriculturaTitulo:
       "Tem uma floricultura e quer aumentar as suas vendas?",
-    cadastreAquiHeader4:
+    headerFloriculturaDescricao:
       "Cadastre-se aqui e entre na lista dos primeiros que irão testar um Agente de IA gratuitamente.",
-    cadastreSeHeader4: "Cadastre-se",
+    headerFloriculturaBotao: "Cadastre-se",
   },
   en: {
-    temFloriculturaHeader4:
+    headerFloriculturaTitulo:
       "Are you a flower shop and want to increase your sales?",
-    cadastreAquiHeader4:
+    headerFloriculturaDescricao:
       "Register here and be on the list of the first to test an AI Agent for free.",
-    cadastreSeHeader4: "Register",
+    headerFloriculturaBotao: "Register",
   },
 };
 
