@@ -67,9 +67,10 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  width: 720px;
+  width: 100%;
   height: 642px;
   max-height: 642px;
+  position: absolute;
   justify-content: center;
   align-items: flex-start;
   padding-left: 70px;
