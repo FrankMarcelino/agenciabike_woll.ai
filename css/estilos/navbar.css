@@ -64,8 +64,16 @@ nav {
   z-index: 50;
 }
 
+.btn-header-select-language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 
-.select-language {
+}
+
+
+.select-language-header {
   display: none;
   align-items: center;
   gap: 10px;
@@ -78,11 +86,13 @@ nav {
   border-radius: 5px;
   cursor: pointer;
   border: solid 1px var(--w);
+  width: 120px;
 }
 
-.select-language.active {
+.select-language-header.active {
   display: flex;
 }
+
 
 .btn-menu-mobile {
   display: none;

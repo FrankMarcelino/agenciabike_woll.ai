@@ -264,6 +264,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // jquery traducao
 
 $(document).ready(function () {
+  $("#language-icon").on("click", function () {
+    $("#language-selector-header").toggleClass("active");
+  });
   $(
     "#language-selector-header, #language-selector-mobile, #language-selector-footer"
   ).on("change", function () {
