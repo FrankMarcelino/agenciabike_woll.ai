@@ -179,6 +179,53 @@ const translationsSolution = {
   },
 };
 
+const translationsCrm = {
+  pt: {
+    crmButton: "CRM",
+    gestorButton: "Gestor de pedidos",
+    contactButton: "Contact Center",
+  },
+  en: {
+    crmButton: "CRM",
+    gestorButton: "Order management",
+    contactButton: "Contact Center",
+  },
+};
+
+const translationsManifesto = {
+  pt: {
+    manifestoTitulo: "Manifesto",
+    manifestoDescricao:
+      "Acreditamos que o impacto é mais que uma consequência - é o motor que impulsiona tudo o que fazemos.",
+    manifestoConexoes: "Impacto gera conexões.",
+    manifestoResultados: "Impacto gera resultados.",
+    manifestoTransforma: "Impacto transforma.",
+  },
+  en: {
+    manifestoTitulo: "Manifest",
+    manifestoDescricao:
+      "We believe that impact is more than a consequence - it's the engine that drives everything we do.",
+    manifestoConexoes: "Impact generates connections.",
+    manifestoResultados: "Impact generates results.",
+    manifestoTransforma: "Impact transforms.",
+  },
+};
+
+const translationsEmpresa = {
+  pt: {
+    empresaTitulo: "Empresa",
+    empresaDescricao:
+      "Nós acreditamos que podemos impactar cada pessoa no planeta gerando acesso a IA de forma acessível e democrática.",
+    empresaLideranca: "Nossa liderança",
+  },
+  en: {
+    empresaTitulo: "Company",
+    empresaDescricao:
+      "We believe we can impact every person on the planet by generating access to AI in an accessible and democratic way.",
+    empresaLideranca: "Our leadership",
+  },
+};
+
 $(document).ready(function () {
   $("#language-selector").on("change", function () {
     const selectedLanguage = $(this).val();
@@ -194,6 +241,9 @@ $(document).ready(function () {
     updateLanguageSection(translationsHeader4, lang);
     updateLanguageSection(translationsProduto, lang);
     updateLanguageSection(translationsSolution, lang);
+    updateLanguageSection(translationsCrm, lang);
+    updateLanguageSection(translationsEmpresa, lang);
+    updateLanguageSection(translationsManifesto, lang);
   }
 
   function updateLanguageSection(translations, lang) {
