@@ -102,3 +102,49 @@ const translationsHeader4 = {
     cadastreSeHeader4: "Register",
   },
 };
+
+const translationsProduto = {
+  pt: {
+    produtoTitulo: "Produto",
+    produtoDescricao:
+      "Nós oferecemos Agent AI as a Service para profissionais e SMBs, de uma forma simples e acessível.",
+    produtoSaibaMais: "Saiba mais",
+  },
+  en: {
+    produtoTitulo: "Product",
+    produtoDescricao:
+      "We offer Agent AI as a Service for professionals and SMBs in a simple and affordable way.",
+    produtoSaibaMais: "Learn more",
+  },
+};
+
+$(document).ready(function () {
+  $("#language-selector").on("change", function () {
+    const selectedLanguage = $(this).val();
+    console.log("Idioma selecionado:", selectedLanguage); // Log para verificação
+    updateTranslations(selectedLanguage);
+  });
+
+  function updateTranslations(lang) {
+    updateLanguageSection(translationsNavBar, lang);
+    updateLanguageSection(translationsHeader1, lang);
+    updateLanguageSection(translationsHeader2, lang);
+    updateLanguageSection(translationsHeader3, lang);
+    updateLanguageSection(translationsHeader4, lang);
+    updateLanguageSection(translationsProduto, lang);
+  }
+
+  function updateLanguageSection(translations, lang) {
+    $("[data-translate]").each(function () {
+      const key = $(this).data("translate");
+      console.log("Chave encontrada:", key); // Log para verificação
+      if (translations[lang][key]) {
+        console.log("Tradução aplicada para:", key); // Log para verificação
+        $(this).text(translations[lang][key]);
+      }
+    });
+  }
+
+  // Define o idioma padrão para Português
+  updateTranslations("pt");
+});
