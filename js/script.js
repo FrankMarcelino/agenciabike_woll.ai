@@ -282,7 +282,7 @@ $(document).ready(function () {
     updateLanguageSection(translationsHeader1, lang);
     updateLanguageSection(translationsHeader2, lang);
     updateLanguageSection(translationsHeader3, lang);
-    updateLanguageSection(translationsHeaderFloricultura, lang);
+    updateLanguageSection(translationsHeader4, lang);
     updateLanguageSection(translationsProduto, lang);
     updateLanguageSection(translationsSolution, lang);
     updateLanguageSection(translationsDiferenciais, lang);
@@ -296,9 +296,8 @@ $(document).ready(function () {
   function updateLanguageSection(translations, lang) {
     $("[data-translate]").each(function () {
       const key = $(this).data("translate");
-      console.log("Chave encontrada:", key); // Log para verificação
+
       if (translations[lang][key]) {
-        console.log("Tradução aplicada para:", key); // Log para verificação
         $(this).text(translations[lang][key]);
       }
     });

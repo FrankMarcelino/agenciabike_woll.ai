@@ -98,17 +98,21 @@ const translationsHeader3 = {
   },
 };
 
-const translationsHeaderFloricultura = {
+const translationsHeader4 = {
   pt: {
-    headerFloriculturaTitulo:
-      "Tem uma floricultura e quer aumentar as suas vendas?",
+    header4TituloParte1: "Tem uma",
+    header4TituloParte2: "floricultura",
+    header4TituloParte3: "e quer",
+    header4TituloParte4: "aumentar suas vendas?",
     headerFloriculturaDescricao:
       "Cadastre-se aqui e entre na lista dos primeiros que irão testar um Agente de IA gratuitamente.",
     headerFloriculturaBotao: "Cadastre-se",
   },
   en: {
-    headerFloriculturaTitulo:
-      "Are you a flower shop and want to increase your sales?",
+    header4TituloParte1: "Are you a",
+    header4TituloParte2: "flower shop",
+    header4TituloParte3: "and want to",
+    header4TituloParte4: "increase your sales?",
     headerFloriculturaDescricao:
       "Register here and be on the list of the first to test an AI Agent for free.",
     headerFloriculturaBotao: "Register",
