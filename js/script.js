@@ -262,3 +262,45 @@ document.addEventListener("DOMContentLoaded", () => {
 // botão linguagem
 
 // jquery traducao
+
+$(document).ready(function () {
+  $(
+    "#language-selector-header, #language-selector-mobile, #language-selector-footer"
+  ).on("change", function () {
+    const selectedLanguage = $(this).val();
+    $(
+      "#language-selector-header, #language-selector-mobile, #language-selector-footer"
+    ).val(selectedLanguage);
+    updateTranslations(selectedLanguage);
+  });
+
+  function updateTranslations(lang) {
+    updateLanguageSection(translationsNavBar, lang);
+    updateLanguageSection(translationsHeader1, lang);
+    updateLanguageSection(translationsHeader2, lang);
+    updateLanguageSection(translationsHeader3, lang);
+    updateLanguageSection(translationsHeader4, lang);
+    updateLanguageSection(translationsProduto, lang);
+    updateLanguageSection(translationsSolution, lang);
+    updateLanguageSection(translationsDiferenciais, lang);
+    updateLanguageSection(translationsCase1, lang);
+    updateLanguageSection(translationsIntegration, lang);
+    updateLanguageSection(translationsCrm, lang);
+    updateLanguageSection(translationsEmpresa, lang);
+    updateLanguageSection(translationsManifesto, lang);
+  }
+
+  function updateLanguageSection(translations, lang) {
+    $("[data-translate]").each(function () {
+      const key = $(this).data("translate");
+      console.log("Chave encontrada:", key); // Log para verificação
+      if (translations[lang][key]) {
+        console.log("Tradução aplicada para:", key); // Log para verificação
+        $(this).text(translations[lang][key]);
+      }
+    });
+  }
+
+  // Define o idioma padrão para Português
+  updateTranslations("pt");
+});
