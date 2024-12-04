@@ -179,6 +179,103 @@ const translationsSolution = {
   },
 };
 
+const translationsDiferenciais = {
+  pt: {
+    diferenciaisTitulo: "Diferenciais",
+    diferenciaisDescricaoMobile:
+      "Nossa tecnologia é desenvolvida para extrair o melhor da Inteligência Artificial, sem que nossos clientes precisem se preocupar com isso. Nós nos preocupamos com a performance e experiência com nossos agentes de IA, para trazer uma experiência quase humana nas interações para resolver os mais diversos desafios.",
+    diferenciaisDescricaoDesktop1:
+      "Nossa tecnologia é desenvolvida para extrair o melhor da Inteligência Artificial, sem que nossos clientes precisem se preocupar com isso.",
+    diferenciaisDescricaoDesktop2:
+      "Nós nos preocupamos com a performance e experiência com nossos agentes de IA, para trazer uma experiência quase humana nas interações para resolver os mais diversos desafios.",
+    interoperabilidadeTitulo: "Interoperabilidade",
+    interoperabilidadeDescricao:
+      "A plataforma pode suportar vários LLMs de diferentes fornecedores, permitindo que os usuários interajam com qualquer modelo que escolherem. Ela abstrai as complexidades de APIs individuais, permitindo uma experiência perfeita entre os modelos.",
+    modularidadeTitulo: "Modularidade",
+    modularidadeDescricao:
+      "Os usuários podem facilmente conectar diferentes LLMs ou alternar entre modelos para diferentes casos de uso (por exemplo, um modelo para geração de linguagem natural, outro para resumo), garantindo flexibilidade.",
+    agnosticoTitulo: "Agnóstico",
+    agnosticoDescricao:
+      "A plataforma não está vinculada a nenhum fornecedor ou provedor de nuvem específico, permitindo que as organizações escolham os melhores modelos ou provedores com base em custo, desempenho ou recursos, e até mesmo combine modelos de diferentes fontes.",
+    otimizacaoTitulo: "Otimização de desempenho",
+    otimizacaoDescricao:
+      "Ela permite que os usuários selecionem modelos com base em métricas de desempenho, como velocidade, precisão, custo ou eficiência, ajudando-os a escolher o modelo mais adequado para tarefas específicas.",
+    integracaoTitulo: "Integração de modelo personalizado",
+    integracaoDescricao:
+      "Além de LLMs públicos, a plataforma pode acomodar modelos personalizados ou proprietários, fornecendo uma interface unificada para modelos internos e externos.",
+    conformidadeTitulo: "Conformidade e governança",
+    conformidadeDescricao:
+      "Garante que os usuários possam aderir aos requisitos regulatórios ou às políticas de governança organizacional, independentemente do modelo LLM que usam. Isso inclui o gerenciamento de privacidade de dados, segurança e conformidade em vários modelos.",
+  },
+  en: {
+    diferenciaisTitulo: "Key advantages",
+    diferenciaisDescricaoMobile:
+      "Our technology is developed to extract the best of Artificial Intelligence, without our customers having to worry about it. We care about the performance and experience with our AI agents, to bring an almost human experience in interactions to solve the most diverse challenges.",
+    diferenciaisDescricaoDesktop1:
+      "Our technology is developed to extract the best of Artificial Intelligence, without our customers having to worry about it.",
+    diferenciaisDescricaoDesktop2:
+      "We care about the performance and experience with our AI agents, to bring an almost human experience in interactions to solve the most diverse challenges.",
+    interoperabilidadeTitulo: "Interoperability",
+    interoperabilidadeDescricao:
+      "The platform can support multiple LLMs from different vendors, allowing users to interact with any model they choose. It abstracts away the complexities of individual APIs, enabling a seamless experience across models.",
+    modularidadeTitulo: "Modularity",
+    modularidadeDescricao:
+      "Users can easily connect different LLMs or switch between models for different use cases (e.g., one model for natural language generation, another for summarization), ensuring flexibility.",
+    agnosticoTitulo: "Agnostic",
+    agnosticoDescricao:
+      "The platform is not tied to any specific cloud vendor or provider, allowing organizations to choose the best models or providers based on cost, performance, or features, and even combine models from different sources.",
+    otimizacaoTitulo: "Performance Optimization",
+    otimizacaoDescricao:
+      "It allows users to select models based on performance metrics such as speed, accuracy, cost, or efficiency, helping them choose the most suitable model for specific tasks.",
+    integracaoTitulo: "Custom Model Integration",
+    integracaoDescricao:
+      "In addition to public LLMs, the platform can accommodate custom or proprietary models, providing a unified interface for internal and external models.",
+    conformidadeTitulo: "Compliance and governance",
+    conformidadeDescricao:
+      "Ensures that users can adhere to regulatory requirements or organizational governance policies regardless of the LLM model they use. This includes managing data privacy, security, and compliance across multiple models.",
+  },
+};
+
+const translationsCase1 = {
+  pt: {
+    case1TituloMobile: "Case de sucesso",
+    case1Nome: "FloresOnline",
+    case1DescricaoMobile:
+      "FloresOnline é um marketplace para venda de buquês e cestas de presentes. O objetivo da Flores Online era melhorar a camada de pré-vendas por meio de um agente de inteligência artificial. Os resultados rapidamente apareceram, a ponto de logo a Flores Online adotar um agente de IA para pós-venda também.",
+    case1BeneficiosTitulo: "Benefícios alcançados:",
+    case1BeneficiosLista:
+      " • 98% de automação na etapa de pré-vendas • 75% de automação na etapa de pós-vendas • Taxa de conversão de 4,5% para 13% • Diminuição da equipe de 7 para 1 pessoa (pessoas transferidas para exercerem outras atividades)",
+    case1TituloDesktop: "Case de sucesso",
+    case1Descricao1:
+      "FloresOnline é um marketplace para venda de buquês e cestas de presentes.",
+    case1Descricao2:
+      "O objetivo da Flores Online era melhorar a camada de pré-vendas por meio de um agente de inteligência artificial.",
+    case1Descricao3:
+      "Os resultados rapidamente apareceram, a ponto de logo a Flores Online adotar um agente de IA para pós-venda também.",
+  },
+  en: {
+    case1TituloMobile: "Success stories",
+    case1Nome: "FloresOnline",
+    case1DescricaoMobile:
+      "FloresOnline is a marketplace for selling bouquets and gift baskets. Flores Online's goal was to improve the pre-sales funnel through an artificial intelligence agent. The results quickly appeared, to the point that Flores Online soon adopted an AI agent for post-sales as well.",
+    case1BeneficiosTitulo: "Benefits achieved:",
+    case1BeneficiosLista:
+      " • 98% automation in the pre-sales stage • 75% automation in the post-sales stage • Conversion rate from 4.5% to 13% • Reduction in the team from 7 to 1 person (people transferred to perform other activities)",
+    case1TituloDesktop: "Success stories",
+    case1Descricao1:
+      "FloresOnline is a marketplace for selling bouquets and gift baskets.",
+    case1Descricao2:
+      "Flores Online's goal was to improve the pre-sales funnel through an artificial intelligence agent.",
+    case1Descricao3:
+      "The results quickly appeared, to the point that Flores Online soon adopted an AI agent for post-sales as well.",
+  },
+};
+
+const translationsIntegration = {
+  pt: { integrationTitulo: "Integrações" },
+  en: { integrationTitulo: "Integrations" },
+};
+
 const translationsCrm = {
   pt: {
     crmButton: "CRM",
@@ -241,6 +338,9 @@ $(document).ready(function () {
     updateLanguageSection(translationsHeader4, lang);
     updateLanguageSection(translationsProduto, lang);
     updateLanguageSection(translationsSolution, lang);
+    updateLanguageSection(translationsDiferenciais, lang);
+    updateLanguageSection(translationsCase1, lang);
+    updateLanguageSection(translationsIntegration, lang);
     updateLanguageSection(translationsCrm, lang);
     updateLanguageSection(translationsEmpresa, lang);
     updateLanguageSection(translationsManifesto, lang);
