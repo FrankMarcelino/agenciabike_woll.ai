@@ -13,21 +13,26 @@
 }
 
 
-.container-produto {
+.detalhe-bg-produto {
   display: flex;
-  width: 100%;
   height: 100%;
-  max-width: 1028px;
-  height: 709px;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  gap: 79px;
+  width: 100%;
   background-image: url('../../img/bg/bg-produto.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--p4);
+}
 
+
+.container-produto {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  width: 1020px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 79px;
 }
 
 
