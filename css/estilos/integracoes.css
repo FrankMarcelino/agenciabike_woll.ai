@@ -8,13 +8,11 @@
   justify-content: center;
   text-align: center;
   height: 320px;
-
   width: 100%;
   margin: 0 auto;
-  max-width: 100%;
   border-top: 15px solid var(--w);
   position: relative;
-  top: 650px;
+  top: 0px;
   left: 0px;
 }
 
