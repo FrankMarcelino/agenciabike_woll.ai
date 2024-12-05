@@ -1,11 +1,10 @@
 .difericiais-section {
-  position: relative;
-  top: 0px;
-  left: 0px;
   display: flex;
   width: 100%;
   height: 603px;
-  max-width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
   align-items: center;
   margin: 0 auto;
 }
@@ -15,7 +14,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 100%;
+  height: 603px;
   margin: 0 auto;
   background-image: url('../../img/bg/bg-diferenciais.png');
   background-size: cover;
@@ -122,9 +121,7 @@
     justify-content: center;
     padding: 0 25px;
     gap: 4px;
-    position: relative;
-    top: 1000px;
-    left: 0px;
+
   }
 
   .container-diferenciais-bg {
@@ -132,8 +129,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 679px;
+    margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
+
   }
 
   .container-diferenciais {
@@ -142,24 +142,23 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    height: auto;
     padding: 0 35px;
     margin: 0 auto;
-    gap: 50px;
-    position: relative;
+    gap: 0px;
+
   }
 
   .card-diferenciais {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
     gap: 30px;
-    padding: 0px 35px;
-    position: relative;
-    /* Alterado para relativo */
+    padding: 0px 0px;
   }
 
   .diferenciais-p-mobile {
@@ -174,11 +173,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    height: auto;
+    height: 458px;
     margin: 0 auto;
-    padding-top: 172px;
+    padding-top: 0px;
     padding-bottom: 0;
+
   }
 
   .faq-item {
