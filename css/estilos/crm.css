@@ -102,7 +102,7 @@
     display: flex;
 
     gap: 16px;
-    width: 100%;
+    width: 95%;
     margin-bottom: 20px;
   }
 
@@ -124,7 +124,7 @@
 
   .crm-images {
     position: relative;
-    width: 100%;
+    width: 95%;
     height: 100%;
   }
 

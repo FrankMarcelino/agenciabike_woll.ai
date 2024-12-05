@@ -18,7 +18,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: var(--w);
   color: #222222;
-  padding-bottom: 84px;
+  padding-bottom: 0px;
 }
 
 ul {
