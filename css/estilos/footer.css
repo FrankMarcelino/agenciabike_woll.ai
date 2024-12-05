@@ -157,6 +157,8 @@
     border-top: #007bff 5px solid;
     gap: 0px;
     position: relative;
+    top: 0px;
+    left: 0px;
     padding-bottom: 0px;
   }
 

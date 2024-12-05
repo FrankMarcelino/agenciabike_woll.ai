@@ -35,7 +35,7 @@
   display: flex;
   height: 100%;
   width: 700px;
-  background-image: url('../../img/bg/detalhe.bg.imapctop.png');
+  background-image: url('../../img/bg/detalhe.bg.imapctop.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -108,7 +108,7 @@
     height: 891px;
     width: 100%;
     max-width: 100%;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding-bottom: 20px;
     margin: 0 auto;
@@ -124,6 +124,8 @@
     height: 891px;
     width: 100%;
     position: relative;
+    top: 0px;
+    left: 0px;
   }
 
   .container-animacao {
@@ -134,7 +136,8 @@
     align-items: flex-start;
     position: absolute;
     top: 10%;
-    left: -40%;
+    left: -160px;
+
   }
 
 
@@ -171,12 +174,12 @@
 
 
   .impacto-container {
-    text-align: left;
+    text-align: center;
   }
 
   .impacto-word {
     display: flex;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
     display: flex;
@@ -189,7 +192,7 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    text-align: left;
+    text-align: center;
     height: 100%;
     width: 100%;
     font-size: 1rem;
