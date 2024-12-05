@@ -8,11 +8,14 @@
   justify-content: center;
   text-align: center;
   height: 320px;
-  margin-top: 30px;
+
   width: 100%;
   margin: 0 auto;
   max-width: 100%;
-  border-top: 24px solid var(--w);
+  border-top: 15px solid var(--w);
+  position: relative;
+  top: 650px;
+  left: 0px;
 }
 
 .integracoes-section h2 {
@@ -20,7 +23,7 @@
 }
 
 .unique-carousel-wrapper {
-  position: relative;
+
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
