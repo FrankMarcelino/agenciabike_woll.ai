@@ -17,9 +17,9 @@
   width: 100%;
   height: 180px;
   max-width: 1300px;
-  padding-top: 30px;
+  padding-top: 0px;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   margin: 0 auto;
 
 }
@@ -28,16 +28,17 @@
   display: flex;
   flex-direction: column;
   width: 301px;
-  height: a;
+  height: 93px;
   gap: 26px;
   padding-left: 0px;
-  align-self: center;
+  align-self: flex-start;
   justify-content: left;
+
 }
 
 .logo-footer img {
   width: 229px;
-  height: 43px;
+  height: 93px;
   align-self: flex-start;
 }
 
@@ -159,7 +160,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 732px;
+    height: 832px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -183,7 +184,8 @@
     align-items: flex-start;
     margin: 0 auto;
     font-size: 12px;
-    padding: 96px auto 24px 35px
+    padding: 96px auto 24px 35px;
+    gap: 100px;
   }
 
   .logo-footer {
@@ -197,7 +199,7 @@
     justify-content: left;
     margin-bottom: 15px;
     position: absolute;
-    top: 46px;
+    top: 80px;
     left: 35px;
   }
 
