@@ -82,11 +82,12 @@
     justify-content: center;
     align-items: center;
     border-top: solid 1px var(--p5);
+    height: 835px;
     position: relative;
-    top: 0;
+    top: 0px;
     left: 0;
     padding-bottom: 20px;
-    /* Adicionando padding inferior */
+
   }
 
   .container-produto {
@@ -98,9 +99,11 @@
     padding: 0 35px;
     margin: 0 auto;
     gap: 20px;
-    /* Ajustando o espaçamento */
+
     position: relative;
-    /* Alterado para relativo */
+    top: 0px;
+    left: 0px;
+
   }
 
   .card-produto {
