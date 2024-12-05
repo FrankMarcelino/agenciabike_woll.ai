@@ -9,7 +9,6 @@
   position: relative;
   top: 0px;
   left: 0px;
-
 }
 
 .case1,
@@ -26,7 +25,6 @@
   top: 0px;
   left: calc(50% - 510px);
   z-index: 1;
-
 }
 
 
@@ -174,37 +172,39 @@
 
 @media (max-width: 600px) {
   .case-sucesso-section {
+    display: flex;
     flex-direction: column;
-    height: auto;
-    padding-bottom: 20px;
-    /* Adicionando padding inferior */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 855px;
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
   }
 
   .case1,
   .case2 {
-    height: auto;
-    position: relative;
-    /* Alterado para relativo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 670px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
   }
+
+
 
   .case1-bg-desktop,
   .case2-bg-desktop {
     display: none;
-  }
-
-  .case-1-bg-mobile,
-  .case-2-bg-mobile {
-    display: flex;
-    height: 50%;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    z-index: -1;
-    top: 0;
   }
 
   .card-1-case-1,
@@ -212,48 +212,35 @@
     display: none;
   }
 
+  .case-1-bg-mobile,
+  .case-2-bg-mobile {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    left: 0px
+  }
+
   .case-titulo-mobile {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100px;
-    justify-content: center;
+    height: auto;
+    justify-content: left;
     align-items: center;
-    position: absolute;
-    top: 25%;
-    left: 0;
+    gap: 10px;
     z-index: 1;
-    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 0px
   }
 
-  .card-1-case-1-mobile,
-  .card-1-case-2-mobile {
-    display: flex;
-    height: 276px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding-left: 35px;
-    z-index: 1;
-    top: 303px;
-    left: 0;
-  }
 
-  .card-2-case-1-mobile,
-  .card-2-case-2-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 35px;
-    gap: 16px;
-    width: 100%;
-    height: 215px;
-    position: absolute;
-    top: 579px;
-    left: 0;
-  }
 
   .container-card-1-case-1,
   .container-card-1-case-2 {
@@ -265,12 +252,53 @@
     display: none;
   }
 
+  .card-1-case-1-mobile,
+  .card-1-case-2-mobile {
+    display: flex;
+    width: 358px;
+    height: auto;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto;
+    gap: 40px;
+    z-index: 1;
+    position: relative;
+    padding: 36px 24px 36px 24px;
+
+    padding-top: 80px;
+  }
+
+  .card-2-case-1-mobile,
+  .card-2-case-2-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    height: 212px;
+    padding: 36px 24px 36px 24px;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 40px;
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 0 0 16px 16px;
+  }
+
   .card-2-case-1>ul,
   .card-2-case-2>ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: left;
+    list-style: none;
+    padding: 0;
   }
 
   .slide-cases {
+    display: flex;
+    flex-direction: column;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     opacity: 0;
     visibility: hidden;
@@ -284,6 +312,34 @@
   }
 
   .carousel-cases {
-    bottom: 60%;
+    position: absolute;
+    top: 310px;
+    left: calc(50% - 60px);
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 24px;
+    gap: 5px;
+    z-index: 10;
+
+  }
+
+  .carousel-cases .carousel-left-cases,
+  .carousel-cases .carousel-right-cases {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .carousel-cases span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .carousel-cases span.active {
+    background-color: #007bff;
   }
 }
