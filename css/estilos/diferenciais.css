@@ -16,7 +16,7 @@
   width: 100%;
   height: 603px;
   margin: 0 auto;
-  background-image: url('../../img/bg/bg-diferenciais.png');
+  background-image: url('../../img/bg/bg-diferenciais.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -120,7 +120,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 25px;
-    gap: 4px;
+    gap: 0px;
 
   }
 
@@ -129,7 +129,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 679px;
+    height: 800px;
     margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     width: 100%;
     height: auto;
     padding: 0 35px;
@@ -157,7 +157,7 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    gap: 30px;
+    gap: 10px;
     padding: 0px 0px;
   }
 
@@ -175,7 +175,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 458px;
+    height: 600px;
     margin: 0 auto;
     padding-top: 0px;
     padding-bottom: 0;

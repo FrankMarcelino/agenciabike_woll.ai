@@ -184,7 +184,7 @@
 }
 
 .card-1 {
-  background-image: url('../../img/cards-solution/card-1.jpg');
+  background-image: url('../../img/cards-solution/card-1.png');
   background-size: contain;
   background-position: right;
   width: 100%;
@@ -192,7 +192,7 @@
 }
 
 .card-2 {
-  background-image: url('../../img/cards-solution/card-2.jpg');
+  background-image: url('../../img/cards-solution/card-2.png');
   background-size: contain;
   background-position: left;
   width: 100%;
@@ -200,7 +200,7 @@
 }
 
 .card-3 {
-  background-image: url('../../img/cards-solution/card-3.jpg');
+  background-image: url('../../img/cards-solution/card-3.png');
   background-size: contain;
   background-position: center;
   width: 100%;
@@ -208,7 +208,7 @@
 }
 
 .card-4 {
-  background-image: url('../../img/cards-solution/card-4.jpg');
+  background-image: url('../../img/cards-solution/card-4.png');
   background-size: contain;
   background-position: center;
   width: 100%;
@@ -216,7 +216,7 @@
 }
 
 .card-5 {
-  background-image: url('../../img/cards-solution/card-5.jpg');
+  background-image: url('../../img/cards-solution/card-5.png');
   background-size: cover;
   background-position: right;
   width: 100%;
@@ -232,7 +232,7 @@
 }
 
 .s-card-2 {
-  background-image: url('../../img/cards-solution/s-card-2.jpg');
+  background-image: url('../../img/cards-solution/s-card-2.png');
   background-size: contain;
   background-position: right;
   width: 100%;
@@ -240,7 +240,7 @@
 }
 
 .s-card-3 {
-  background-image: url('../../img/cards-solution/s-card-3.jpg');
+  background-image: url('../../img/cards-solution/s-card-3.png');
   background-size: contain;
   background-position: center;
   width: 100%;
